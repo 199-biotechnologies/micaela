@@ -54,18 +54,18 @@
       "heading": "Expertiza Noastră",
       "service1": {
         "imageAlt": "Casă modernă cu piscină",
-        "title": "Achiziție și Administrare Imobiliară",
-        "description": "O selecție exclusivă de reședințe, disponibile atât pentru șederi temporare, cât și pentru investiții pe termen lung."
+        "title": "Achiziție și Administrare de Proprietăți",
+        "description": "O colecție rafinată de reședințe, disponibile pentru sejururi de prestigiu sau investiții durabile."
       },
       "service2": {
         "imageAlt": "Balcon modern cu vedere la peisajul urban",
         "title": "Consultanță Juridică și Tehnică",
-        "description": "Colaborăm cu cei mai buni experți pentru a orchestra fiecare aspect al achiziției, renovării și valorificării proprietății dumneavoastră."
+        "description": "Colaborăm cu experți de elită pentru a orchestra fiecare dimensiune a achiziției, transformării și valorificării proprietății dumneavoastră."
       },
       "service3": {
         "imageAlt": "Interior de living cu design modern",
-        "title": "Renovare și Design Interior",
-        "description": "Însoțim clienții noștri în crearea de spații care le reflectă personalitatea și maximizează potențialul fiecărei reședințe."
+        "title": "Renovare și Arhitectură de Interior",
+        "description": "Ghidăm clienții noștri în crearea de ambianțe ce exprimă unicitatea lor și revelează potențialul desăvârșit al fiecărei reședințe."
       }
     },
     "getInTouch": {
@@ -77,7 +77,7 @@
       "heading": "Bună, sunt Micaela",
       "paragraph1": "Cu o formație în design interior și licență de agent imobiliar din 2011, lucrez la intersecția acestor două lumi—ajutând oamenii din Ibiza să aleagă înțelept, să creeze cu grijă și să se stabilească cu încredere.",
       "paragraph2": "Încep prin a asculta. Analizăm modul în care trăiți—lumină, flux, spațiu de depozitare, ritm—și modelăm căutarea în jurul acestuia. Cu o echipă mică și de încredere, mențin relații apropiate și un proces liniștit, astfel încât deciziile să fie clare și bine chibzuite.",
-      "paragraph3": "Ne ocupăm de detalii de la început până la sfârșit: căutare și negociere imobiliară, coordonare juridică și licențiere, consiliere pentru renovare și design interior. Scopul este simplu—mai puține, dar alegeri mai bune, și o casă care se simte ca voi.",
+      "paragraph3": "Gestionăm fiecare detaliu de la început până la final: căutare și negociere imobiliară, coordonare juridică și licențiere, consultanță pentru renovare și arhitectură de interior. Obiectivul este simplu—opțiuni selecte, alegeri excelente și o reședință ce reflectă esența dumneavoastră.",
       "imageAlt": "O femeie cu păr lung și ondulat stă la o masă de restaurant, ajustându-și părul. Masa are o față de masă albă, un pahar cu apă și un șervețel împăturit. În fundal se văd opere de artă și perdele elegante."
     },
     "getInTouch": {
@@ -86,8 +86,8 @@
   },
   "ContactPage": {
     "hero": {
-      "heading": "Să Începem Dialogul",
-      "description": "Permiteți-ne să vă însoțim în căutarea reședinței ideale în Ibiza, de la apartamente de lux la parter până la penthouse-uri exclusive."
+      "heading": "Să Purtăm un Dialog",
+      "description": "Permiteți-ne să vă ghidăm către reședința visurilor dumneavoastră în Ibiza, de la apartamente de prestigiu la parter până la penthouse-uri de excepție."
     },
     "form": {
       "name": {
@@ -116,7 +116,7 @@
   "PropertyPage": {
     "hero": {
       "heading": "Descoperiți Spațiile Noastre",
-      "description": "Volume concepute meticulos unde eleganța contemporană se îmbină cu farmecul mediteranean"
+      "description": "Spații create cu rafinament unde eleganța contemporană se contopește cu farmecul mediteranean"
     },
     "gallery": {
       "image1": "Terasă Panoramică",
@@ -128,8 +128,8 @@
       "image7": "Living"
     },
     "amenities": {
-      "heading": "Dotări",
-      "description": "Fiecare reședință dispune de 3-4 dormitoare, piscină și grădină private, spa și dressing-uri, sală de fitness, parcare acoperită și vederi panoramice la Dalt Vila și Marea Mediterană.",
+      "heading": "Dotări de Prestigiu",
+      "description": "Fiecare reședință oferă 3-4 dormitoare, piscină și grădină exclusiv private, spa și dressing-uri rafinate, sală de fitness, parcare acoperită și panorame spectaculoase către Dalt Vila și Marea Mediterană.",
       "concierge": {
         "title": "Concierge",
         "description": "Serviciu personalizat 24/7"
@@ -150,26 +150,26 @@
         "title": "Securitate",
         "description": "Supraveghere 24/7"
       },
-      "closing": "La Doran Homes cultivăm arta vieții în Ibiza. Cu o colecție exclusivă de reședințe în inima insulei, orchestrăm fiecare experiență. Proiectele noastre la cheie cuprind proceduri administrative, însoțire juridică și design interior, pentru ca dumneavoastră să vă bucurați pur și simplu."
+      "closing": "La Doran Homes cultivăm arta vieții mediteraneene. Cu o colecție rafinată de reședințe în inima insulei Ibiza, orchestrăm fiecare experiență pentru excelență. Proiectele noastre turnkey integrează proceduri administrative, însoțire juridică și arhitectură de interior, astfel încât dumneavoastră să savurați fiecare moment."
     },
     "location": {
-      "heading": "Locație Prestigioasă",
-      "description": "La doar trei minute de mers pe jos de splendida plajă Talamanca și de vibrantul oraș Ibiza. The White Angel este situat în inima orașului, cu acces facil la tot ceea ce oferă Ibiza.",
-      "imageAlt": "Piscină pe acoperiș cu vedere la Ibiza"
+      "heading": "Amplasament de Excepție",
+      "description": "La numai trei minute de mers pe jos de renumita plajă Talamanca și de cosmopolitul oraș Ibiza. The White Angel se află în epicentrul insulei, cu acces privilegiat la tot ceea ce Ibiza oferă mai prestigios.",
+      "imageAlt": "Piscină pe acoperiș cu priveliște către Ibiza"
     }
   },
   "UnitsPage": {
     "hero": {
-      "heading": "Tipuri de Unități"
+      "heading": "Tipologii de Reședințe"
     },
     "groundFloor": {
       "heading": "PARTER",
-      "details": "Piscină Privată • 4 Dormitoare • 185-320 mp",
+      "details": "Piscină Privată • 4 Dormitoare • 185-320 m²",
       "imageAlt": "Plan arhitectural al unei case care arată diverse camere, mobilier și zone exterioare."
     },
     "penthouse": {
       "heading": "PENTHOUSE",
-      "details": "Piscină Privată • 3 Dormitoare • 197 mp",
+      "details": "Piscină Privată • 3 Dormitoare • 197 m²",
       "imageAlt": "Plan arhitectural al unei case care arată camere, mobilier, bucătărie, dormitoare, băi și patio exterior cu piscină."
     },
     "getInTouch": {

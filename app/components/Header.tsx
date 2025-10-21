@@ -32,14 +32,14 @@ export default function Header() {
   }, [showLanguages]);
 
   const languages = [
-    { code: "en", label: "EN" },
-    { code: "es", label: "ES" },
-    { code: "fr", label: "FR" },
-    { code: "de", label: "DE" },
-    { code: "it", label: "IT" },
-    { code: "zh", label: "ZH" },
-    { code: "ru", label: "RU" },
-    { code: "ro", label: "RO" },
+    { code: "en", label: "EN", name: "English" },
+    { code: "de", label: "DE", name: "Deutsch" },
+    { code: "es", label: "ES", name: "Español" },
+    { code: "fr", label: "FR", name: "Français" },
+    { code: "it", label: "IT", name: "Italiano" },
+    { code: "ro", label: "RO", name: "Română" },
+    { code: "ru", label: "RU", name: "Русский" },
+    { code: "zh", label: "中文", name: "中文" },
   ];
 
   const currentLanguage = languages.find((lang) => lang.code === locale);
