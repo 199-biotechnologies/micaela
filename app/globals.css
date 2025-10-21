@@ -24,6 +24,28 @@ body {
   overflow-x: hidden;
 }
 
+/* Chinese font weight adjustment for better readability */
+html[lang="zh"] body {
+  font-weight: 300;
+}
+
+html[lang="zh"] .font-light {
+  font-weight: 400 !important;
+}
+
+html[lang="zh"] .font-extralight {
+  font-weight: 300 !important;
+}
+
+html[lang="zh"] h1,
+html[lang="zh"] h2,
+html[lang="zh"] h3,
+html[lang="zh"] h4,
+html[lang="zh"] h5,
+html[lang="zh"] h6 {
+  font-weight: 400;
+}
+
 /* Subtle fade-in animation */
 @keyframes fadeIn {
   from {
