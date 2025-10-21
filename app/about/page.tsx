@@ -9,12 +9,12 @@ export default function About() {
 
       <main className="pt-20">
         {/* About Section */}
-        <section className="py-20 px-4">
+        <section className="py-32 md:py-40 px-6">
           <div className="max-w-5xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
               <div>
-                <h1 className="text-4xl font-light tracking-tight mb-4">Hi, I&apos;m Micaela</h1>
-                <div className="w-20 h-1 bg-gray-900 mb-8"></div>
+                <h1 className="text-5xl md:text-6xl font-extralight tracking-tight mb-6">Hi, I&apos;m Micaela</h1>
+                <div className="w-16 h-px bg-gray-900 mb-10"></div>
 
                 <div className="space-y-6 text-gray-700 leading-relaxed font-light">
                   <p>

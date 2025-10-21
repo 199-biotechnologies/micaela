@@ -9,9 +9,10 @@ export default function TheProperty() {
 
       <main className="pt-20">
         {/* Title Section */}
-        <section className="py-16 px-4">
+        <section className="py-32 md:py-40 px-6">
           <div className="max-w-7xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-extralight tracking-tighter mb-8">TAKE A LOOK INSIDE</h1>
+            <h1 className="text-5xl md:text-7xl font-extralight tracking-tight mb-6">Take A Look Inside</h1>
+            <div className="w-16 h-px bg-gray-300 mx-auto" />
           </div>
         </section>
 
@@ -51,10 +52,11 @@ export default function TheProperty() {
         </section>
 
         {/* Amenities Section */}
-        <section className="py-20 px-4 bg-gray-50">
+        <section className="py-32 md:py-40 px-6 bg-gray-50/50">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-4xl font-light tracking-tight text-center mb-8">AMENITIES</h2>
-            <p className="text-center text-gray-600 text-lg mb-16 max-w-4xl mx-auto font-light">
+            <h2 className="text-4xl md:text-5xl font-extralight tracking-tight text-center mb-6">Amenities</h2>
+            <div className="w-16 h-px bg-gray-300 mx-auto mb-16" />
+            <p className="text-center text-gray-600 text-lg mb-20 max-w-4xl mx-auto font-light">
               All our apartments include 3-4 bedrooms, a private pool & garden, spa & fitting rooms, gym, indoor parking,
               and panoramic views of Dalt Villa and the Mediterranean Sea.
             </p>

@@ -9,9 +9,10 @@ export default function Units() {
 
       <main className="pt-20">
         {/* Title Section */}
-        <section className="py-16 px-4">
+        <section className="py-32 md:py-40 px-6">
           <div className="max-w-7xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-extralight tracking-tighter mb-8">UNIT TYPES</h1>
+            <h1 className="text-5xl md:text-7xl font-extralight tracking-tight mb-6">Unit Types</h1>
+            <div className="w-16 h-px bg-gray-300 mx-auto" />
           </div>
         </section>
 
