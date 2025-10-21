@@ -19,6 +19,13 @@ export const metadata: Metadata = {
   description: "The White Angel Talamanca - Luxury real estate in Ibiza",
 };
 
+// iOS Safari safe area support
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover" as const,
+};
+
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }

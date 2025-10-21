@@ -15,6 +15,27 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Fix overscroll bounce - prevent white/black flash */
+html {
+  background: linear-gradient(to bottom, #ffffff 0%, #ffffff 50%, #111111 50%, #111111 100%);
+  scroll-behavior: smooth;
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
@@ -22,6 +43,8 @@ body {
   font-optical-sizing: auto;
   letter-spacing: -0.015em;
   overflow-x: hidden;
+  /* iOS Safari safe area support */
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 /* Chinese font weight adjustment for better readability */
@@ -89,5 +112,60 @@ html[lang="zh"] h6 {
 
   .transition-smooth-fast {
     transition: all 0.25s var(--ease-in-out-quart);
+  }
+}
+
+/* Enhanced focus states - luxury minimalism */
+*:focus-visible {
+  outline: 2px solid rgba(29, 29, 31, 0.4);
+  outline-offset: 4px;
+  border-radius: 4px;
+  transition: outline 0.2s var(--ease-out-expo);
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid rgba(29, 29, 31, 0.6);
+  outline-offset: 3px;
+}
+
+/* Elegant link underline animation */
+a.link-underline {
+  position: relative;
+  text-decoration: none;
+}
+
+a.link-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s var(--ease-out-expo);
+}
+
+a.link-underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Footer link glow effect */
+footer a:hover {
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+  transition: all 0.3s var(--ease-out-expo);
+}
+
+/* Minimum touch target size for mobile */
+@media (hover: none) and (pointer: coarse) {
+  button,
+  a,
+  input[type="submit"],
+  input[type="button"] {
+    min-height: 44px;
+    min-width: 44px;
   }
 }

@@ -23,8 +23,8 @@ export default function WhatsAppButton() {
           <div className="absolute inset-0 rounded-full bg-green-500/10 blur-3xl animate-pulse delay-75" />
         </div>
 
-        {/* Main button */}
-        <div className="relative flex items-center gap-3 px-8 py-4 bg-gradient-to-br from-green-500 to-green-600 rounded-full shadow-lg shadow-green-500/25 transition-all duration-500 ease-out group-hover:shadow-xl group-hover:shadow-green-500/40 group-hover:scale-105 group-active:scale-95">
+        {/* Main button - responsive padding for mobile */}
+        <div className="relative flex items-center gap-3 px-6 py-3 md:px-8 md:py-4 bg-gradient-to-br from-green-500 to-green-600 rounded-full shadow-lg shadow-green-500/25 transition-all duration-500 ease-out group-hover:shadow-xl group-hover:shadow-green-500/40 group-hover:scale-105 group-active:scale-95 min-h-[44px]">
           {/* WhatsApp icon */}
           <div className="relative w-6 h-6">
             <svg

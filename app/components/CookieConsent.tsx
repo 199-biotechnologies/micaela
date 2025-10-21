@@ -30,7 +30,7 @@ export default function CookieConsent() {
   if (!showBanner) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 animate-fade-in">
+    <div className="fixed bottom-0 left-0 right-0 z-40 animate-fade-in">
       {/* Glassmorphism banner */}
       <div className="relative bg-white/90 backdrop-blur-xl border-t border-gray-900/10 shadow-2xl shadow-gray-900/10">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-6">

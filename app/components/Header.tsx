@@ -107,23 +107,26 @@ export default function Header() {
             <div className="relative ml-4" ref={dropdownRef}>
               <button
                 onClick={() => setShowLanguages(!showLanguages)}
-                className="px-4 py-2.5 text-xs font-light tracking-[0.1em] uppercase border border-gray-900/20 text-gray-900 rounded-full transition-smooth-fast hover:bg-gray-900/5 hover:border-gray-900"
+                className="px-4 py-2.5 text-xs font-light tracking-[0.1em] uppercase border border-gray-900/20 text-gray-900 rounded-full transition-smooth-fast hover:bg-gray-900/5 hover:border-gray-900 min-h-[44px]"
                 aria-label="Select language"
+                aria-expanded={showLanguages}
+                aria-haspopup="true"
               >
                 {currentLanguage?.label}
               </button>
 
               {showLanguages && (
-                <div className="absolute top-full right-0 mt-2 bg-white/90 backdrop-blur-xl border border-gray-900/20 rounded-2xl shadow-lg overflow-hidden min-w-[100px] z-50">
+                <div className="absolute top-full right-0 mt-2 bg-white/90 backdrop-blur-xl border border-gray-900/20 rounded-2xl shadow-lg overflow-hidden min-w-[100px] z-[60]">
                   {languages.map((lang) => (
                     <button
                       key={lang.code}
                       onClick={() => handleLanguageChange(lang.code)}
-                      className={`w-full px-4 py-2.5 text-xs font-light tracking-[0.1em] uppercase text-left transition-smooth-fast hover:bg-gray-900/5 ${
+                      className={`w-full px-4 py-3 text-xs font-light tracking-[0.1em] uppercase text-left transition-smooth-fast hover:bg-gray-900/5 min-h-[44px] ${
                         locale === lang.code
                           ? "bg-gray-900/10 text-gray-900"
                           : "text-gray-700"
                       }`}
+                      aria-current={locale === lang.code ? "true" : undefined}
                     >
                       {lang.label}
                     </button>
