@@ -1,0 +1,179 @@
+{
+  "Header": {
+    "logoAlt": "Doran Homes 设计",
+    "nav": {
+      "home": "首页",
+      "property": "房产",
+      "layout": "户型",
+      "about": "关于我们",
+      "contact": "联系方式"
+    }
+  },
+  "Footer": {
+    "brand": {
+      "name": "Doran Homes",
+      "tagline": "自2011年起,您在伊比萨值得信赖的豪华房产合作伙伴。"
+    },
+    "quickLinks": {
+      "heading": "快速导航",
+      "home": "首页",
+      "theProperty": "房产详情",
+      "layout": "户型图",
+      "about": "关于我们",
+      "contact": "联系方式"
+    },
+    "contact": {
+      "heading": "联系我们",
+      "address": {
+        "line1": "阿劳埃斯街3号",
+        "line2": "西班牙伊比萨 07800"
+      },
+      "ariaLabels": {
+        "instagram": "Instagram",
+        "facebook": "Facebook",
+        "whatsapp": "WhatsApp"
+      }
+    },
+    "bottom": {
+      "copyright": "© 2024 Doran Homes。版权所有。",
+      "privacyPolicy": "隐私政策"
+    }
+  },
+  "WhatsAppButton": {
+    "text": "联系我们"
+  },
+  "HomePage": {
+    "hero": {
+      "imageAlt": "室内外用餐区,俯瞰迷人景观",
+      "heading": {
+        "line1": "白天使",
+        "line2": "塔拉曼卡"
+      }
+    },
+    "services": {
+      "heading": "我们的专业服务",
+      "service1": {
+        "imageAlt": "配有游泳池的现代住宅",
+        "title": "房产收购与资产管理",
+        "description": "臻选稀缺豪宅,可供短期度假或长期投资持有。"
+      },
+      "service2": {
+        "imageAlt": "俯瞰城市景观的现代阳台",
+        "title": "法律与技术咨询",
+        "description": "携手顶尖专家团队,全程把控房产收购、改造与增值的每个环节。"
+      },
+      "service3": {
+        "imageAlt": "现代设计风格的客厅内饰",
+        "title": "翻新与室内设计",
+        "description": "陪伴客户打造彰显个性的空间,充分释放每套豪宅的独特潜力。"
+      }
+    },
+    "getInTouch": {
+      "heading": "联系我们"
+    }
+  },
+  "AboutPage": {
+    "about": {
+      "heading": "您好,我是 Micaela",
+      "paragraph1": "拥有室内设计专业背景,自2011年获得房地产经纪人执照以来,我专注于这两个领域的交汇点——帮助伊比萨的客户明智选择、精心设计,并充满信心地安家落户。",
+      "paragraph2": "我从倾听开始。我们会了解您的生活方式——光线、动线、储物空间、生活节奏——并以此为中心展开搜索。凭借小而精的专业团队,我与客户保持紧密联系,确保整个过程从容有序,让每个决策都清晰而深思熟虑。",
+      "paragraph3": "我们提供端到端的全程服务:房产搜索与谈判、法律协调与许可办理、翻新与室内设计咨询。我们的目标很简单——为您提供精选优质选择,打造真正属于您的理想家园。",
+      "imageAlt": "一位长发飘逸的女士坐在餐厅餐桌旁,整理她的头发。桌上铺着白色桌布,摆放着水杯和折叠餐巾。背景可见艺术品和优雅的窗帘。"
+    },
+    "getInTouch": {
+      "heading": "联系我们"
+    }
+  },
+  "ContactPage": {
+    "hero": {
+      "heading": "开启对话",
+      "description": "请允许我们陪伴您寻觅伊比萨理想居所,从奢华花园公寓到独享顶层阁楼。"
+    },
+    "form": {
+      "name": {
+        "label": "姓名",
+        "placeholder": "您的姓名"
+      },
+      "email": {
+        "label": "电子邮件",
+        "placeholder": "your@email.com"
+      },
+      "phone": {
+        "label": "电话",
+        "optional": "(可选)",
+        "placeholder": "+34"
+      },
+      "message": {
+        "label": "留言",
+        "placeholder": "告诉我们您在伊比萨的理想房产..."
+      },
+      "submit": "发送信息",
+      "divider": "或",
+      "instantMessaging": "更喜欢即时通讯?"
+    },
+    "imageAlt": "现代住宅综合体的航拍图"
+  },
+  "PropertyPage": {
+    "hero": {
+      "heading": "探索空间美学",
+      "description": "精心雕琢的空间格局,当代雅致与地中海神韵交相辉映"
+    },
+    "gallery": {
+      "image1": "屋顶露台",
+      "image2": "顶层公寓露台",
+      "image3": "露台景观",
+      "image4": "屋顶泳池",
+      "image5": "花园泳池",
+      "image6": "阳台",
+      "image7": "客厅"
+    },
+    "amenities": {
+      "heading": "尊贵配套",
+      "description": "每套豪宅配备3-4间卧室、私属泳池与花园、水疗及衣帽间、健身房、地下车库,尽揽达尔特维拉古城与地中海全景。",
+      "concierge": {
+        "title": "礼宾服务",
+        "description": "24/7全天候个性化服务"
+      },
+      "spa": {
+        "title": "水疗与健身",
+        "description": "健康休闲区与健身房"
+      },
+      "indoorPool": {
+        "title": "室内泳池",
+        "description": "全年恒温加热"
+      },
+      "outdoorPool": {
+        "title": "室外泳池",
+        "description": "三个泳池可供使用"
+      },
+      "security": {
+        "title": "安保系统",
+        "description": "24/7全天候监控"
+      },
+      "closing": "Doran Homes 致力于诠释伊比萨生活艺术。凭借岛屿核心地段的独家豪宅珍藏,我们精心编排每一次体验。全程交钥匙服务涵盖行政手续、法律护航与室内设计,让您尽情享受。"
+    },
+    "location": {
+      "heading": "黄金地段",
+      "description": "步行仅三分钟即可抵达迷人的塔拉曼卡海滩和充满活力的伊比萨市中心。白天使坐落于城市中心,便捷通达伊比萨的一切精彩。",
+      "imageAlt": "俯瞰伊比萨的屋顶泳池"
+    }
+  },
+  "UnitsPage": {
+    "hero": {
+      "heading": "户型类别"
+    },
+    "groundFloor": {
+      "heading": "底层公寓",
+      "details": "私人泳池 • 4间卧室 • 185-320平方米",
+      "imageAlt": "住宅建筑平面图,展示各个房间、家具和室外区域。"
+    },
+    "penthouse": {
+      "heading": "顶层公寓",
+      "details": "私人泳池 • 3间卧室 • 197平方米",
+      "imageAlt": "住宅建筑平面图,展示房间、家具、厨房、卧室、浴室以及带游泳池的室外露台。"
+    },
+    "getInTouch": {
+      "heading": "联系我们"
+    }
+  }
+}
