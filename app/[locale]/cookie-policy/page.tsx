@@ -1,15 +1,16 @@
+"use client";
+
 import { useTranslations } from "next-intl";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
-type Props = {
-  params: Promise<{ locale: string }>;
-};
-
-export default async function CookiePolicyPage({ params }: Props) {
-  const { locale } = await params;
+export default function CookiePolicyPage() {
   const t = useTranslations("CookiePolicy");
 
   return (
-    <main className="min-h-screen pt-32 pb-20">
+    <div className="min-h-screen bg-white">
+      <Header />
+      <main className="pt-32 pb-20">
       <div className="max-w-4xl mx-auto px-6 lg:px-8">
         {/* Header */}
         <div className="mb-16 text-center">
@@ -159,5 +160,7 @@ export default async function CookiePolicyPage({ params }: Props) {
         </div>
       </div>
     </main>
+    <Footer />
+  </div>
   );
 }
