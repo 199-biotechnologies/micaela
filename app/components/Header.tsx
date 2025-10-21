@@ -4,16 +4,48 @@ import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { useTranslations, useLocale } from "next-intl";
 import { usePathname, useRouter } from "@/i18n/navigation";
+import { useState, useEffect, useRef } from "react";
 
 export default function Header() {
   const t = useTranslations("Header");
   const locale = useLocale();
   const pathname = usePathname();
   const router = useRouter();
+  const [showLanguages, setShowLanguages] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
-  const toggleLocale = () => {
-    const newLocale = locale === "en" ? "es" : "en";
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setShowLanguages(false);
+      }
+    };
+
+    if (showLanguages) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [showLanguages]);
+
+  const languages = [
+    { code: "en", label: "EN" },
+    { code: "es", label: "ES" },
+    { code: "fr", label: "FR" },
+    { code: "de", label: "DE" },
+    { code: "it", label: "IT" },
+    { code: "zh", label: "ZH" },
+    { code: "ru", label: "RU" },
+  ];
+
+  const currentLanguage = languages.find((lang) => lang.code === locale);
+
+  const handleLanguageChange = (newLocale: string) => {
     router.replace(pathname, { locale: newLocale });
+    setShowLanguages(false);
   };
 
   return (
@@ -71,13 +103,33 @@ export default function Header() {
             </Link>
 
             {/* Language Switcher */}
-            <button
-              onClick={toggleLocale}
-              className="ml-4 px-4 py-2.5 text-xs font-light tracking-[0.1em] uppercase border border-gray-900/20 text-gray-900 rounded-full transition-smooth-fast hover:bg-gray-900/5 hover:border-gray-900"
-              aria-label="Switch language"
-            >
-              {locale === "en" ? "ES" : "EN"}
-            </button>
+            <div className="relative ml-4" ref={dropdownRef}>
+              <button
+                onClick={() => setShowLanguages(!showLanguages)}
+                className="px-4 py-2.5 text-xs font-light tracking-[0.1em] uppercase border border-gray-900/20 text-gray-900 rounded-full transition-smooth-fast hover:bg-gray-900/5 hover:border-gray-900"
+                aria-label="Select language"
+              >
+                {currentLanguage?.label}
+              </button>
+
+              {showLanguages && (
+                <div className="absolute top-full right-0 mt-2 bg-white/90 backdrop-blur-xl border border-gray-900/20 rounded-2xl shadow-lg overflow-hidden min-w-[100px] z-50">
+                  {languages.map((lang) => (
+                    <button
+                      key={lang.code}
+                      onClick={() => handleLanguageChange(lang.code)}
+                      className={`w-full px-4 py-2.5 text-xs font-light tracking-[0.1em] uppercase text-left transition-smooth-fast hover:bg-gray-900/5 ${
+                        locale === lang.code
+                          ? "bg-gray-900/10 text-gray-900"
+                          : "text-gray-700"
+                      }`}
+                    >
+                      {lang.label}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
           </nav>
         </div>
       </div>
