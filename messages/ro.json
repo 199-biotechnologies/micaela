@@ -1,0 +1,179 @@
+{
+  "Header": {
+    "logoAlt": "Doran Homes Design",
+    "nav": {
+      "home": "Acasă",
+      "property": "Proprietatea",
+      "layout": "Planuri",
+      "about": "Despre Noi",
+      "contact": "Contact"
+    }
+  },
+  "Footer": {
+    "brand": {
+      "name": "Doran Homes",
+      "tagline": "Partenerul dumneavoastră de încredere pentru proprietăţi de lux în Ibiza din 2011."
+    },
+    "quickLinks": {
+      "heading": "Acces Rapid",
+      "home": "Acasă",
+      "theProperty": "Proprietatea",
+      "layout": "Planuri",
+      "about": "Despre Noi",
+      "contact": "Contact"
+    },
+    "contact": {
+      "heading": "Contact",
+      "address": {
+        "line1": "3 Carrer d'Alhaueth",
+        "line2": "Ibiza, Spania 07800"
+      },
+      "ariaLabels": {
+        "instagram": "Instagram",
+        "facebook": "Facebook",
+        "whatsapp": "WhatsApp"
+      }
+    },
+    "bottom": {
+      "copyright": "© 2024 Doran Homes. Toate drepturile rezervate.",
+      "privacyPolicy": "Politica de Confidențialitate"
+    }
+  },
+  "WhatsAppButton": {
+    "text": "Contactați-ne"
+  },
+  "HomePage": {
+    "hero": {
+      "imageAlt": "Zonă de luat masa interior-exterior cu vedere la peisaj pitoresc",
+      "heading": {
+        "line1": "The White Angel",
+        "line2": "Talamanca"
+      }
+    },
+    "services": {
+      "heading": "Expertiza Noastră",
+      "service1": {
+        "imageAlt": "Casă modernă cu piscină",
+        "title": "Achiziție și Administrare Imobiliară",
+        "description": "O selecție exclusivă de reședințe, disponibile atât pentru șederi temporare, cât și pentru investiții pe termen lung."
+      },
+      "service2": {
+        "imageAlt": "Balcon modern cu vedere la peisajul urban",
+        "title": "Consultanță Juridică și Tehnică",
+        "description": "Colaborăm cu cei mai buni experți pentru a orchestra fiecare aspect al achiziției, renovării și valorificării proprietății dumneavoastră."
+      },
+      "service3": {
+        "imageAlt": "Interior de living cu design modern",
+        "title": "Renovare și Design Interior",
+        "description": "Însoțim clienții noștri în crearea de spații care le reflectă personalitatea și maximizează potențialul fiecărei reședințe."
+      }
+    },
+    "getInTouch": {
+      "heading": "Contactați-ne"
+    }
+  },
+  "AboutPage": {
+    "about": {
+      "heading": "Bună, sunt Micaela",
+      "paragraph1": "Cu o formație în design interior și licență de agent imobiliar din 2011, lucrez la intersecția acestor două lumi—ajutând oamenii din Ibiza să aleagă înțelept, să creeze cu grijă și să se stabilească cu încredere.",
+      "paragraph2": "Încep prin a asculta. Analizăm modul în care trăiți—lumină, flux, spațiu de depozitare, ritm—și modelăm căutarea în jurul acestuia. Cu o echipă mică și de încredere, mențin relații apropiate și un proces liniștit, astfel încât deciziile să fie clare și bine chibzuite.",
+      "paragraph3": "Ne ocupăm de detalii de la început până la sfârșit: căutare și negociere imobiliară, coordonare juridică și licențiere, consiliere pentru renovare și design interior. Scopul este simplu—mai puține, dar alegeri mai bune, și o casă care se simte ca voi.",
+      "imageAlt": "O femeie cu păr lung și ondulat stă la o masă de restaurant, ajustându-și părul. Masa are o față de masă albă, un pahar cu apă și un șervețel împăturit. În fundal se văd opere de artă și perdele elegante."
+    },
+    "getInTouch": {
+      "heading": "Contactați-ne"
+    }
+  },
+  "ContactPage": {
+    "hero": {
+      "heading": "Să Începem Dialogul",
+      "description": "Permiteți-ne să vă însoțim în căutarea reședinței ideale în Ibiza, de la apartamente de lux la parter până la penthouse-uri exclusive."
+    },
+    "form": {
+      "name": {
+        "label": "Nume",
+        "placeholder": "Numele dumneavoastră"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "email@dumneavoastra.ro"
+      },
+      "phone": {
+        "label": "Telefon",
+        "optional": "(Opțional)",
+        "placeholder": "+34"
+      },
+      "message": {
+        "label": "Mesaj",
+        "placeholder": "Spuneți-ne despre proprietatea dumneavoastră de vis din Ibiza..."
+      },
+      "submit": "Trimiteți Mesajul",
+      "divider": "sau",
+      "instantMessaging": "Preferați mesagerie instant?"
+    },
+    "imageAlt": "Vedere aeriană a unui complex rezidențial modern"
+  },
+  "PropertyPage": {
+    "hero": {
+      "heading": "Descoperiți Spațiile Noastre",
+      "description": "Volume concepute meticulos unde eleganța contemporană se îmbină cu farmecul mediteranean"
+    },
+    "gallery": {
+      "image1": "Terasă Panoramică",
+      "image2": "Terasă Penthouse",
+      "image3": "Vedere de pe Terasă",
+      "image4": "Piscină pe Acoperiș",
+      "image5": "Piscină în Grădină",
+      "image6": "Balcon",
+      "image7": "Living"
+    },
+    "amenities": {
+      "heading": "Dotări",
+      "description": "Fiecare reședință dispune de 3-4 dormitoare, piscină și grădină private, spa și dressing-uri, sală de fitness, parcare acoperită și vederi panoramice la Dalt Vila și Marea Mediterană.",
+      "concierge": {
+        "title": "Concierge",
+        "description": "Serviciu personalizat 24/7"
+      },
+      "spa": {
+        "title": "Spa & Fitness",
+        "description": "Zonă wellness și sală de sport"
+      },
+      "indoorPool": {
+        "title": "Piscină Interioară",
+        "description": "Încălzită tot anul"
+      },
+      "outdoorPool": {
+        "title": "Piscină Exterioară",
+        "description": "Trei piscine disponibile"
+      },
+      "security": {
+        "title": "Securitate",
+        "description": "Supraveghere 24/7"
+      },
+      "closing": "La Doran Homes cultivăm arta vieții în Ibiza. Cu o colecție exclusivă de reședințe în inima insulei, orchestrăm fiecare experiență. Proiectele noastre la cheie cuprind proceduri administrative, însoțire juridică și design interior, pentru ca dumneavoastră să vă bucurați pur și simplu."
+    },
+    "location": {
+      "heading": "Locație Prestigioasă",
+      "description": "La doar trei minute de mers pe jos de splendida plajă Talamanca și de vibrantul oraș Ibiza. The White Angel este situat în inima orașului, cu acces facil la tot ceea ce oferă Ibiza.",
+      "imageAlt": "Piscină pe acoperiș cu vedere la Ibiza"
+    }
+  },
+  "UnitsPage": {
+    "hero": {
+      "heading": "Tipuri de Unități"
+    },
+    "groundFloor": {
+      "heading": "PARTER",
+      "details": "Piscină Privată • 4 Dormitoare • 185-320 mp",
+      "imageAlt": "Plan arhitectural al unei case care arată diverse camere, mobilier și zone exterioare."
+    },
+    "penthouse": {
+      "heading": "PENTHOUSE",
+      "details": "Piscină Privată • 3 Dormitoare • 197 mp",
+      "imageAlt": "Plan arhitectural al unei case care arată camere, mobilier, bucătărie, dormitoare, băi și patio exterior cu piscină."
+    },
+    "getInTouch": {
+      "heading": "Contactați-ne"
+    }
+  }
+}

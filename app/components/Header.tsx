@@ -39,6 +39,7 @@ export default function Header() {
     { code: "it", label: "IT" },
     { code: "zh", label: "ZH" },
     { code: "ru", label: "RU" },
+    { code: "ro", label: "RO" },
   ];
 
   const currentLanguage = languages.find((lang) => lang.code === locale);
