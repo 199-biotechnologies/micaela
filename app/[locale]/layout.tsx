@@ -15,8 +15,37 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Doran Homes Design",
-  description: "The White Angel Talamanca - Luxury real estate in Ibiza",
+  title: "Mihaela Doran",
+  description: "The White Angel Talamanca - Exclusive luxury real estate in Ibiza. Expert interior design and bespoke property development by Mihaela Doran.",
+  keywords: ["Mihaela Doran", "Ibiza luxury real estate", "White Angel Talamanca", "interior design Ibiza", "luxury property Ibiza"],
+  authors: [{ name: "Mihaela Doran" }],
+  creator: "Mihaela Doran",
+  publisher: "Mihaela Doran",
+  openGraph: {
+    title: "Mihaela Doran",
+    description: "The White Angel Talamanca - Exclusive luxury real estate in Ibiza",
+    url: "https://doranhomesdesign.com",
+    siteName: "Mihaela Doran",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mihaela Doran",
+    description: "The White Angel Talamanca - Exclusive luxury real estate in Ibiza",
+    creator: "@doranhomesdesign",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 // iOS Safari safe area support
