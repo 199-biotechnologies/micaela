@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import WhatsAppButton from "../components/WhatsAppButton";
 
 export default function Units() {
   return (
@@ -57,23 +58,13 @@ export default function Units() {
         </section>
 
         {/* Get In Touch Section */}
-        <section className="py-20 bg-white">
-          <div className="max-w-7xl mx-auto px-4 text-center">
-            <h2 className="text-4xl font-light tracking-tight mb-8">GET IN TOUCH</h2>
-            <a
-              href="https://wa.me/34671478820"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block"
-            >
-              <Image
-                src="/images/whatsapp.png"
-                alt="WhatsApp"
-                width={60}
-                height={60}
-                className="hover:opacity-80 transition-opacity"
-              />
-            </a>
+        <section className="py-32 md:py-40 bg-white">
+          <div className="max-w-7xl mx-auto px-6 text-center">
+            <h2 className="text-4xl md:text-5xl font-extralight tracking-tight mb-6">
+              Get In Touch
+            </h2>
+            <div className="w-16 h-px bg-gray-300 mx-auto mb-16" />
+            <WhatsAppButton />
           </div>
         </section>
       </main>
