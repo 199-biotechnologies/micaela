@@ -175,5 +175,166 @@
     "getInTouch": {
       "heading": "Contactați-ne"
     }
+  },
+  "PrivacyPolicy": {
+    "heading": "Politica de Confidențialitate",
+    "lastUpdated": "Ultima actualizare: Ianuarie 2025",
+    "introduction": {
+      "heading": "Introducere",
+      "paragraph1": "La Doran Homes, ne angajăm să protejăm confidențialitatea și datele dumneavoastră personale. Această Politică de Confidențialitate explică modul în care colectăm, utilizăm și salvgardăm informațiile dumneavoastră în conformitate cu Regulamentul General privind Protecția Datelor (RGPD) al UE și legile spaniole privind protecția datelor.",
+      "paragraph2": "Colectăm exclusiv informațiile necesare pentru a vă oferi serviciile noastre și pentru a comunica eficient despre reședințe de prestigiu în Ibiza."
+    },
+    "dataController": {
+      "heading": "Operator de Date",
+      "name": "Denumire Societate",
+      "address": "Adresă",
+      "contact": "Contact"
+    },
+    "dataCollection": {
+      "heading": "Date pe care le Colectăm",
+      "intro": "Colectăm următoarele tipuri de informații:",
+      "personalData": {
+        "heading": "Date Personale",
+        "description": "Nume, adresă de e-mail, număr de telefon și orice alte informații pe care ni le furnizați atunci când ne contactați prin intermediul site-ului nostru web sau prin alte canale."
+      },
+      "technicalData": {
+        "heading": "Date Tehnice",
+        "description": "Adresă IP, tip de browser, informații despre dispozitiv și cookie-uri (consultați Politica noastră privind Cookie-urile pentru detalii)."
+      },
+      "communicationData": {
+        "heading": "Date de Comunicare",
+        "description": "Conținutul mesajelor pe care ni le trimiteți și înregistrările interacțiunilor noastre cu dumneavoastră."
+      }
+    },
+    "dataUse": {
+      "heading": "Cum Utilizăm Datele Dumneavoastră",
+      "purpose1": "Pentru a răspunde solicitărilor dumneavoastră despre reședințe și servicii",
+      "purpose2": "Pentru a vă furniza informații despre reședințe care corespund cerințelor dumneavoastră",
+      "purpose3": "Pentru a menține și îmbunătăți site-ul nostru web și serviciile",
+      "purpose4": "Pentru a respecta obligațiile legale și reglementare",
+      "purpose5": "Pentru a vă trimite actualizări relevante despre reședințe, cu consimțământul dumneavoastră"
+    },
+    "legalBasis": {
+      "heading": "Baza Legală pentru Prelucrare",
+      "intro": "Prelucrăm datele dumneavoastră personale pe baza:",
+      "consent": {
+        "heading": "Consimțământul Dumneavoastră",
+        "description": "Când furnizați informații prin formulare de contact sau vă abonați la comunicări"
+      },
+      "contract": {
+        "heading": "Executarea Contractului",
+        "description": "Când prelucrarea este necesară pentru îndeplinirea serviciilor noastre"
+      },
+      "legitimate": {
+        "heading": "Interese Legitime",
+        "description": "Pentru a îmbunătăți serviciile noastre și a vă furniza informații relevante despre reședințe"
+      }
+    },
+    "yourRights": {
+      "heading": "Drepturile Dumneavoastră",
+      "intro": "Conform RGPD, aveți următoarele drepturi:",
+      "access": {
+        "heading": "Dreptul de Acces",
+        "description": "Solicitarea unei copii a datelor personale pe care le deținem despre dumneavoastră"
+      },
+      "rectification": {
+        "heading": "Dreptul de Rectificare",
+        "description": "Solicitarea corectării datelor inexacte sau incomplete"
+      },
+      "erasure": {
+        "heading": "Dreptul la Ștergere",
+        "description": "Solicitarea ștergerii datelor dumneavoastră personale ('dreptul de a fi uitat')"
+      },
+      "restriction": {
+        "heading": "Dreptul de Limitare",
+        "description": "Solicitarea limitării prelucrării datelor dumneavoastră"
+      },
+      "portability": {
+        "heading": "Dreptul la Portabilitate",
+        "description": "Primirea datelor dumneavoastră într-un format structurat și de uz comun"
+      },
+      "objection": {
+        "heading": "Dreptul de Opoziție",
+        "description": "Opunerea față de prelucrarea datelor dumneavoastră în scopuri de marketing direct sau interese legitime"
+      }
+    },
+    "dataRetention": {
+      "heading": "Păstrarea Datelor",
+      "description": "Păstrăm datele dumneavoastră personale doar atât timp cât este necesar pentru a îndeplini scopurile pentru care au fost colectate, pentru a respecta obligațiile legale sau pentru a rezolva litigii. Datele de marketing sunt păstrate până când vă retrageți consimțământul."
+    },
+    "dataSecurity": {
+      "heading": "Securitatea Datelor",
+      "description": "Implementăm măsuri tehnice și organizatorice adecvate pentru a proteja datele dumneavoastră personale împotriva accesului neautorizat, modificării, divulgării sau distrugerii. Cu toate acestea, nicio transmisie prin internet nu este complet sigură și nu putem garanta securitate absolută."
+    },
+    "contact": {
+      "heading": "Contact",
+      "description": "Dacă aveți întrebări despre această Politică de Confidențialitate sau doriți să vă exercitați drepturile, vă rugăm să ne contactați la:"
+    }
+  },
+  "CookiePolicy": {
+    "heading": "Politica privind Cookie-urile",
+    "lastUpdated": "Ultima actualizare: Ianuarie 2025",
+    "introduction": {
+      "heading": "Introducere",
+      "paragraph1": "Această Politică privind Cookie-urile explică modul în care Doran Homes utilizează cookie-uri și tehnologii similare pe site-ul nostru web pentru a îmbunătăți experiența dumneavoastră de navigare și a vă oferi informații relevante despre reședințe de prestigiu în Ibiza.",
+      "paragraph2": "Utilizând site-ul nostru web, consimțiți la utilizarea cookie-urilor în conformitate cu această Politică privind Cookie-urile."
+    },
+    "whatAreCookies": {
+      "heading": "Ce sunt Cookie-urile?",
+      "description": "Cookie-urile sunt fișiere text mici care sunt plasate pe dispozitivul dumneavoastră când vizitați un site web. Acestea sunt utilizate pe scară largă pentru a face site-urile web să funcționeze mai eficient și pentru a furniza informații proprietarilor de site-uri web."
+    },
+    "cookiesWeUse": {
+      "heading": "Cookie-urile pe care le Utilizăm",
+      "essential": {
+        "heading": "Cookie-uri Esențiale",
+        "description": "Aceste cookie-uri sunt necesare pentru ca site-ul web să funcționeze corespunzător și nu pot fi dezactivate.",
+        "purpose": "Scop",
+        "purposeText": "Activarea funcționalității de bază a site-ului web, preferințelor lingvistice și caracteristicilor de securitate",
+        "duration": "Durată",
+        "durationText": "Sesiune sau până la 1 an"
+      },
+      "analytics": {
+        "heading": "Cookie-uri Analitice",
+        "description": "Aceste cookie-uri ne ajută să înțelegem modul în care vizitatorii interacționează cu site-ul nostru web prin colectarea de informații anonime.",
+        "purpose": "Scop",
+        "purposeText": "Analizarea traficului pe site-ul web, comportamentul utilizatorilor și îmbunătățirea serviciilor noastre",
+        "duration": "Durată",
+        "durationText": "Până la 2 ani"
+      },
+      "preference": {
+        "heading": "Cookie-uri de Preferință",
+        "description": "Aceste cookie-uri își amintesc preferințele și alegerile dumneavoastră pentru a oferi o experiență mai personalizată.",
+        "purpose": "Scop",
+        "purposeText": "Memorarea selecției de limbă și a altor preferințe",
+        "duration": "Durată",
+        "durationText": "Până la 1 an"
+      }
+    },
+    "managingCookies": {
+      "heading": "Gestionarea Cookie-urilor",
+      "paragraph1": "Puteți controla și gestiona cookie-urile prin setările browserului dumneavoastră. Majoritatea browserelor vă permit să refuzați sau să acceptați cookie-uri, să ștergeți cookie-urile existente sau să fiți notificat când sunt setate cookie-uri noi.",
+      "paragraph2": "Vă rugăm să rețineți că dezactivarea anumitor cookie-uri poate afecta funcționalitatea site-ului nostru web și experiența dumneavoastră de utilizare."
+    },
+    "thirdParty": {
+      "heading": "Cookie-uri de la Terți",
+      "description": "Este posibil să utilizăm servicii de la terți, cum ar fi instrumente de analiză, care pot seta propriile cookie-uri. Acești terți au propriile politici de confidențialitate și cookie-uri, pe care vă încurajăm să le examinați."
+    },
+    "updates": {
+      "heading": "Actualizări ale acestei Politici",
+      "description": "Este posibil să actualizăm această Politică privind Cookie-urile din când în când pentru a reflecta schimbările în tehnologie sau cerințele legale. Data 'Ultima actualizare' din partea de sus a acestei pagini indică când a fost revizuită politica pentru ultima dată."
+    },
+    "contact": {
+      "heading": "Contact",
+      "description": "Dacă aveți întrebări despre utilizarea noastră a cookie-urilor, vă rugăm să ne contactați la:"
+    }
+  },
+  "CookieConsent": {
+    "message": "Folosim cookie-uri pentru a îmbunătăți experiența dumneavoastră de navigare și pentru a vă oferi informații relevante despre reședințe. Continuând să utilizați site-ul nostru web, consimțiți la utilizarea cookie-urilor.",
+    "accept": "Accept",
+    "reject": "Refuz",
+    "privacyPolicy": "Politica de Confidențialitate",
+    "cookiePolicy": "Politica privind Cookie-urile",
+    "acceptAria": "Acceptați cookie-urile",
+    "rejectAria": "Refuzați cookie-urile"
   }
 }

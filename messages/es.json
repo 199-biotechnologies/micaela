@@ -3,8 +3,8 @@
     "logoAlt": "Doran Homes Design",
     "nav": {
       "home": "Inicio",
-      "property": "La Propiedad",
-      "layout": "Distribución",
+      "property": "La Residencia",
+      "layout": "Tipologías",
       "about": "Nosotros",
       "contact": "Contacto"
     }
@@ -12,13 +12,13 @@
   "Footer": {
     "brand": {
       "name": "Doran Homes",
-      "tagline": "Su socio de confianza para inmuebles de lujo en Ibiza desde 2011."
+      "tagline": "Curadores de residencias excepcionales en Ibiza desde 2011."
     },
     "quickLinks": {
-      "heading": "Enlaces Rápidos",
+      "heading": "Acceso Rápido",
       "home": "Inicio",
-      "theProperty": "La Propiedad",
-      "layout": "Distribución",
+      "theProperty": "La Residencia",
+      "layout": "Tipologías",
       "about": "Nosotros",
       "contact": "Contacto"
     },
@@ -51,21 +51,21 @@
       }
     },
     "services": {
-      "heading": "Nuestros Servicios",
+      "heading": "Nuestra Expertise",
       "service1": {
         "imageAlt": "Casa moderna con piscina",
-        "title": "Adquisición y Gestión de Propiedades",
-        "description": "Una selecta cartera de residencias, disponibles tanto para estancias temporales como para inversión a largo plazo."
+        "title": "Incorporación y Administración de Residencias",
+        "description": "Una colección exclusiva de villas y penthouses, concebidas tanto para la residencia permanente como para la inversión patrimonial de largo plazo."
       },
       "service2": {
         "imageAlt": "Balcón moderno con vista al paisaje urbano",
-        "title": "Asesoramiento Legal y Técnico",
-        "description": "Colaboramos con los mejores profesionales para atender cada aspecto de la adquisición, reforma y comercialización de su propiedad."
+        "title": "Asesoramiento Jurídico y Técnico de Alto Nivel",
+        "description": "Colaboramos con profesionales de élite para orquestar cada dimensión de la incorporación, desarrollo arquitectónico y valorización de su residencia."
       },
       "service3": {
         "imageAlt": "Interior de salón con diseño moderno",
-        "title": "Interiorismo y Renovación",
-        "description": "Acompañamos a nuestros clientes en la creación de espacios que reflejan su estilo y maximizan el potencial de cada residencia."
+        "title": "Arquitectura de Interior y Desarrollo a Medida",
+        "description": "Acompañamos a nuestros clientes en la creación de ambientes que expresan su esencia y revelan el potencial absoluto de cada residencia."
       }
     },
     "getInTouch": {
@@ -75,9 +75,9 @@
   "AboutPage": {
     "about": {
       "heading": "Hola, soy Micaela",
-      "paragraph1": "Formada en diseño de interiores y licenciada como agente inmobiliaria desde 2011, trabajo en la intersección de estos dos mundos—ayudando a personas en Ibiza a elegir bien, diseñar con cuidado y establecerse con confianza.",
-      "paragraph2": "Comienzo escuchando. Observamos cómo vive—luz, flujo, almacenamiento, ritmo—y moldeamos la búsqueda en torno a eso. Con un pequeño equipo de confianza, mantengo las relaciones cercanas y el proceso tranquilo, para que las decisiones se sientan claras y consideradas.",
-      "paragraph3": "Manejamos los detalles de principio a fin: búsqueda y negociación de propiedades, coordinación legal y licencias, reforma y asesoramiento de diseño de interiores. El objetivo es simple—menos opciones, mejores opciones, y un hogar que se sienta como usted.",
+      "paragraph1": "Formada en diseño de interiores y licenciada como agente inmobiliaria desde 2011, trabajo en la intersección de estos dos mundos—ayudando a personas en Ibiza a elegir sabiamente, diseñar con exquisitez y establecerse con absoluta confianza.",
+      "paragraph2": "Todo comienza con la escucha. Observamos cómo vive—luz, circulación, espacios, ritmo—y moldeamos la exploración en torno a ello. Con un equipo reducido y de máxima confianza, mantengo relaciones cercanas y un proceso sereno, para que cada decisión se sienta clara y profundamente considerada.",
+      "paragraph3": "Orquestamos cada detalle de principio a fin: identificación y negociación de residencias, coordinación jurídica y licencias, desarrollo arquitectónico y consultoría de interiorismo. El objetivo es cristalino—opciones selectas, elecciones excepcionales, y una residencia que refleje su esencia.",
       "imageAlt": "Una mujer con cabello largo y ondulado sentada en una mesa de restaurante, ajustándose el cabello. La mesa tiene mantel blanco, un vaso de agua y una servilleta doblada. Al fondo se ven arte y cortinas elegantes."
     },
     "getInTouch": {
@@ -86,8 +86,8 @@
   },
   "ContactPage": {
     "hero": {
-      "heading": "Conversemos",
-      "description": "Permítanos acompañarle en la búsqueda de su residencia ideal en Ibiza, desde apartamentos de lujo en planta baja hasta exclusivos áticos."
+      "heading": "Iniciemos el Diálogo",
+      "description": "Permítanos acompañarle en la identificación de su residencia ideal en Ibiza, desde villas de prestigio en planta baja hasta penthouses de excepción."
     },
     "form": {
       "name": {
@@ -116,7 +116,7 @@
   "PropertyPage": {
     "hero": {
       "heading": "Descubra Nuestros Espacios",
-      "description": "Espacios meticulosamente concebidos donde el diseño contemporáneo se encuentra con la esencia mediterránea"
+      "description": "Espacios creados con exquisitez donde la elegancia contemporánea se fusiona con el encanto mediterráneo"
     },
     "gallery": {
       "image1": "Azotea",
@@ -128,8 +128,8 @@
       "image7": "Salón"
     },
     "amenities": {
-      "heading": "Prestaciones",
-      "description": "Cada residencia dispone de 3-4 dormitorios, piscina y jardín privados, spa y vestidor, gimnasio, aparcamiento cubierto y vistas panorámicas a Dalt Vila y el Mediterráneo.",
+      "heading": "Atributos de Prestigio",
+      "description": "Cada residencia dispone de 3-4 dormitorios, piscina y jardín de uso exclusivo, spa y vestidores refinados, gimnasio, estacionamiento cubierto y panorámicas espectaculares hacia Dalt Vila y el Mediterráneo.",
       "concierge": {
         "title": "Conserje",
         "description": "Servicio personalizado 24/7"
@@ -150,17 +150,17 @@
         "title": "Seguridad",
         "description": "Vigilancia 24/7"
       },
-      "closing": "En Doran Homes nos dedicamos al arte de vivir en Ibiza. Con una selecta cartera de propiedades exclusivas, personalizamos cada experiencia. Ofrecemos proyectos llave en mano, atendiendo todos los aspectos—desde trámites legales hasta diseño de interiores—para que usted simplemente disfrute."
+      "closing": "En Doran Homes cultivamos el arte de la vida mediterránea. Con una colección refinada de residencias en el corazón de Ibiza, orquestamos cada experiencia hacia la excelencia. Nuestros desarrollos integrales abarcan procedimientos administrativos, acompañamiento jurídico y arquitectura de interior, para que usted sencillamente disfrute cada momento."
     },
     "location": {
-      "heading": "Ubicación Privilegiada",
-      "description": "A tres minutos caminando de la playa de Talamanca y del centro de Ibiza. The White Angel se sitúa en el corazón de la isla, con acceso inmediato a todo lo que Ibiza ofrece.",
+      "heading": "Emplazamiento de Excepción",
+      "description": "A tan solo tres minutos a pie de la renombrada playa de Talamanca y del cosmopolita centro de Ibiza. The White Angel se sitúa en el epicentro de la isla, con acceso privilegiado a lo más selecto que Ibiza ofrece.",
       "imageAlt": "Piscina en azotea con vista a Ibiza"
     }
   },
   "UnitsPage": {
     "hero": {
-      "heading": "Tipos de Vivienda"
+      "heading": "Tipologías de Residencias"
     },
     "groundFloor": {
       "heading": "PLANTA BAJA",
@@ -175,5 +175,166 @@
     "getInTouch": {
       "heading": "Contáctenos"
     }
+  },
+  "PrivacyPolicy": {
+    "heading": "Política de Privacidad",
+    "lastUpdated": "Última actualización: Enero 2025",
+    "introduction": {
+      "heading": "Introducción",
+      "paragraph1": "En Doran Homes, nos comprometemos a proteger su privacidad y datos personales. Esta Política de Privacidad explica cómo recopilamos, utilizamos y salvaguardamos su información conforme al Reglamento General de Protección de Datos (RGPD) de la UE y las leyes españolas de protección de datos.",
+      "paragraph2": "Únicamente recopilamos información necesaria para proporcionarle nuestros servicios y comunicarnos eficazmente sobre residencias de prestigio en Ibiza."
+    },
+    "dataController": {
+      "heading": "Responsable del Tratamiento",
+      "name": "Razón Social",
+      "address": "Domicilio",
+      "contact": "Contacto"
+    },
+    "dataCollection": {
+      "heading": "Datos que Recopilamos",
+      "intro": "Recopilamos los siguientes tipos de información:",
+      "personalData": {
+        "heading": "Datos Personales",
+        "description": "Nombre, dirección de correo electrónico, número de teléfono y cualquier otra información que nos proporcione al contactarnos a través de nuestro sitio web u otros canales."
+      },
+      "technicalData": {
+        "heading": "Datos Técnicos",
+        "description": "Dirección IP, tipo de navegador, información del dispositivo y cookies (consulte nuestra Política de Cookies para más detalles)."
+      },
+      "communicationData": {
+        "heading": "Datos de Comunicación",
+        "description": "Contenido de los mensajes que nos envía y registros de nuestras interacciones con usted."
+      }
+    },
+    "dataUse": {
+      "heading": "Cómo Utilizamos sus Datos",
+      "purpose1": "Para responder a sus consultas sobre residencias y servicios",
+      "purpose2": "Para proporcionarle información sobre residencias que se ajusten a sus requisitos",
+      "purpose3": "Para mantener y mejorar nuestro sitio web y servicios",
+      "purpose4": "Para cumplir con obligaciones legales y reglamentarias",
+      "purpose5": "Para enviarle actualizaciones relevantes sobre residencias, con su consentimiento"
+    },
+    "legalBasis": {
+      "heading": "Base Legal para el Tratamiento",
+      "intro": "Tratamos sus datos personales basándonos en:",
+      "consent": {
+        "heading": "Su Consentimiento",
+        "description": "Cuando proporciona información a través de formularios de contacto o se suscribe a comunicaciones"
+      },
+      "contract": {
+        "heading": "Ejecución del Contrato",
+        "description": "Cuando el tratamiento es necesario para cumplir con nuestros servicios"
+      },
+      "legitimate": {
+        "heading": "Intereses Legítimos",
+        "description": "Para mejorar nuestros servicios y proporcionarle información relevante sobre residencias"
+      }
+    },
+    "yourRights": {
+      "heading": "Sus Derechos",
+      "intro": "Bajo el RGPD, usted tiene los siguientes derechos:",
+      "access": {
+        "heading": "Derecho de Acceso",
+        "description": "Solicitar una copia de los datos personales que tenemos sobre usted"
+      },
+      "rectification": {
+        "heading": "Derecho de Rectificación",
+        "description": "Solicitar la corrección de datos inexactos o incompletos"
+      },
+      "erasure": {
+        "heading": "Derecho de Supresión",
+        "description": "Solicitar la eliminación de sus datos personales ('derecho al olvido')"
+      },
+      "restriction": {
+        "heading": "Derecho de Limitación",
+        "description": "Solicitar la limitación del tratamiento de sus datos"
+      },
+      "portability": {
+        "heading": "Derecho a la Portabilidad",
+        "description": "Recibir sus datos en un formato estructurado y de uso común"
+      },
+      "objection": {
+        "heading": "Derecho de Oposición",
+        "description": "Oponerse al tratamiento de sus datos con fines de marketing directo o intereses legítimos"
+      }
+    },
+    "dataRetention": {
+      "heading": "Conservación de Datos",
+      "description": "Conservamos sus datos personales únicamente durante el tiempo necesario para cumplir los fines para los que se recopilaron, cumplir con obligaciones legales o resolver disputas. Los datos de marketing se conservan hasta que retire su consentimiento."
+    },
+    "dataSecurity": {
+      "heading": "Seguridad de los Datos",
+      "description": "Implementamos medidas técnicas y organizativas apropiadas para proteger sus datos personales contra acceso no autorizado, alteración, divulgación o destrucción. Sin embargo, ninguna transmisión por Internet es completamente segura y no podemos garantizar seguridad absoluta."
+    },
+    "contact": {
+      "heading": "Contacto",
+      "description": "Si tiene preguntas sobre esta Política de Privacidad o desea ejercer sus derechos, contáctenos en:"
+    }
+  },
+  "CookiePolicy": {
+    "heading": "Política de Cookies",
+    "lastUpdated": "Última actualización: Enero 2025",
+    "introduction": {
+      "heading": "Introducción",
+      "paragraph1": "Esta Política de Cookies explica cómo Doran Homes utiliza cookies y tecnologías similares en nuestro sitio web para mejorar su experiencia de navegación y proporcionarle información relevante sobre residencias de prestigio en Ibiza.",
+      "paragraph2": "Al utilizar nuestro sitio web, usted consiente el uso de cookies de acuerdo con esta Política de Cookies."
+    },
+    "whatAreCookies": {
+      "heading": "¿Qué son las Cookies?",
+      "description": "Las cookies son pequeños archivos de texto que se colocan en su dispositivo cuando visita un sitio web. Se utilizan ampliamente para que los sitios web funcionen de manera más eficiente y proporcionen información a los propietarios del sitio."
+    },
+    "cookiesWeUse": {
+      "heading": "Cookies que Utilizamos",
+      "essential": {
+        "heading": "Cookies Esenciales",
+        "description": "Estas cookies son necesarias para que el sitio web funcione correctamente y no se pueden desactivar.",
+        "purpose": "Propósito",
+        "purposeText": "Habilitar funcionalidades básicas del sitio web, preferencias de idioma y características de seguridad",
+        "duration": "Duración",
+        "durationText": "Sesión o hasta 1 año"
+      },
+      "analytics": {
+        "heading": "Cookies Analíticas",
+        "description": "Estas cookies nos ayudan a comprender cómo los visitantes interactúan con nuestro sitio web mediante la recopilación de información anónima.",
+        "purpose": "Propósito",
+        "purposeText": "Analizar el tráfico del sitio web, comportamiento del usuario y mejorar nuestros servicios",
+        "duration": "Duración",
+        "durationText": "Hasta 2 años"
+      },
+      "preference": {
+        "heading": "Cookies de Preferencia",
+        "description": "Estas cookies recuerdan sus preferencias y elecciones para proporcionar una experiencia más personalizada.",
+        "purpose": "Propósito",
+        "purposeText": "Recordar su selección de idioma y otras preferencias",
+        "duration": "Duración",
+        "durationText": "Hasta 1 año"
+      }
+    },
+    "managingCookies": {
+      "heading": "Gestión de Cookies",
+      "paragraph1": "Puede controlar y gestionar las cookies a través de la configuración de su navegador. La mayoría de los navegadores le permiten rechazar o aceptar cookies, eliminar las existentes o recibir notificaciones cuando se establecen nuevas cookies.",
+      "paragraph2": "Tenga en cuenta que desactivar ciertas cookies puede afectar la funcionalidad de nuestro sitio web y su experiencia de usuario."
+    },
+    "thirdParty": {
+      "heading": "Cookies de Terceros",
+      "description": "Podemos utilizar servicios de terceros, como herramientas de análisis, que pueden establecer sus propias cookies. Estos terceros tienen sus propias políticas de privacidad y cookies, que le recomendamos revisar."
+    },
+    "updates": {
+      "heading": "Actualizaciones de esta Política",
+      "description": "Podemos actualizar esta Política de Cookies de vez en cuando para reflejar cambios en la tecnología o requisitos legales. La fecha de 'Última actualización' en la parte superior de esta página indica cuándo se revisó la política por última vez."
+    },
+    "contact": {
+      "heading": "Contacto",
+      "description": "Si tiene preguntas sobre nuestro uso de cookies, contáctenos en:"
+    }
+  },
+  "CookieConsent": {
+    "message": "Utilizamos cookies para mejorar su experiencia de navegación y proporcionarle información relevante sobre residencias. Al continuar utilizando nuestro sitio web, usted consiente el uso de cookies.",
+    "accept": "Aceptar",
+    "reject": "Rechazar",
+    "privacyPolicy": "Política de Privacidad",
+    "cookiePolicy": "Política de Cookies",
+    "acceptAria": "Aceptar cookies",
+    "rejectAria": "Rechazar cookies"
   }
 }
