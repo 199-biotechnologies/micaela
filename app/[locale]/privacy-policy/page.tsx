@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import BottomNav from "../../components/BottomNav";
 
 export default function PrivacyPolicyPage() {
   const t = useTranslations("PrivacyPolicy");
@@ -271,6 +272,7 @@ export default function PrivacyPolicyPage() {
       </div>
     </main>
     <Footer />
+    <BottomNav />
   </div>
   );
 }

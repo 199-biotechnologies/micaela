@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import BottomNav from "../../components/BottomNav";
 
 export default function CookiePolicyPage() {
   const t = useTranslations("CookiePolicy");
@@ -161,6 +162,7 @@ export default function CookiePolicyPage() {
       </div>
     </main>
     <Footer />
+    <BottomNav />
   </div>
   );
 }

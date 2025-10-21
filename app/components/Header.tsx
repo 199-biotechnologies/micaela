@@ -12,6 +12,7 @@ export default function Header() {
   const pathname = usePathname();
   const router = useRouter();
   const [showLanguages, setShowLanguages] = useState(false);
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   // Close dropdown when clicking outside
@@ -30,6 +31,18 @@ export default function Header() {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [showLanguages]);
+
+  // Prevent body scroll when mobile menu is open
+  useEffect(() => {
+    if (showMobileMenu) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [showMobileMenu]);
 
   const languages = [
     { code: "en", label: "EN", name: "English" },
@@ -67,6 +80,20 @@ export default function Header() {
               />
             </Link>
           </div>
+
+          {/* Hamburger Button - Mobile Only */}
+          <button
+            onClick={() => setShowMobileMenu(!showMobileMenu)}
+            className="md:hidden w-12 h-12 flex flex-col items-center justify-center gap-1.5 transition-smooth-fast hover:opacity-70"
+            aria-label="Toggle menu"
+            aria-expanded={showMobileMenu}
+          >
+            <span className={`w-6 h-0.5 bg-gray-900 transition-all ${showMobileMenu ? 'rotate-45 translate-y-2' : ''}`} />
+            <span className={`w-6 h-0.5 bg-gray-900 transition-all ${showMobileMenu ? 'opacity-0' : ''}`} />
+            <span className={`w-6 h-0.5 bg-gray-900 transition-all ${showMobileMenu ? '-rotate-45 -translate-y-2' : ''}`} />
+          </button>
+
+          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-12">
             <Link
               href="/"
@@ -137,6 +164,74 @@ export default function Header() {
           </nav>
         </div>
       </div>
+
+      {/* Mobile Menu Overlay */}
+      {showMobileMenu && (
+        <div className="fixed inset-0 z-[100] md:hidden">
+          {/* Backdrop */}
+          <div
+            className="absolute inset-0 bg-black/20 backdrop-blur-sm"
+            onClick={() => setShowMobileMenu(false)}
+          />
+
+          {/* Menu Panel */}
+          <div className="absolute inset-x-0 top-0 bg-white/95 backdrop-blur-xl shadow-2xl animate-slideDown">
+            {/* Header */}
+            <div className="flex justify-between items-center px-6 py-6 border-b border-gray-200/50">
+              <Link href="/" onClick={() => setShowMobileMenu(false)}>
+                <Image
+                  src="/images/mihaela-logo.svg"
+                  alt={t("logoAlt")}
+                  width={180}
+                  height={54}
+                  priority
+                />
+              </Link>
+              <button
+                onClick={() => setShowMobileMenu(false)}
+                className="w-12 h-12 flex items-center justify-center transition-smooth-fast hover:opacity-70"
+                aria-label="Close menu"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+
+            {/* Navigation Links */}
+            <nav className="px-6 py-8 space-y-1">
+              <Link
+                href="/"
+                onClick={() => setShowMobileMenu(false)}
+                className="block py-4 text-lg font-light tracking-[0.1em] uppercase text-gray-700 hover:text-gray-900 transition-smooth-fast border-b border-gray-200/50"
+              >
+                {t("nav.home")}
+              </Link>
+              <Link
+                href="/property"
+                onClick={() => setShowMobileMenu(false)}
+                className="block py-4 text-lg font-light tracking-[0.1em] uppercase text-gray-700 hover:text-gray-900 transition-smooth-fast border-b border-gray-200/50"
+              >
+                {t("nav.property")}
+              </Link>
+              <Link
+                href="/units"
+                onClick={() => setShowMobileMenu(false)}
+                className="block py-4 text-lg font-light tracking-[0.1em] uppercase text-gray-700 hover:text-gray-900 transition-smooth-fast border-b border-gray-200/50"
+              >
+                {t("nav.layout")}
+              </Link>
+              <Link
+                href="/about"
+                onClick={() => setShowMobileMenu(false)}
+                className="block py-4 text-lg font-light tracking-[0.1em] uppercase text-gray-700 hover:text-gray-900 transition-smooth-fast border-b border-gray-200/50"
+              >
+                {t("nav.about")}
+              </Link>
+            </nav>
+          </div>
+        </div>
+      )}
     </header>
   );
 }

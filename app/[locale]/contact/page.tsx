@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import BottomNav from "../../components/BottomNav";
 import WhatsAppButton from "../../components/WhatsAppButton";
 
 export default function Contact() {
@@ -134,6 +135,7 @@ export default function Contact() {
       </main>
 
       <Footer />
+      <BottomNav />
     </div>
   );
 }
