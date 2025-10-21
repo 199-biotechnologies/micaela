@@ -21,10 +21,10 @@ export default function Home() {
             />
           </div>
           <div className="relative h-full flex flex-col items-center justify-center text-white text-center px-4">
-            <h1 className="text-5xl md:text-7xl font-bold mb-4">
+            <h1 className="text-5xl md:text-7xl font-extralight tracking-tighter mb-4">
               THE WHITE ANGEL TALAMANCA
             </h1>
-            <h2 className="text-xl md:text-2xl font-light mb-8">
+            <h2 className="text-xl md:text-2xl font-thin tracking-wide mb-8">
               HEAVEN IN THE HEART OF TALAMANCA
             </h2>
             <a
@@ -47,7 +47,7 @@ export default function Home() {
         {/* Services Section */}
         <section className="py-20 px-4">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-4xl font-bold text-center mb-16">OUR SERVICES</h2>
+            <h2 className="text-4xl font-light tracking-tight text-center mb-16">OUR SERVICES</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Service 1 */}
@@ -60,8 +60,8 @@ export default function Home() {
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                <h3 className="text-2xl font-bold mb-4">BUYING, SELLING & RENTING HOMES</h3>
-                <p className="text-gray-600 leading-relaxed">
+                <h3 className="text-2xl font-light tracking-tight mb-4">BUYING, SELLING & RENTING HOMES</h3>
+                <p className="text-gray-600 leading-relaxed font-light">
                   We offer a wide range of houses and apartments for both vacation and long-term rental or purchase.
                 </p>
               </div>
@@ -76,8 +76,8 @@ export default function Home() {
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                <h3 className="text-2xl font-bold mb-4">LEGAL & CONSTRUCTION CONSULTING</h3>
-                <p className="text-gray-600 leading-relaxed">
+                <h3 className="text-2xl font-light tracking-tight mb-4">LEGAL & CONSTRUCTION CONSULTING</h3>
+                <p className="text-gray-600 leading-relaxed font-light">
                   Our network boasts the best professionals to address any need related to property acquisition, refurbishment, and sale.
                 </p>
               </div>
@@ -92,8 +92,8 @@ export default function Home() {
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                <h3 className="text-2xl font-bold mb-4">REFURBISHMENT & INTERIOR DESIGN</h3>
-                <p className="text-gray-600 leading-relaxed">
+                <h3 className="text-2xl font-light tracking-tight mb-4">REFURBISHMENT & INTERIOR DESIGN</h3>
+                <p className="text-gray-600 leading-relaxed font-light">
                   We are passionate about interior design and have been advising our clients on how to make the most out of their properties.
                 </p>
               </div>
@@ -104,7 +104,7 @@ export default function Home() {
         {/* Get In Touch Section */}
         <section className="py-20 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 text-center">
-            <h2 className="text-4xl font-bold mb-8">GET IN TOUCH</h2>
+            <h2 className="text-4xl font-light tracking-tight mb-8">GET IN TOUCH</h2>
             <a
               href="https://wa.me/34671478820"
               target="_blank"

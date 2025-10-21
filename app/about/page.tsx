@@ -13,10 +13,10 @@ export default function About() {
           <div className="max-w-5xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
               <div>
-                <h1 className="text-4xl font-bold mb-4">Hi, I&apos;m Micaela</h1>
+                <h1 className="text-4xl font-light tracking-tight mb-4">Hi, I&apos;m Micaela</h1>
                 <div className="w-20 h-1 bg-gray-900 mb-8"></div>
 
-                <div className="space-y-6 text-gray-700 leading-relaxed">
+                <div className="space-y-6 text-gray-700 leading-relaxed font-light">
                   <p>
                     I&apos;ve built my career around a passion for both interior design and real estate.
                     After graduating in Interior Design and becoming a qualified real estate agent in 2011,
@@ -55,7 +55,7 @@ export default function About() {
         {/* Get In Touch Section */}
         <section className="py-20 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 text-center">
-            <h2 className="text-4xl font-bold mb-8">GET IN TOUCH</h2>
+            <h2 className="text-4xl font-light tracking-tight mb-8">GET IN TOUCH</h2>
             <a
               href="https://wa.me/34671478820"
               target="_blank"

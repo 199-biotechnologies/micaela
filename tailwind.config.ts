@@ -7,7 +7,15 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ["var(--font-inter)", "sans-serif"],
+      },
+      letterSpacing: {
+        tighter: "-0.02em",
+        tight: "-0.01em",
+      },
+    },
   },
   plugins: [],
 } satisfies Config;

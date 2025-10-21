@@ -18,19 +18,19 @@ export default function Header() {
             </Link>
           </div>
           <nav className="hidden md:flex space-x-8">
-            <Link href="/" className="text-gray-700 hover:text-gray-900 font-medium">
+            <Link href="/" className="text-gray-700 hover:text-gray-900 font-light tracking-tight">
               Home
             </Link>
-            <Link href="/theproperty" className="text-gray-700 hover:text-gray-900 font-medium">
+            <Link href="/theproperty" className="text-gray-700 hover:text-gray-900 font-light tracking-tight">
               The Property
             </Link>
-            <Link href="/units" className="text-gray-700 hover:text-gray-900 font-medium">
+            <Link href="/units" className="text-gray-700 hover:text-gray-900 font-light tracking-tight">
               Layout
             </Link>
-            <Link href="/about" className="text-gray-700 hover:text-gray-900 font-medium">
+            <Link href="/about" className="text-gray-700 hover:text-gray-900 font-light tracking-tight">
               About
             </Link>
-            <Link href="/contact" className="text-gray-700 hover:text-gray-900 font-medium">
+            <Link href="/contact" className="text-gray-700 hover:text-gray-900 font-light tracking-tight">
               Contact
             </Link>
           </nav>

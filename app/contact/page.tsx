@@ -11,8 +11,8 @@ export default function Contact() {
         {/* Hero Section */}
         <section className="py-20 px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-8">LET&apos;S CONNECT</h1>
-            <p className="text-gray-700 text-lg leading-relaxed">
+            <h1 className="text-4xl md:text-5xl font-extralight tracking-tighter mb-8">LET&apos;S CONNECT</h1>
+            <p className="text-gray-700 text-lg leading-relaxed font-light">
               Contact us today, and let us guide in finding your perfect Ibiza home—whether it&apos;s a ground floor
               luxury apartment, or an exclusive penthouse retreat. As your real estate and interior design experts
               on the island, my team and I will ensure every detail is tailored to your lifestyle, making the process
@@ -38,7 +38,7 @@ export default function Contact() {
         {/* Get In Touch Section */}
         <section className="py-20 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 text-center">
-            <h2 className="text-4xl font-bold mb-8">GET IN TOUCH</h2>
+            <h2 className="text-4xl font-light tracking-tight mb-8">GET IN TOUCH</h2>
             <a
               href="https://wa.me/34671478820"
               target="_blank"

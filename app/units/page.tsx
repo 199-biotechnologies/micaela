@@ -11,7 +11,7 @@ export default function Units() {
         {/* Title Section */}
         <section className="py-16 px-4">
           <div className="max-w-7xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-8">UNIT TYPES</h1>
+            <h1 className="text-4xl md:text-5xl font-extralight tracking-tighter mb-8">UNIT TYPES</h1>
           </div>
         </section>
 
@@ -19,8 +19,8 @@ export default function Units() {
         <section className="py-12 px-4">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-8">
-              <h2 className="text-3xl font-bold mb-4">GROUND FLOOR</h2>
-              <p className="text-gray-600 text-lg italic">
+              <h2 className="text-3xl font-light tracking-tight mb-4">GROUND FLOOR</h2>
+              <p className="text-gray-600 text-lg italic font-light">
                 Private Pool • 4 Bedrooms • 185-320 sqm
               </p>
             </div>
@@ -39,8 +39,8 @@ export default function Units() {
         <section className="py-12 px-4 bg-gray-50">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-8">
-              <h2 className="text-3xl font-bold mb-4">PENTHOUSE</h2>
-              <p className="text-gray-600 text-lg italic">
+              <h2 className="text-3xl font-light tracking-tight mb-4">PENTHOUSE</h2>
+              <p className="text-gray-600 text-lg italic font-light">
                 Private Pool • 3 Bedrooms • 197 sqm
               </p>
             </div>
@@ -58,7 +58,7 @@ export default function Units() {
         {/* Get In Touch Section */}
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 text-center">
-            <h2 className="text-4xl font-bold mb-8">GET IN TOUCH</h2>
+            <h2 className="text-4xl font-light tracking-tight mb-8">GET IN TOUCH</h2>
             <a
               href="https://wa.me/34671478820"
               target="_blank"
