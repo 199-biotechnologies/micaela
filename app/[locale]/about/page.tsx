@@ -37,13 +37,15 @@ export default function About() {
                 </div>
               </div>
 
-              <div className="relative h-[600px]">
+              <div className="group relative h-[600px] overflow-hidden rounded-2xl">
                 <Image
                   src="/images/portrait-micaela-new.jpg"
                   alt={t("about.imageAlt")}
                   fill
-                  className="object-cover"
+                  className="object-cover transition-smooth group-hover:scale-110"
                 />
+                {/* Overlay with gradient */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0 opacity-0 group-hover:opacity-100 transition-smooth" />
               </div>
             </div>
           </div>

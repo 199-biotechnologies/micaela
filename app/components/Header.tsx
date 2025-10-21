@@ -76,7 +76,7 @@ export default function Header() {
               <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-gray-900 opacity-0 transition-smooth group-hover:opacity-100" />
             </Link>
             <Link
-              href="/theproperty"
+              href="/property"
               className="text-xs text-gray-700 hover:text-gray-900 font-light tracking-[0.1em] uppercase transition-smooth-fast relative group"
             >
               {t("nav.property")}

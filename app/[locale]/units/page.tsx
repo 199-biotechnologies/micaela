@@ -35,13 +35,15 @@ export default function Units() {
                 {t("groundFloor.details")}
               </p>
             </div>
-            <div className="relative w-full h-[600px] bg-gray-100">
+            <div className="group relative w-full h-[600px] overflow-hidden rounded-2xl bg-gray-100">
               <Image
                 src="/images/ground-floor-plan.jpg"
                 alt={t("groundFloor.imageAlt")}
                 fill
-                className="object-contain"
+                className="object-contain transition-smooth group-hover:scale-110"
               />
+              {/* Overlay with gradient */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0 opacity-0 group-hover:opacity-100 transition-smooth" />
             </div>
           </div>
         </section>
@@ -57,13 +59,15 @@ export default function Units() {
                 {t("penthouse.details")}
               </p>
             </div>
-            <div className="relative w-full h-[600px] bg-white">
+            <div className="group relative w-full h-[600px] overflow-hidden rounded-2xl bg-white">
               <Image
                 src="/images/penthouse-plan.jpg"
                 alt={t("penthouse.imageAlt")}
                 fill
-                className="object-contain"
+                className="object-contain transition-smooth group-hover:scale-110"
               />
+              {/* Overlay with gradient */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0 opacity-0 group-hover:opacity-100 transition-smooth" />
             </div>
           </div>
         </section>

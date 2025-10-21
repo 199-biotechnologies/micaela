@@ -118,14 +118,16 @@ export default function Contact() {
         {/* Image Section */}
         <section className="py-16 px-6">
           <div className="max-w-6xl mx-auto">
-            <div className="relative h-[500px] overflow-hidden rounded-2xl">
+            <div className="group relative h-[500px] overflow-hidden rounded-2xl">
               <Image
                 src="/images/contact-aerial.jpeg"
                 alt={t("imageAlt")}
                 fill
-                className="object-cover"
+                className="object-cover transition-smooth group-hover:scale-110"
                 quality={90}
               />
+              {/* Overlay with gradient */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0 opacity-0 group-hover:opacity-100 transition-smooth" />
             </div>
           </div>
         </section>

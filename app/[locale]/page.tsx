@@ -64,14 +64,16 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-12">
               {/* Service 1 */}
               <div className="group cursor-default">
-                <div className="relative h-[480px] md:h-[560px] mb-8 overflow-hidden bg-gray-100">
+                <div className="relative h-[480px] md:h-[560px] mb-8 overflow-hidden rounded-2xl bg-gray-100">
                   <Image
                     src="/images/service1.jpg"
                     alt={t("services.service1.imageAlt")}
                     fill
-                    className="object-cover transition-smooth group-hover:scale-105"
+                    className="object-cover transition-smooth group-hover:scale-110"
                     quality={90}
                   />
+                  {/* Overlay with gradient */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0 opacity-0 group-hover:opacity-100 transition-smooth" />
                 </div>
                 <h3 className="text-2xl md:text-3xl font-light tracking-tight mb-5 text-gray-900">
                   {t("services.service1.title")}
@@ -83,14 +85,16 @@ export default function Home() {
 
               {/* Service 2 */}
               <div className="group cursor-default">
-                <div className="relative h-[480px] md:h-[560px] mb-8 overflow-hidden bg-gray-100">
+                <div className="relative h-[480px] md:h-[560px] mb-8 overflow-hidden rounded-2xl bg-gray-100">
                   <Image
                     src="/images/service2.jpg"
                     alt={t("services.service2.imageAlt")}
                     fill
-                    className="object-cover transition-smooth group-hover:scale-105"
+                    className="object-cover transition-smooth group-hover:scale-110"
                     quality={90}
                   />
+                  {/* Overlay with gradient */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0 opacity-0 group-hover:opacity-100 transition-smooth" />
                 </div>
                 <h3 className="text-2xl md:text-3xl font-light tracking-tight mb-5 text-gray-900">
                   {t("services.service2.title")}
@@ -102,14 +106,16 @@ export default function Home() {
 
               {/* Service 3 */}
               <div className="group cursor-default">
-                <div className="relative h-[480px] md:h-[560px] mb-8 overflow-hidden bg-gray-100">
+                <div className="relative h-[480px] md:h-[560px] mb-8 overflow-hidden rounded-2xl bg-gray-100">
                   <Image
                     src="/images/service3.jpg"
                     alt={t("services.service3.imageAlt")}
                     fill
-                    className="object-cover transition-smooth group-hover:scale-105"
+                    className="object-cover transition-smooth group-hover:scale-110"
                     quality={90}
                   />
+                  {/* Overlay with gradient */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0 opacity-0 group-hover:opacity-100 transition-smooth" />
                 </div>
                 <h3 className="text-2xl md:text-3xl font-light tracking-tight mb-5 text-gray-900">
                   {t("services.service3.title")}
