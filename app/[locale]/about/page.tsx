@@ -39,7 +39,7 @@ export default function About() {
 
               <div className="group relative h-[600px] overflow-hidden rounded-2xl">
                 <Image
-                  src="/images/portrait-micaela-new.jpg"
+                  src="/images/portrait-mihaela-new.jpg"
                   alt={t("about.imageAlt")}
                   fill
                   className="object-cover transition-smooth group-hover:scale-110"
