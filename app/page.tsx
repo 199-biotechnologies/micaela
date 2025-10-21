@@ -9,91 +9,127 @@ export default function Home() {
 
       {/* Main Content */}
       <main className="pt-20">
-        {/* Hero Section */}
-        <section className="relative h-screen">
-          <div className="absolute inset-0">
+        {/* Hero Section - Refined with subtle gradient overlay */}
+        <section className="relative h-screen overflow-hidden">
+          {/* Image with subtle zoom on load */}
+          <div className="absolute inset-0 animate-scale-in">
             <Image
               src="/images/hero.jpeg"
-              alt="A spacious indoor-outdoor dining area with a large wooden table and chairs, overlooking a scenic landscape with trees and a swimming pool outside."
+              alt="Indoor-outdoor dining area overlooking scenic landscape"
               fill
               className="object-cover"
               priority
+              quality={100}
             />
+            {/* Subtle gradient overlay for text readability */}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black/40" />
           </div>
-          <div className="relative h-full flex flex-col items-center justify-center text-white text-center px-4">
-            <h1 className="text-5xl md:text-7xl font-extralight tracking-tighter mb-4">
-              THE WHITE ANGEL TALAMANCA
-            </h1>
-            <h2 className="text-xl md:text-2xl font-thin tracking-wide mb-8">
-              HEAVEN IN THE HEART OF TALAMANCA
-            </h2>
-            <a
-              href="https://wa.me/34671478820"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-8"
-            >
-              <Image
-                src="/images/whatsapp.png"
-                alt="WhatsApp"
-                width={60}
-                height={60}
-                className="hover:opacity-80 transition-opacity"
-              />
-            </a>
+
+          {/* Hero Content - Centered with refined spacing */}
+          <div className="relative h-full flex flex-col items-center justify-center text-white text-center px-6">
+            <div className="max-w-5xl animate-fade-in">
+              {/* Main headline with ultra-refined typography */}
+              <h1 className="text-6xl md:text-8xl lg:text-9xl font-extralight tracking-[-0.04em] mb-6 leading-[0.95]">
+                The White Angel
+                <span className="block mt-2 text-5xl md:text-7xl lg:text-8xl opacity-90">Talamanca</span>
+              </h1>
+
+              {/* Subtle divider */}
+              <div className="w-16 h-px bg-white/40 mx-auto my-8" />
+
+              {/* Subheading with perfect spacing */}
+              <h2 className="text-lg md:text-xl lg:text-2xl font-light tracking-[0.05em] uppercase opacity-95 mb-12">
+                Heaven in the heart of Talamanca
+              </h2>
+
+              {/* CTA with micro-interaction */}
+              <a
+                href="https://wa.me/34671478820"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center transition-smooth-fast hover:scale-110 active:scale-95"
+              >
+                <div className="relative group">
+                  <div className="absolute inset-0 bg-white/20 rounded-full blur-xl group-hover:bg-white/30 transition-smooth" />
+                  <Image
+                    src="/images/whatsapp.png"
+                    alt="WhatsApp"
+                    width={64}
+                    height={64}
+                    className="relative"
+                  />
+                </div>
+              </a>
+            </div>
           </div>
         </section>
 
-        {/* Services Section */}
-        <section className="py-20 px-4">
+        {/* Services Section - Refined spacing and interactions */}
+        <section className="py-24 md:py-32 px-6 bg-gray-50/50">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-4xl font-light tracking-tight text-center mb-16">OUR SERVICES</h2>
+            {/* Section title with subtle animation */}
+            <div className="text-center mb-20">
+              <h2 className="text-sm md:text-base font-light tracking-[0.2em] uppercase text-gray-500 mb-4">
+                Our Services
+              </h2>
+              <div className="w-12 h-px bg-gray-300 mx-auto" />
+            </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Service cards grid */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
               {/* Service 1 */}
-              <div className="group">
-                <div className="relative h-96 mb-6 overflow-hidden">
+              <div className="group cursor-default">
+                <div className="relative h-[400px] md:h-[480px] mb-8 overflow-hidden bg-gray-100">
                   <Image
                     src="/images/service1.jpg"
-                    alt="Modern house with a swimming pool in the backyard, surrounded by greenery and lounge chairs."
+                    alt="Modern house with swimming pool"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="object-cover transition-smooth group-hover:scale-105"
+                    quality={90}
                   />
                 </div>
-                <h3 className="text-2xl font-light tracking-tight mb-4">BUYING, SELLING & RENTING HOMES</h3>
-                <p className="text-gray-600 leading-relaxed font-light">
+                <h3 className="text-xl md:text-2xl font-light tracking-tight mb-4 text-gray-900">
+                  Buying, Selling & Renting Homes
+                </h3>
+                <p className="text-gray-600 leading-relaxed font-light text-sm md:text-base">
                   We offer a wide range of houses and apartments for both vacation and long-term rental or purchase.
                 </p>
               </div>
 
               {/* Service 2 */}
-              <div className="group">
-                <div className="relative h-96 mb-6 overflow-hidden">
+              <div className="group cursor-default">
+                <div className="relative h-[400px] md:h-[480px] mb-8 overflow-hidden bg-gray-100">
                   <Image
                     src="/images/service2.jpg"
-                    alt="Modern balcony with wooden furniture and white cushions overlooking a cityscape, with trees, buildings, water, and hills in the background."
+                    alt="Modern balcony overlooking cityscape"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="object-cover transition-smooth group-hover:scale-105"
+                    quality={90}
                   />
                 </div>
-                <h3 className="text-2xl font-light tracking-tight mb-4">LEGAL & CONSTRUCTION CONSULTING</h3>
-                <p className="text-gray-600 leading-relaxed font-light">
+                <h3 className="text-xl md:text-2xl font-light tracking-tight mb-4 text-gray-900">
+                  Legal & Construction Consulting
+                </h3>
+                <p className="text-gray-600 leading-relaxed font-light text-sm md:text-base">
                   Our network boasts the best professionals to address any need related to property acquisition, refurbishment, and sale.
                 </p>
               </div>
 
               {/* Service 3 */}
-              <div className="group">
-                <div className="relative h-96 mb-6 overflow-hidden">
+              <div className="group cursor-default">
+                <div className="relative h-[400px] md:h-[480px] mb-8 overflow-hidden bg-gray-100">
                   <Image
                     src="/images/service3.jpg"
-                    alt="Living room with a large cream-colored sofa, a rustic wooden coffee table with white decorative vases, and a beige rug. There is a side table with a stone lamp, and artwork hanging on the white wall. Sliding glass doors open to a balcony with outdoor furniture and a view of green trees and blue sky."
+                    alt="Living room interior with modern design"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="object-cover transition-smooth group-hover:scale-105"
+                    quality={90}
                   />
                 </div>
-                <h3 className="text-2xl font-light tracking-tight mb-4">REFURBISHMENT & INTERIOR DESIGN</h3>
-                <p className="text-gray-600 leading-relaxed font-light">
+                <h3 className="text-xl md:text-2xl font-light tracking-tight mb-4 text-gray-900">
+                  Refurbishment & Interior Design
+                </h3>
+                <p className="text-gray-600 leading-relaxed font-light text-sm md:text-base">
                   We are passionate about interior design and have been advising our clients on how to make the most out of their properties.
                 </p>
               </div>
@@ -101,23 +137,30 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Get In Touch Section */}
-        <section className="py-20 bg-gray-50">
-          <div className="max-w-7xl mx-auto px-4 text-center">
-            <h2 className="text-4xl font-light tracking-tight mb-8">GET IN TOUCH</h2>
+        {/* Get In Touch Section - Minimal and refined */}
+        <section className="py-24 md:py-32 bg-white">
+          <div className="max-w-7xl mx-auto px-6 text-center">
+            <h2 className="text-sm md:text-base font-light tracking-[0.2em] uppercase text-gray-500 mb-8">
+              Get In Touch
+            </h2>
+            <div className="w-12 h-px bg-gray-300 mx-auto mb-12" />
+
             <a
               href="https://wa.me/34671478820"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block"
+              className="inline-flex items-center justify-center transition-smooth-fast hover:scale-110 active:scale-95"
             >
-              <Image
-                src="/images/whatsapp.png"
-                alt="WhatsApp"
-                width={60}
-                height={60}
-                className="hover:opacity-80 transition-opacity"
-              />
+              <div className="relative group">
+                <div className="absolute inset-0 bg-green-500/10 rounded-full blur-2xl group-hover:bg-green-500/20 transition-smooth" />
+                <Image
+                  src="/images/whatsapp.png"
+                  alt="WhatsApp"
+                  width={72}
+                  height={72}
+                  className="relative"
+                />
+              </div>
             </a>
           </div>
         </section>
