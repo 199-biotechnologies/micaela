@@ -42,7 +42,7 @@ export default function About() {
 
               <div className="relative h-[600px]">
                 <Image
-                  src="/images/portrait-micaela.jpg"
+                  src="/images/portrait-micaela-new.jpg"
                   alt="A woman with long, wavy hair sits at a dining table in a restaurant, adjusting her hair. The table has a white tablecloth, a glass of water, and a folded napkin. In the background, art and elegant curtains are visible."
                   fill
                   className="object-cover"
