@@ -1,9 +1,14 @@
+"use client";
+
 import Image from "next/image";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import WhatsAppButton from "./components/WhatsAppButton";
+import { useTranslations } from "next-intl";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import WhatsAppButton from "../components/WhatsAppButton";
 
 export default function Home() {
+  const t = useTranslations("HomePage");
+
   return (
     <div className="min-h-screen bg-white">
       <Header />
@@ -16,7 +21,7 @@ export default function Home() {
           <div className="absolute inset-0 animate-scale-in">
             <Image
               src="/images/hero.jpeg"
-              alt="Indoor-outdoor dining area overlooking scenic landscape"
+              alt={t("hero.imageAlt")}
               fill
               className="object-cover"
               priority
@@ -31,9 +36,9 @@ export default function Home() {
             <div className="max-w-6xl animate-fade-in">
               {/* Main headline - ALL CAPS, SAME SIZE */}
               <h1 className="text-6xl md:text-8xl lg:text-9xl font-extralight tracking-[-0.04em] leading-[0.95] uppercase">
-                The White Angel
+                {t("hero.heading.line1")}
                 <br />
-                Talamanca
+                {t("hero.heading.line2")}
               </h1>
 
               {/* CTA with premium animation */}
@@ -50,7 +55,7 @@ export default function Home() {
             {/* Section title */}
             <div className="text-center mb-24">
               <h2 className="text-4xl md:text-5xl font-extralight tracking-tight text-gray-900 mb-6">
-                Our Services
+                {t("services.heading")}
               </h2>
               <div className="w-16 h-px bg-gray-300 mx-auto" />
             </div>
@@ -62,17 +67,17 @@ export default function Home() {
                 <div className="relative h-[480px] md:h-[560px] mb-8 overflow-hidden bg-gray-100">
                   <Image
                     src="/images/service1.jpg"
-                    alt="Modern house with swimming pool"
+                    alt={t("services.service1.imageAlt")}
                     fill
                     className="object-cover transition-smooth group-hover:scale-105"
                     quality={90}
                   />
                 </div>
                 <h3 className="text-2xl md:text-3xl font-light tracking-tight mb-5 text-gray-900">
-                  Buying, Selling & Renting Homes
+                  {t("services.service1.title")}
                 </h3>
                 <p className="text-gray-600 leading-relaxed font-light text-base">
-                  We offer a wide range of houses and apartments for both vacation and long-term rental or purchase.
+                  {t("services.service1.description")}
                 </p>
               </div>
 
@@ -81,17 +86,17 @@ export default function Home() {
                 <div className="relative h-[480px] md:h-[560px] mb-8 overflow-hidden bg-gray-100">
                   <Image
                     src="/images/service2.jpg"
-                    alt="Modern balcony overlooking cityscape"
+                    alt={t("services.service2.imageAlt")}
                     fill
                     className="object-cover transition-smooth group-hover:scale-105"
                     quality={90}
                   />
                 </div>
                 <h3 className="text-2xl md:text-3xl font-light tracking-tight mb-5 text-gray-900">
-                  Legal & Construction Consulting
+                  {t("services.service2.title")}
                 </h3>
                 <p className="text-gray-600 leading-relaxed font-light text-base">
-                  Our network boasts the best professionals to address any need related to property acquisition, refurbishment, and sale.
+                  {t("services.service2.description")}
                 </p>
               </div>
 
@@ -100,17 +105,17 @@ export default function Home() {
                 <div className="relative h-[480px] md:h-[560px] mb-8 overflow-hidden bg-gray-100">
                   <Image
                     src="/images/service3.jpg"
-                    alt="Living room interior with modern design"
+                    alt={t("services.service3.imageAlt")}
                     fill
                     className="object-cover transition-smooth group-hover:scale-105"
                     quality={90}
                   />
                 </div>
                 <h3 className="text-2xl md:text-3xl font-light tracking-tight mb-5 text-gray-900">
-                  Refurbishment & Interior Design
+                  {t("services.service3.title")}
                 </h3>
                 <p className="text-gray-600 leading-relaxed font-light text-base">
-                  We are passionate about interior design and have been advising our clients on how to make the most out of their properties.
+                  {t("services.service3.description")}
                 </p>
               </div>
             </div>
@@ -121,7 +126,7 @@ export default function Home() {
         <section className="py-32 md:py-40 bg-white">
           <div className="max-w-7xl mx-auto px-6 text-center">
             <h2 className="text-4xl md:text-5xl font-extralight tracking-tight text-gray-900 mb-6">
-              Get In Touch
+              {t("getInTouch.heading")}
             </h2>
             <div className="w-16 h-px bg-gray-300 mx-auto mb-16" />
 

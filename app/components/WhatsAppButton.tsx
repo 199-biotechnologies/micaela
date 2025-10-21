@@ -1,9 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 export default function WhatsAppButton() {
   const [isHovered, setIsHovered] = useState(false);
+  const t = useTranslations("WhatsAppButton");
 
   return (
     <a
@@ -36,7 +38,7 @@ export default function WhatsAppButton() {
 
           {/* Text */}
           <span className="text-white font-light text-sm tracking-wide">
-            Get In Touch
+            {t("text")}
           </span>
 
           {/* Arrow */}

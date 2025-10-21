@@ -1,0 +1,179 @@
+{
+  "Header": {
+    "logoAlt": "Doran Homes Design",
+    "nav": {
+      "home": "Inicio",
+      "property": "La Propiedad",
+      "layout": "Distribución",
+      "about": "Nosotros",
+      "contact": "Contacto"
+    }
+  },
+  "Footer": {
+    "brand": {
+      "name": "Doran Homes",
+      "tagline": "Su socio de confianza para inmuebles de lujo en Ibiza desde 2011."
+    },
+    "quickLinks": {
+      "heading": "Enlaces Rápidos",
+      "home": "Inicio",
+      "theProperty": "La Propiedad",
+      "layout": "Distribución",
+      "about": "Nosotros",
+      "contact": "Contacto"
+    },
+    "contact": {
+      "heading": "Contacto",
+      "address": {
+        "line1": "3 Carrer d'Alhaueth",
+        "line2": "Ibiza, España 07800"
+      },
+      "ariaLabels": {
+        "instagram": "Instagram",
+        "facebook": "Facebook",
+        "whatsapp": "WhatsApp"
+      }
+    },
+    "bottom": {
+      "copyright": "© 2024 Doran Homes. Todos los derechos reservados.",
+      "privacyPolicy": "Política de Privacidad"
+    }
+  },
+  "WhatsAppButton": {
+    "text": "Contáctenos"
+  },
+  "HomePage": {
+    "hero": {
+      "imageAlt": "Comedor interior-exterior con vista al paisaje",
+      "heading": {
+        "line1": "The White Angel",
+        "line2": "Talamanca"
+      }
+    },
+    "services": {
+      "heading": "Nuestros Servicios",
+      "service1": {
+        "imageAlt": "Casa moderna con piscina",
+        "title": "Compra, Venta y Alquiler de Viviendas",
+        "description": "Ofrecemos una amplia gama de casas y apartamentos tanto para alquiler vacacional como a largo plazo o compra."
+      },
+      "service2": {
+        "imageAlt": "Balcón moderno con vista al paisaje urbano",
+        "title": "Asesoría Legal y de Construcción",
+        "description": "Nuestra red cuenta con los mejores profesionales para atender cualquier necesidad relacionada con la adquisición, reforma y venta de propiedades."
+      },
+      "service3": {
+        "imageAlt": "Interior de salón con diseño moderno",
+        "title": "Reforma y Diseño de Interiores",
+        "description": "Nos apasiona el diseño de interiores y hemos asesorado a nuestros clientes sobre cómo aprovechar al máximo sus propiedades."
+      }
+    },
+    "getInTouch": {
+      "heading": "Contáctenos"
+    }
+  },
+  "AboutPage": {
+    "about": {
+      "heading": "Hola, soy Micaela",
+      "paragraph1": "He construido mi carrera en torno a una pasión por el diseño de interiores y el sector inmobiliario. Después de graduarme en Diseño de Interiores y convertirme en agente inmobiliaria cualificada en 2011, he tenido la alegría de combinar estos dos campos para ofrecer un enfoque único y personalizado en servicios inmobiliarios.",
+      "paragraph2": "Con sede aquí en Ibiza, me enorgullece comprender verdaderamente las necesidades de mis clientes, no solo a nivel práctico, sino centrándome en construir relaciones significativas. Junto con mi equipo, ayudo a clientes de diversos orígenes a encontrar propiedades que se alineen perfectamente con sus estilos de vida.",
+      "paragraph3": "Ofrecemos una gama completa de servicios, desde asesoramiento inmobiliario y legal hasta diseño de interiores y consultoría de construcción, todo diseñado para que su experiencia inmobiliaria sea fluida y sin estrés. Si busca un profesional que realmente escucha y valora el servicio personalizado, me encantaría ayudarle a encontrar la propiedad perfecta.",
+      "imageAlt": "Una mujer con cabello largo y ondulado sentada en una mesa de restaurante, ajustándose el cabello. La mesa tiene mantel blanco, un vaso de agua y una servilleta doblada. Al fondo se ven arte y cortinas elegantes."
+    },
+    "getInTouch": {
+      "heading": "Contáctenos"
+    }
+  },
+  "ContactPage": {
+    "hero": {
+      "heading": "Conectemos",
+      "description": "Contáctenos hoy y permítanos guiarle en la búsqueda de su hogar perfecto en Ibiza, ya sea un apartamento de lujo en planta baja o un exclusivo ático."
+    },
+    "form": {
+      "name": {
+        "label": "Nombre",
+        "placeholder": "Su nombre"
+      },
+      "email": {
+        "label": "Correo Electrónico",
+        "placeholder": "su@correo.com"
+      },
+      "phone": {
+        "label": "Teléfono",
+        "optional": "(Opcional)",
+        "placeholder": "+34"
+      },
+      "message": {
+        "label": "Mensaje",
+        "placeholder": "Cuéntenos sobre la propiedad de sus sueños en Ibiza..."
+      },
+      "submit": "Enviar Mensaje",
+      "divider": "o",
+      "instantMessaging": "¿Prefiere mensajería instantánea?"
+    },
+    "imageAlt": "Vista aérea de complejo residencial moderno"
+  },
+  "PropertyPage": {
+    "hero": {
+      "heading": "Eche un Vistazo al Interior",
+      "description": "Explore nuestros espacios meticulosamente diseñados donde el lujo moderno se encuentra con el encanto mediterráneo"
+    },
+    "gallery": {
+      "image1": "Azotea",
+      "image2": "Terraza del Ático",
+      "image3": "Vista de la Terraza",
+      "image4": "Piscina en Azotea",
+      "image5": "Piscina en el Jardín",
+      "image6": "Balcón",
+      "image7": "Salón"
+    },
+    "amenities": {
+      "heading": "Servicios",
+      "description": "Todos nuestros apartamentos incluyen 3-4 dormitorios, piscina privada y jardín, spa y vestidores, gimnasio, aparcamiento interior y vistas panorámicas de Dalt Vila y el Mar Mediterráneo.",
+      "concierge": {
+        "title": "Conserje",
+        "description": "Servicio personalizado 24/7"
+      },
+      "spa": {
+        "title": "Spa y Gimnasio",
+        "description": "Zona de bienestar y gimnasio"
+      },
+      "indoorPool": {
+        "title": "Piscina Interior",
+        "description": "Climatizada todo el año"
+      },
+      "outdoorPool": {
+        "title": "Piscina Exterior",
+        "description": "Tres piscinas disponibles"
+      },
+      "security": {
+        "title": "Seguridad",
+        "description": "Vigilancia 24/7"
+      },
+      "closing": "En Doran Homes, nos dedicamos al estilo de vida de Ibiza. Con una amplia gama de propiedades y apartamentos céntricos, personalizamos su estancia para una experiencia excepcional. Ofreciendo proyectos llave en mano, nos encargamos de licencias, aspectos legales y diseño de interiores, para que usted simplemente disfrute."
+    },
+    "location": {
+      "heading": "Ubicación Privilegiada",
+      "description": "A solo tres minutos andando de la maravillosa playa de Talamanca y de la vibrante ciudad de Ibiza. The White Angel está ubicado en el corazón de la ciudad, con fácil acceso a todo lo que Ibiza tiene para ofrecer.",
+      "imageAlt": "Piscina en azotea con vista a Ibiza"
+    }
+  },
+  "UnitsPage": {
+    "hero": {
+      "heading": "Tipos de Vivienda"
+    },
+    "groundFloor": {
+      "heading": "PLANTA BAJA",
+      "details": "Piscina Privada • 4 Dormitorios • 185-320 m²",
+      "imageAlt": "Plano arquitectónico de una casa mostrando varias habitaciones, muebles y áreas exteriores."
+    },
+    "penthouse": {
+      "heading": "ÁTICO",
+      "details": "Piscina Privada • 3 Dormitorios • 197 m²",
+      "imageAlt": "Plano arquitectónico de una casa mostrando habitaciones, muebles, cocina, dormitorios, baños y patio exterior con piscina."
+    },
+    "getInTouch": {
+      "heading": "Contáctenos"
+    }
+  }
+}

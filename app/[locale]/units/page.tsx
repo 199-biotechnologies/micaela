@@ -1,9 +1,14 @@
+"use client";
+
 import Image from "next/image";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import WhatsAppButton from "../components/WhatsAppButton";
+import { useTranslations } from "next-intl";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
+import WhatsAppButton from "../../components/WhatsAppButton";
 
 export default function Units() {
+  const t = useTranslations("UnitsPage");
+
   return (
     <div className="min-h-screen bg-white">
       <Header />
@@ -12,7 +17,9 @@ export default function Units() {
         {/* Title Section */}
         <section className="py-32 md:py-40 px-6">
           <div className="max-w-7xl mx-auto text-center">
-            <h1 className="text-5xl md:text-7xl font-extralight tracking-tight mb-6">Unit Types</h1>
+            <h1 className="text-5xl md:text-7xl font-extralight tracking-tight mb-6">
+              {t("hero.heading")}
+            </h1>
             <div className="w-16 h-px bg-gray-300 mx-auto" />
           </div>
         </section>
@@ -21,15 +28,17 @@ export default function Units() {
         <section className="py-12 px-4">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-8">
-              <h2 className="text-3xl font-light tracking-tight mb-4">GROUND FLOOR</h2>
+              <h2 className="text-3xl font-light tracking-tight mb-4">
+                {t("groundFloor.heading")}
+              </h2>
               <p className="text-gray-600 text-lg italic font-light">
-                Private Pool • 4 Bedrooms • 185-320 sqm
+                {t("groundFloor.details")}
               </p>
             </div>
             <div className="relative w-full h-[600px] bg-gray-100">
               <Image
                 src="/images/ground-floor-plan.jpg"
-                alt="Architectural floor plan of a house showing various rooms, furniture, and outdoor areas."
+                alt={t("groundFloor.imageAlt")}
                 fill
                 className="object-contain"
               />
@@ -41,15 +50,17 @@ export default function Units() {
         <section className="py-12 px-4 bg-gray-50">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-8">
-              <h2 className="text-3xl font-light tracking-tight mb-4">PENTHOUSE</h2>
+              <h2 className="text-3xl font-light tracking-tight mb-4">
+                {t("penthouse.heading")}
+              </h2>
               <p className="text-gray-600 text-lg italic font-light">
-                Private Pool • 3 Bedrooms • 197 sqm
+                {t("penthouse.details")}
               </p>
             </div>
             <div className="relative w-full h-[600px] bg-white">
               <Image
                 src="/images/penthouse-plan.jpg"
-                alt="Architectural floor plan of a house showing rooms, furniture, kitchen, bedrooms, bathrooms, and outdoor patio with a swimming pool."
+                alt={t("penthouse.imageAlt")}
                 fill
                 className="object-contain"
               />
@@ -61,7 +72,7 @@ export default function Units() {
         <section className="py-32 md:py-40 bg-white">
           <div className="max-w-7xl mx-auto px-6 text-center">
             <h2 className="text-4xl md:text-5xl font-extralight tracking-tight mb-6">
-              Get In Touch
+              {t("getInTouch.heading")}
             </h2>
             <div className="w-16 h-px bg-gray-300 mx-auto mb-16" />
             <WhatsAppButton />
