@@ -48,7 +48,7 @@ export default function PrivacyPolicyPage() {
                 <strong className="font-normal">
                   {t("dataController.name")}:
                 </strong>{" "}
-                Doran Homes
+                Mihaela Doran
               </p>
               <p className="mb-2">
                 <strong className="font-normal">

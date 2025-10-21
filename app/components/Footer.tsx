@@ -119,11 +119,8 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Divider - Subtle */}
-        <div className="h-px bg-gray-900/10 mb-8" />
-
         {/* Bottom section - Minimal */}
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4 mt-8">
           <p className="text-gray-400 font-light text-xs tracking-wide">
             {t("bottom.copyright")}
           </p>

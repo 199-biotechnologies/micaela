@@ -1,10 +1,10 @@
-# Doran Homes Design
+# Mihaela Doran
 
-A faithful recreation of the Doran Homes Design website, built with Next.js 15.5.6 and TypeScript.
+Official website for Mihaela Doran, built with Next.js 15.5.6 and TypeScript.
 
 ## Overview
 
-This website showcases "The White Angel Talamanca" property and Doran Homes Design's services in Ibiza, Spain.
+This website showcases "The White Angel Talamanca" property and Mihaela Doran's luxury real estate services in Ibiza, Spain.
 
 ## Features
 
@@ -39,4 +39,4 @@ vercel --prod
 
 3 Carrer d'Alhaueth, Ibiza, Spain 07800
 
-© 2024 Doran Homes
+© 2025 Mihaela Doran
