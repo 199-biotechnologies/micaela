@@ -59,7 +59,7 @@ export default function Header() {
           <div className="flex-shrink-0">
             <Link href="/" className="transition-smooth-fast hover:opacity-70">
               <Image
-                src="/images/logo.png"
+                src="/images/mihaela-logo.svg"
                 alt={t("logoAlt")}
                 width={180}
                 height={54}
