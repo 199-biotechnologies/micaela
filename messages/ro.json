@@ -208,11 +208,14 @@
     },
     "dataUse": {
       "heading": "Cum Utilizăm Datele Dumneavoastră",
-      "purpose1": "Pentru a răspunde solicitărilor dumneavoastră despre reședințe și servicii",
-      "purpose2": "Pentru a vă furniza informații despre reședințe care corespund cerințelor dumneavoastră",
-      "purpose3": "Pentru a menține și îmbunătăți site-ul nostru web și serviciile",
-      "purpose4": "Pentru a respecta obligațiile legale și reglementare",
-      "purpose5": "Pentru a vă trimite actualizări relevante despre reședințe, cu consimțământul dumneavoastră"
+      "purpose1": "Pentru a răspunde și procesa solicitările dumneavoastră referitoare la reședințe și servicii",
+      "purpose2": "Pentru a vă furniza informații despre reședințe care corespund cerințelor și preferințelor dumneavoastră specifice",
+      "purpose3": "Pentru a comunica cu dumneavoastră despre reședințe, servicii, programări, vizionări și tranzacții",
+      "purpose4": "Pentru a menține, îmbunătăți și personaliza site-ul nostru web și serviciile pe baza tiparelor dumneavoastră de utilizare",
+      "purpose5": "Pentru a respecta obligațiile legale și reglementare conform legislației spaniole și europene",
+      "purpose6": "Pentru a vă trimite actualizări relevante despre reședințe, perspective de piață și comunicări promoționale (numai cu consimțământul dumneavoastră explicit)",
+      "purpose7": "Pentru a analiza traficul site-ului web și comportamentul utilizatorilor în scopuri de îmbunătățire a serviciilor și securitate",
+      "purpose8": "Pentru a proteja drepturile noastre legale și a preveni frauda sau utilizarea abuzivă a serviciilor noastre"
     },
     "legalBasis": {
       "heading": "Baza Legală pentru Prelucrare",
@@ -260,15 +263,31 @@
     },
     "dataRetention": {
       "heading": "Păstrarea Datelor",
-      "description": "Păstrăm datele dumneavoastră personale doar atât timp cât este necesar pentru a îndeplini scopurile pentru care au fost colectate, pentru a respecta obligațiile legale sau pentru a rezolva litigii. Datele de marketing sunt păstrate până când vă retrageți consimțământul."
+      "description": "Păstrăm datele dumneavoastră personale doar atât timp cât este necesar pentru a îndeplini scopurile prezentate în această politică și pentru a respecta cerințele legale. Perioadele specifice de păstrare sunt: Solicitările prin formulare de contact sunt păstrate timp de 2 ani de la ultimul contact, cu excepția cazului în care solicitați ștergerea; Datele clienților activi sunt păstrate pe durata relației noastre comerciale plus 6 ani pentru conformitatea legală conform legislației spaniole; Datele de consimțământ pentru comunicări de marketing sunt păstrate până când retrageți consimțământul; Datele de analiză web sunt anonimizate după 26 de luni; Documentația legală referitoare la tranzacțiile imobiliare este păstrată timp de 6 ani conform cerințelor Codului Comercial spaniol. După aceste perioade, vom șterge în mod securizat sau anonimiza datele dumneavoastră personale, cu excepția cazului în care legea impune o păstrare mai lungă sau există revendicări legale legitime."
     },
     "dataSecurity": {
       "heading": "Securitatea Datelor",
-      "description": "Implementăm măsuri tehnice și organizatorice adecvate pentru a proteja datele dumneavoastră personale împotriva accesului neautorizat, modificării, divulgării sau distrugerii. Cu toate acestea, nicio transmisie prin internet nu este complet sigură și nu putem garanta securitate absolută."
+      "description": "Implementăm măsuri tehnice și organizatorice adecvate pentru a proteja datele dumneavoastră personale împotriva procesării neautorizate sau ilegale, pierderii accidentale, distrugerii sau deteriorării. Aceste măsuri includ criptare SSL pentru transmiterea datelor, servere securizate, evaluări periodice de securitate, controale de acces care limitează cine poate vizualiza datele dumneavoastră și instruirea personalului privind protecția datelor. Deși ne străduim să protejăm informațiile dumneavoastră personale, nicio metodă de transmitere prin internet sau stocare electronică nu este 100% sigură. Nu putem garanta securitate absolută, dar vă vom notifica pe dumneavoastră și autoritățile relevante în termen de 72 de ore dacă apare o încălcare a datelor care este probabil să rezulte într-un risc pentru drepturile și libertățile dumneavoastră, conform cerințelor RGPD."
+    },
+    "dataSharing": {
+      "heading": "Partajarea și Transferurile de Date",
+      "description": "Nu vindem datele dumneavoastră personale către terțe părți. Putem partaja informațiile dumneavoastră cu furnizori de servicii de încredere care ne asistă în operarea site-ului nostru web, desfășurarea afacerii noastre sau prestarea de servicii către dumneavoastră (cum ar fi găzduire web, servicii de e-mail, furnizori de analiză), cu condiția să accepte să păstreze aceste informații confidențiale și să respecte RGPD. De asemenea, putem divulga informațiile dumneavoastră atunci când este cerut de lege sau pentru a ne proteja drepturile, proprietatea sau siguranța. Orice transfer internațional de date în afara UE/SEE este efectuat în conformitate cu cerințele RGPD, inclusiv utilizarea Clauzelor Contractuale Standard sau alte garanții aprobate."
+    },
+    "yourChoices": {
+      "heading": "Opțiunile și Controlul Dumneavoastră",
+      "description": "Puteți renunța la comunicările de marketing în orice moment făcând clic pe linkul de dezabonare din e-mailurile noastre sau contactându-ne direct. Puteți configura browserul să refuze cookie-urile sau să vă alerteze când sunt trimise cookie-uri. Puteți solicita să revizuiți, actualizați sau să ștergeți informațiile dumneavoastră personale contactându-ne. Vă rugăm să rețineți că dacă alegeți să nu furnizați anumite informații sau să renunțați la anumite procesări de date, este posibil să nu putem să vă oferim unele dintre serviciile noastre."
+    },
+    "changes": {
+      "heading": "Modificări ale acestei Politici",
+      "description": "Putem actualiza această Politică de Confidențialitate periodic pentru a reflecta schimbările în practicile noastre, tehnologie, cerințe legale sau alți factori. Vă vom notifica despre orice modificări semnificative prin publicarea noii Politici de Confidențialitate pe această pagină și actualizarea datei 'Ultima actualizare'. Vă încurajăm să revizuiți periodic această Politică de Confidențialitate."
+    },
+    "supervisory": {
+      "heading": "Autoritate de Supraveghere",
+      "description": "Dacă considerați că nu am gestionat datele dumneavoastră personale în conformitate cu această politică sau cu legislația aplicabilă, aveți dreptul să depuneți o plângere la Agenția Spaniolă pentru Protecția Datelor (Agencia Española de Protección de Datos - AEPD) la www.aepd.es sau la autoritatea locală de protecție a datelor."
     },
     "contact": {
       "heading": "Contact",
-      "description": "Dacă aveți întrebări despre această Politică de Confidențialitate sau doriți să vă exercitați drepturile, vă rugăm să ne contactați la:"
+      "description": "Dacă aveți întrebări despre această Politică de Confidențialitate, doriți să vă exercitați drepturile sau aveți preocupări despre modul în care gestionăm datele dumneavoastră, vă rugăm să ne contactați la:"
     }
   },
   "CookiePolicy": {

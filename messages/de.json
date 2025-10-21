@@ -175,5 +175,185 @@
     "getInTouch": {
       "heading": "Kontaktieren Sie uns"
     }
+  },
+  "PrivacyPolicy": {
+    "heading": "Datenschutzerklärung",
+    "lastUpdated": "Letzte Aktualisierung: Januar 2025",
+    "introduction": {
+      "heading": "Einleitung",
+      "paragraph1": "Bei Doran Homes verpflichten wir uns, Ihre Privatsphäre und personenbezogenen Daten zu schützen. Diese Datenschutzerklärung erklärt, wie wir Ihre Informationen erfassen, verwenden, offenlegen und schützen, wenn Sie unsere Website besuchen oder unsere Dienste nutzen, in voller Übereinstimmung mit der EU-Datenschutz-Grundverordnung (DSGVO) und dem spanischen Organgesetz über Datenschutz und Garantie digitaler Rechte (LOPDGDD 3/2018).",
+      "paragraph2": "Wir respektieren Ihre Privatsphäre und verpflichten uns zur Transparenz im Umgang mit Ihren personenbezogenen Daten. Wir erfassen nur Daten, die notwendig sind, um Ihnen einen außergewöhnlichen Service in Bezug auf Luxusimmobilien auf Ibiza zu bieten. Durch die Nutzung unserer Website oder Dienstleistungen stimmen Sie den in dieser Richtlinie beschriebenen Datenpraktiken zu."
+    },
+    "dataController": {
+      "heading": "Datenverantwortlicher",
+      "name": "Firmenname",
+      "address": "Adresse",
+      "contact": "Kontakt"
+    },
+    "dataCollection": {
+      "heading": "Von uns erfasste Daten",
+      "intro": "Wir können folgende Kategorien personenbezogener Daten erfassen und verarbeiten:",
+      "personalData": {
+        "heading": "Personenbezogene Identifikationsdaten",
+        "description": "Name, Vorname, E-Mail-Adresse, Telefonnummer, Postanschrift und alle anderen Informationen, die Sie freiwillig angeben, wenn Sie uns über unsere Website, E-Mail, Telefon oder persönlich kontaktieren."
+      },
+      "technicalData": {
+        "heading": "Technische und Navigationsdaten",
+        "description": "IP-Adresse, Browsertyp und -version, Gerätetyp, Betriebssystem, Zeitzoneneinstellung, Browser-Plugin-Typen und -Versionen, Standortdaten und andere Technologien auf den Geräten, die Sie für den Zugriff auf unsere Website verwenden. Wir erfassen auch Informationen über Ihren Besuch, einschließlich des vollständigen URL-Clickstreams zu, durch und von unserer Website (einschließlich Datum und Uhrzeit), angesehene Seiten, Seitenladezeiten, Download-Fehler, Besuchsdauer auf bestimmten Seiten, Seiteninteraktionsinformationen (wie Scrollen, Klicks und Mausbewegungen) und Methoden zum Verlassen der Seite."
+      },
+      "communicationData": {
+        "heading": "Kommunikations- und Marketingdaten",
+        "description": "Inhalt der Korrespondenz mit uns (E-Mail, Telefon, WhatsApp oder ein anderer Kanal), Aufzeichnungen von Immobilienanfragen, Präferenzen bezüglich des Empfangs von Marketing von uns und Ihre Kommunikationspräferenzen."
+      }
+    },
+    "dataUse": {
+      "heading": "Wie wir Ihre Daten verwenden",
+      "purpose1": "Um Ihre Immobilien- und Serviceanfragen zu beantworten und zu bearbeiten",
+      "purpose2": "Um Ihnen Informationen über Immobilien bereitzustellen, die Ihren spezifischen Anforderungen und Präferenzen entsprechen",
+      "purpose3": "Um mit Ihnen über Immobilien, Dienstleistungen, Termine, Besichtigungen und Transaktionen zu kommunizieren",
+      "purpose4": "Um unsere Website und Dienstleistungen basierend auf Ihren Nutzungsmustern zu pflegen, zu verbessern und zu personalisieren",
+      "purpose5": "Um rechtlichen und regulatorischen Verpflichtungen nach spanischem und EU-Recht nachzukommen",
+      "purpose6": "Um Ihnen relevante Immobilien-Updates, Markteinblicke und Werbemitteilungen zu senden (nur mit Ihrer ausdrücklichen Zustimmung)",
+      "purpose7": "Um Website-Traffic und Nutzerverhalten zu Zwecken der Serviceverbesserung und Sicherheit zu analysieren",
+      "purpose8": "Um unsere rechtlichen Rechte zu schützen und Betrug oder Missbrauch unserer Dienste zu verhindern"
+    },
+    "legalBasis": {
+      "heading": "Rechtsgrundlage für die Verarbeitung",
+      "intro": "Wir verarbeiten Ihre personenbezogenen Daten auf folgender Grundlage:",
+      "consent": {
+        "heading": "Ihre Einwilligung",
+        "description": "Wenn Sie Informationen über Kontaktformulare bereitstellen oder Mitteilungen abonnieren"
+      },
+      "contract": {
+        "heading": "Vertragserfüllung",
+        "description": "Wenn die Verarbeitung zur Erfüllung unserer Dienstleistungen erforderlich ist"
+      },
+      "legitimate": {
+        "heading": "Berechtigte Interessen",
+        "description": "Zur Verbesserung unserer Dienstleistungen und zur Bereitstellung relevanter Immobilieninformationen"
+      }
+    },
+    "yourRights": {
+      "heading": "Ihre Rechte",
+      "intro": "Gemäß der DSGVO haben Sie folgende Rechte:",
+      "access": {
+        "heading": "Auskunftsrecht",
+        "description": "Eine Kopie der personenbezogenen Daten anzufordern, die wir über Sie speichern"
+      },
+      "rectification": {
+        "heading": "Recht auf Berichtigung",
+        "description": "Die Korrektur unrichtiger oder unvollständiger Daten anzufordern"
+      },
+      "erasure": {
+        "heading": "Recht auf Löschung",
+        "description": "Die Löschung Ihrer personenbezogenen Daten anzufordern ('Recht auf Vergessenwerden')"
+      },
+      "restriction": {
+        "heading": "Recht auf Einschränkung",
+        "description": "Die Einschränkung der Verarbeitung Ihrer Daten anzufordern"
+      },
+      "portability": {
+        "heading": "Recht auf Datenübertragbarkeit",
+        "description": "Ihre Daten in einem strukturierten, gängigen Format zu erhalten"
+      },
+      "objection": {
+        "heading": "Widerspruchsrecht",
+        "description": "Der Verarbeitung Ihrer Daten für Direktmarketing oder berechtigte Interessen zu widersprechen"
+      }
+    },
+    "dataRetention": {
+      "heading": "Datenspeicherung",
+      "description": "Wir speichern Ihre personenbezogenen Daten nur so lange, wie es zur Erfüllung der in dieser Richtlinie dargelegten Zwecke und zur Einhaltung gesetzlicher Anforderungen erforderlich ist. Spezifische Aufbewahrungsfristen sind: Kontaktformularanfragen werden 2 Jahre ab dem letzten Kontakt aufbewahrt, es sei denn, Sie fordern die Löschung an; Aktive Kundendaten werden für die Dauer unserer Geschäftsbeziehung plus 6 Jahre zur rechtlichen Einhaltung nach spanischem Recht aufbewahrt; Marketing-Einwilligungsdaten werden aufbewahrt, bis Sie Ihre Einwilligung widerrufen; Website-Analysedaten werden nach 26 Monaten anonymisiert; Rechtliche Dokumentation im Zusammenhang mit Immobilientransaktionen wird 6 Jahre lang gemäß dem spanischen Handelsgesetzbuch aufbewahrt. Nach diesen Zeiträumen werden wir Ihre personenbezogenen Daten sicher löschen oder anonymisieren, es sei denn, eine längere Aufbewahrung ist gesetzlich vorgeschrieben oder berechtigte rechtliche Ansprüche bestehen."
+    },
+    "dataSecurity": {
+      "heading": "Datensicherheit",
+      "description": "Wir setzen geeignete technische und organisatorische Sicherheitsmaßnahmen ein, um Ihre personenbezogenen Daten vor unbefugter oder unrechtmäßiger Verarbeitung, versehentlichem Verlust, Zerstörung oder Beschädigung zu schützen. Diese Maßnahmen umfassen SSL-Verschlüsselung für die Datenübertragung, sichere Server, regelmäßige Sicherheitsbewertungen, Zugriffskontrollen, die einschränken, wer Ihre Daten einsehen kann, und Schulungen des Personals zum Datenschutz. Obwohl wir uns bemühen, Ihre persönlichen Informationen zu schützen, ist keine Methode der Übertragung über das Internet oder der elektronischen Speicherung zu 100% sicher. Wir können keine absolute Sicherheit garantieren, werden Sie und die zuständigen Behörden jedoch innerhalb von 72 Stunden benachrichtigen, wenn eine Datenschutzverletzung auftritt, die wahrscheinlich ein Risiko für Ihre Rechte und Freiheiten darstellt, wie von der DSGVO gefordert."
+    },
+    "dataSharing": {
+      "heading": "Datenweitergabe und -übermittlungen",
+      "description": "Wir verkaufen Ihre personenbezogenen Daten nicht an Dritte. Wir können Ihre Informationen mit vertrauenswürdigen Dienstleistern teilen, die uns beim Betrieb unserer Website, der Durchführung unseres Geschäfts oder der Erbringung von Dienstleistungen unterstützen (wie Webhosting, E-Mail-Dienste, Analyse-Anbieter), sofern sie zustimmen, diese Informationen vertraulich zu behandeln und die DSGVO einzuhalten. Wir können Ihre Informationen auch offenlegen, wenn dies gesetzlich vorgeschrieben ist oder um unsere Rechte, unser Eigentum oder unsere Sicherheit zu schützen. Jegliche internationale Datenübermittlung außerhalb der EU/des EWR erfolgt in Übereinstimmung mit den DSGVO-Anforderungen, einschließlich der Verwendung von Standardvertragsklauseln oder anderen genehmigten Schutzmaßnahmen."
+    },
+    "yourChoices": {
+      "heading": "Ihre Auswahlmöglichkeiten und Kontrolle",
+      "description": "Sie können sich jederzeit von Marketingkommunikation abmelden, indem Sie auf den Abmeldelink in unseren E-Mails klicken oder uns direkt kontaktieren. Sie können Ihren Browser so einstellen, dass er Cookies ablehnt oder Sie benachrichtigt, wenn Cookies gesendet werden. Sie können die Einsichtnahme, Aktualisierung oder Löschung Ihrer persönlichen Informationen anfordern, indem Sie uns kontaktieren. Bitte beachten Sie, dass wir Ihnen möglicherweise einige unserer Dienste nicht zur Verfügung stellen können, wenn Sie bestimmte Informationen nicht bereitstellen oder sich gegen bestimmte Datenverarbeitungen entscheiden."
+    },
+    "changes": {
+      "heading": "Änderungen dieser Richtlinie",
+      "description": "Wir können diese Datenschutzerklärung von Zeit zu Zeit aktualisieren, um Änderungen in unseren Praktiken, Technologien, gesetzlichen Anforderungen oder anderen Faktoren widerzuspiegeln. Wir werden Sie über wesentliche Änderungen informieren, indem wir die neue Datenschutzerklärung auf dieser Seite veröffentlichen und das Datum 'Letzte Aktualisierung' aktualisieren. Wir empfehlen Ihnen, diese Datenschutzerklärung regelmäßig zu überprüfen."
+    },
+    "supervisory": {
+      "heading": "Aufsichtsbehörde",
+      "description": "Wenn Sie der Ansicht sind, dass wir Ihre personenbezogenen Daten nicht im Einklang mit dieser Richtlinie oder geltendem Recht behandelt haben, haben Sie das Recht, eine Beschwerde bei der Spanischen Datenschutzbehörde (Agencia Española de Protección de Datos - AEPD) unter www.aepd.es oder bei Ihrer lokalen Datenschutzbehörde einzureichen."
+    },
+    "contact": {
+      "heading": "Kontaktieren Sie uns",
+      "description": "Wenn Sie Fragen zu dieser Datenschutzerklärung haben, Ihre Rechte ausüben möchten oder Bedenken hinsichtlich unserer Datenverarbeitung haben, kontaktieren Sie uns bitte unter:"
+    }
+  },
+  "CookiePolicy": {
+    "heading": "Cookie-Richtlinie",
+    "lastUpdated": "Letzte Aktualisierung: Januar 2025",
+    "introduction": {
+      "heading": "Einleitung",
+      "paragraph1": "Diese Cookie-Richtlinie erklärt, wie Doran Homes Cookies und ähnliche Technologien auf unserer Website nutzt, um Ihr Surferlebnis zu verbessern und Ihnen relevante Informationen über Luxusimmobilien auf Ibiza bereitzustellen.",
+      "paragraph2": "Durch die Nutzung unserer Website stimmen Sie der Verwendung von Cookies gemäß dieser Cookie-Richtlinie zu."
+    },
+    "whatAreCookies": {
+      "heading": "Was sind Cookies?",
+      "description": "Cookies sind kleine Textdateien, die auf Ihrem Gerät abgelegt werden, wenn Sie eine Website besuchen. Sie werden häufig verwendet, um Websites effizienter zu gestalten und den Website-Betreibern Informationen bereitzustellen."
+    },
+    "cookiesWeUse": {
+      "heading": "Cookies, die wir verwenden",
+      "essential": {
+        "heading": "Notwendige Cookies",
+        "description": "Diese Cookies sind für das Funktionieren der Website erforderlich und können nicht deaktiviert werden.",
+        "purpose": "Zweck",
+        "purposeText": "Grundlegende Website-Funktionen, Spracheinstellungen und Sicherheitsfunktionen ermöglichen",
+        "duration": "Dauer",
+        "durationText": "Sitzung oder bis zu 1 Jahr"
+      },
+      "analytics": {
+        "heading": "Analyse-Cookies",
+        "description": "Diese Cookies helfen uns zu verstehen, wie Besucher mit unserer Website interagieren, indem sie anonyme Informationen sammeln.",
+        "purpose": "Zweck",
+        "purposeText": "Website-Traffic, Nutzerverhalten analysieren und unsere Dienste verbessern",
+        "duration": "Dauer",
+        "durationText": "Bis zu 2 Jahre"
+      },
+      "preference": {
+        "heading": "Präferenz-Cookies",
+        "description": "Diese Cookies speichern Ihre Präferenzen und Auswahlmöglichkeiten, um ein personalisierteres Erlebnis zu bieten.",
+        "purpose": "Zweck",
+        "purposeText": "Ihre Sprachauswahl und andere Präferenzen speichern",
+        "duration": "Dauer",
+        "durationText": "Bis zu 1 Jahr"
+      }
+    },
+    "managingCookies": {
+      "heading": "Verwaltung von Cookies",
+      "paragraph1": "Sie können Cookies über Ihre Browsereinstellungen steuern und verwalten. Die meisten Browser ermöglichen es Ihnen, Cookies abzulehnen oder zu akzeptieren, vorhandene Cookies zu löschen oder benachrichtigt zu werden, wenn neue Cookies gesetzt werden.",
+      "paragraph2": "Bitte beachten Sie, dass die Deaktivierung bestimmter Cookies die Funktionalität unserer Website und Ihr Benutzererlebnis beeinträchtigen kann."
+    },
+    "thirdParty": {
+      "heading": "Cookies von Drittanbietern",
+      "description": "Wir können Drittanbieterdienste wie Analysetools verwenden, die ihre eigenen Cookies setzen können. Diese Drittanbieter haben ihre eigenen Datenschutz- und Cookie-Richtlinien, die wir Sie ermutigen zu überprüfen."
+    },
+    "updates": {
+      "heading": "Aktualisierungen dieser Richtlinie",
+      "description": "Wir können diese Cookie-Richtlinie von Zeit zu Zeit aktualisieren, um Änderungen in der Technologie oder gesetzliche Anforderungen widerzuspiegeln. Das Datum der letzten Aktualisierung oben auf dieser Seite zeigt an, wann die Richtlinie zuletzt überarbeitet wurde."
+    },
+    "contact": {
+      "heading": "Kontaktieren Sie uns",
+      "description": "Wenn Sie Fragen zu unserer Verwendung von Cookies haben, kontaktieren Sie uns bitte unter:"
+    }
+  },
+  "CookieConsent": {
+    "message": "Wir verwenden Cookies, um Ihr Surferlebnis zu verbessern und Ihnen relevante Informationen über Immobilien bereitzustellen. Durch die weitere Nutzung unserer Website stimmen Sie unserer Verwendung von Cookies zu.",
+    "accept": "Akzeptieren",
+    "reject": "Ablehnen",
+    "privacyPolicy": "Datenschutzerklärung",
+    "cookiePolicy": "Cookie-Richtlinie",
+    "acceptAria": "Cookies akzeptieren",
+    "rejectAria": "Cookies ablehnen"
   }
 }

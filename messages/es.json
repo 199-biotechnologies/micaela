@@ -208,11 +208,14 @@
     },
     "dataUse": {
       "heading": "Cómo Utilizamos sus Datos",
-      "purpose1": "Para responder a sus consultas sobre residencias y servicios",
-      "purpose2": "Para proporcionarle información sobre residencias que se ajusten a sus requisitos",
-      "purpose3": "Para mantener y mejorar nuestro sitio web y servicios",
-      "purpose4": "Para cumplir con obligaciones legales y reglamentarias",
-      "purpose5": "Para enviarle actualizaciones relevantes sobre residencias, con su consentimiento"
+      "purpose1": "Para responder y gestionar sus consultas sobre residencias y servicios",
+      "purpose2": "Para proporcionarle información sobre residencias que se ajusten a sus requisitos y preferencias específicas",
+      "purpose3": "Para comunicarnos con usted acerca de residencias, servicios, citas, visitas y transacciones",
+      "purpose4": "Para mantener, mejorar y personalizar nuestro sitio web y servicios basándonos en sus patrones de uso",
+      "purpose5": "Para cumplir con obligaciones legales y reglamentarias conforme a la normativa española y europea",
+      "purpose6": "Para enviarle actualizaciones relevantes sobre residencias, perspectivas del mercado y comunicaciones promocionales (únicamente con su consentimiento explícito)",
+      "purpose7": "Para analizar el tráfico del sitio web y el comportamiento del usuario con fines de mejora del servicio y seguridad",
+      "purpose8": "Para proteger nuestros derechos legales y prevenir fraudes o uso indebido de nuestros servicios"
     },
     "legalBasis": {
       "heading": "Base Legal para el Tratamiento",
@@ -260,15 +263,31 @@
     },
     "dataRetention": {
       "heading": "Conservación de Datos",
-      "description": "Conservamos sus datos personales únicamente durante el tiempo necesario para cumplir los fines para los que se recopilaron, cumplir con obligaciones legales o resolver disputas. Los datos de marketing se conservan hasta que retire su consentimiento."
+      "description": "Conservamos sus datos personales únicamente durante el tiempo necesario para cumplir los fines establecidos en esta política y para cumplir con los requisitos legales. Los períodos de conservación específicos son: Las consultas a través de formularios de contacto se conservan durante 2 años desde el último contacto, salvo que solicite su eliminación; Los datos de clientes activos se conservan durante la duración de nuestra relación comercial más 6 años para cumplimiento legal conforme a la legislación española; Los datos de consentimiento para comunicaciones de marketing se conservan hasta que retire su consentimiento; Los datos de analítica web se anonimizan después de 26 meses; La documentación legal relacionada con transacciones inmobiliarias se conserva durante 6 años según lo exigido por el Código de Comercio español. Transcurridos estos períodos, eliminaremos de forma segura o anonimizaremos sus datos personales, salvo que la ley exija un período de conservación más prolongado o existan reclamaciones legales legítimas."
     },
     "dataSecurity": {
       "heading": "Seguridad de los Datos",
-      "description": "Implementamos medidas técnicas y organizativas apropiadas para proteger sus datos personales contra acceso no autorizado, alteración, divulgación o destrucción. Sin embargo, ninguna transmisión por Internet es completamente segura y no podemos garantizar seguridad absoluta."
+      "description": "Implementamos medidas técnicas y organizativas apropiadas para proteger sus datos personales contra procesamiento no autorizado o ilícito, pérdida accidental, destrucción o daño. Estas medidas incluyen cifrado SSL para la transmisión de datos, servidores seguros, evaluaciones periódicas de seguridad, controles de acceso que limitan quién puede ver sus datos, y formación del personal en protección de datos. Si bien nos esforzamos por proteger su información personal, ningún método de transmisión por Internet o almacenamiento electrónico es 100% seguro. No podemos garantizar seguridad absoluta, pero le notificaremos a usted y a las autoridades pertinentes en un plazo de 72 horas si se produce una violación de datos que probablemente conlleve un riesgo para sus derechos y libertades, tal como exige el RGPD."
+    },
+    "dataSharing": {
+      "heading": "Compartición y Transferencias de Datos",
+      "description": "No vendemos sus datos personales a terceros. Podemos compartir su información con proveedores de servicios de confianza que nos asisten en la operación de nuestro sitio web, la conducción de nuestro negocio o la prestación de servicios (como alojamiento web, servicios de correo electrónico, proveedores de analítica), siempre que acepten mantener esta información confidencial y cumplan con el RGPD. También podemos divulgar su información cuando sea requerido por ley o para proteger nuestros derechos, propiedad o seguridad. Cualquier transferencia internacional de datos fuera de la UE/EEE se realiza en cumplimiento con los requisitos del RGPD, incluyendo el uso de Cláusulas Contractuales Estándar u otras salvaguardas aprobadas."
+    },
+    "yourChoices": {
+      "heading": "Sus Opciones y Control",
+      "description": "Puede optar por no recibir comunicaciones de marketing en cualquier momento haciendo clic en el enlace de cancelación de suscripción en nuestros correos electrónicos o contactándonos directamente. Puede configurar su navegador para rechazar cookies o alertarle cuando se envíen cookies. Puede solicitar revisar, actualizar o eliminar su información personal contactándonos. Tenga en cuenta que si decide no proporcionar cierta información u optar por no participar en cierto procesamiento de datos, es posible que no podamos proporcionarle algunos de nuestros servicios."
+    },
+    "changes": {
+      "heading": "Cambios a esta Política",
+      "description": "Podemos actualizar esta Política de Privacidad periódicamente para reflejar cambios en nuestras prácticas, tecnología, requisitos legales u otros factores. Le notificaremos de cualquier cambio material publicando la nueva Política de Privacidad en esta página y actualizando la fecha de 'Última actualización'. Le recomendamos que revise esta Política de Privacidad periódicamente."
+    },
+    "supervisory": {
+      "heading": "Autoridad de Control",
+      "description": "Si considera que no hemos tratado sus datos personales de conformidad con esta política o la legislación aplicable, tiene derecho a presentar una reclamación ante la Agencia Española de Protección de Datos (AEPD) en www.aepd.es o ante su autoridad local de protección de datos."
     },
     "contact": {
       "heading": "Contacto",
-      "description": "Si tiene preguntas sobre esta Política de Privacidad o desea ejercer sus derechos, contáctenos en:"
+      "description": "Si tiene preguntas sobre esta Política de Privacidad, desea ejercer sus derechos o tiene inquietudes sobre cómo manejamos sus datos, contáctenos en:"
     }
   },
   "CookiePolicy": {

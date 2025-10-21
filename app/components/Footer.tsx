@@ -127,7 +127,7 @@ export default function Footer() {
             {t("bottom.copyright")}
           </p>
           <Link
-            href="/privacy-policy-1"
+            href="/privacy-policy"
             className="text-white/40 hover:text-white/70 font-light transition-smooth-fast"
           >
             {t("bottom.privacyPolicy")}

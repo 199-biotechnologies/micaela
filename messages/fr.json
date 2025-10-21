@@ -175,5 +175,185 @@
     "getInTouch": {
       "heading": "Prenez Contact"
     }
+  },
+  "PrivacyPolicy": {
+    "heading": "Politique de Confidentialité",
+    "lastUpdated": "Dernière mise à jour : Janvier 2025",
+    "introduction": {
+      "heading": "Introduction",
+      "paragraph1": "Chez Doran Homes, nous nous engageons à protéger votre vie privée et vos données personnelles. Cette Politique de Confidentialité explique comment nous collectons, utilisons, divulguons et protégeons vos informations lorsque vous visitez notre site web ou utilisez nos services, en pleine conformité avec le Règlement Général sur la Protection des Données (RGPD) de l'UE et la Loi Organique espagnole sur la Protection des Données et la Garantie des Droits Numériques (LOPDGDD 3/2018).",
+      "paragraph2": "Nous respectons votre vie privée et nous nous engageons à la transparence dans la gestion de vos informations personnelles. Nous ne collectons que les données nécessaires pour vous offrir un service exceptionnel concernant l'immobilier de luxe à Ibiza. En utilisant notre site web ou nos services, vous consentez aux pratiques de données décrites dans cette politique."
+    },
+    "dataController": {
+      "heading": "Responsable du Traitement",
+      "name": "Nom de la Société",
+      "address": "Adresse",
+      "contact": "Contact"
+    },
+    "dataCollection": {
+      "heading": "Données que Nous Collectons",
+      "intro": "Nous pouvons collecter et traiter les catégories suivantes de données personnelles :",
+      "personalData": {
+        "heading": "Données d'Identification Personnelle",
+        "description": "Nom, prénom, adresse e-mail, numéro de téléphone, adresse postale et toute autre information que vous fournissez volontairement lorsque vous nous contactez via notre site web, e-mail, téléphone ou en personne."
+      },
+      "technicalData": {
+        "heading": "Données Techniques et de Navigation",
+        "description": "Adresse IP, type et version de navigateur, type d'appareil, système d'exploitation, paramètres de fuseau horaire, types et versions de plug-ins de navigateur, données de localisation et autres technologies sur les appareils que vous utilisez pour accéder à notre site web. Nous collectons également des informations sur votre visite, notamment le flux de clics URL complet vers, à travers et depuis notre site web (y compris la date et l'heure), les pages que vous avez consultées, les temps de réponse des pages, les erreurs de téléchargement, la durée des visites sur certaines pages, les informations d'interaction avec les pages (telles que le défilement, les clics et les survols de souris), et les méthodes utilisées pour quitter la page."
+      },
+      "communicationData": {
+        "heading": "Données de Communication et de Marketing",
+        "description": "Contenu de la correspondance avec nous (e-mail, téléphone, WhatsApp ou tout autre canal), enregistrements de demandes immobilières, préférences concernant la réception de marketing de notre part et vos préférences de communication."
+      }
+    },
+    "dataUse": {
+      "heading": "Comment Nous Utilisons Vos Données",
+      "purpose1": "Pour répondre et traiter vos demandes immobilières et de services",
+      "purpose2": "Pour vous fournir des informations sur les propriétés qui correspondent à vos exigences et préférences spécifiques",
+      "purpose3": "Pour communiquer avec vous au sujet des propriétés, services, rendez-vous, visites et transactions",
+      "purpose4": "Pour maintenir, améliorer et personnaliser notre site web et nos services en fonction de vos habitudes d'utilisation",
+      "purpose5": "Pour nous conformer aux obligations légales et réglementaires en vertu du droit espagnol et européen",
+      "purpose6": "Pour vous envoyer des mises à jour pertinentes sur les propriétés, des perspectives de marché et des communications promotionnelles (uniquement avec votre consentement explicite)",
+      "purpose7": "Pour analyser le trafic du site web et le comportement des utilisateurs à des fins d'amélioration du service et de sécurité",
+      "purpose8": "Pour protéger nos droits légaux et prévenir la fraude ou l'utilisation abusive de nos services"
+    },
+    "legalBasis": {
+      "heading": "Base Légale du Traitement",
+      "intro": "Nous traitons vos données personnelles sur la base de :",
+      "consent": {
+        "heading": "Votre Consentement",
+        "description": "Lorsque vous fournissez des informations via des formulaires de contact ou vous abonnez aux communications"
+      },
+      "contract": {
+        "heading": "Exécution du Contrat",
+        "description": "Lorsque le traitement est nécessaire pour remplir nos services"
+      },
+      "legitimate": {
+        "heading": "Intérêts Légitimes",
+        "description": "Pour améliorer nos services et vous fournir des informations pertinentes sur les propriétés"
+      }
+    },
+    "yourRights": {
+      "heading": "Vos Droits",
+      "intro": "En vertu du RGPD, vous disposez des droits suivants :",
+      "access": {
+        "heading": "Droit d'Accès",
+        "description": "Demander une copie des données personnelles que nous détenons à votre sujet"
+      },
+      "rectification": {
+        "heading": "Droit de Rectification",
+        "description": "Demander la correction de données inexactes ou incomplètes"
+      },
+      "erasure": {
+        "heading": "Droit à l'Effacement",
+        "description": "Demander la suppression de vos données personnelles ('droit à l'oubli')"
+      },
+      "restriction": {
+        "heading": "Droit à la Limitation",
+        "description": "Demander la limitation du traitement de vos données"
+      },
+      "portability": {
+        "heading": "Droit à la Portabilité",
+        "description": "Recevoir vos données dans un format structuré et couramment utilisé"
+      },
+      "objection": {
+        "heading": "Droit d'Opposition",
+        "description": "S'opposer au traitement de vos données à des fins de marketing direct ou d'intérêts légitimes"
+      }
+    },
+    "dataRetention": {
+      "heading": "Conservation des Données",
+      "description": "Nous conservons vos données personnelles uniquement le temps nécessaire pour atteindre les objectifs énoncés dans cette politique et pour nous conformer aux exigences légales. Les périodes de conservation spécifiques sont les suivantes : Les demandes par formulaire de contact sont conservées pendant 2 ans à compter du dernier contact, sauf si vous demandez leur suppression ; Les données des clients actifs sont conservées pendant la durée de notre relation commerciale plus 6 ans pour la conformité légale en vertu de la loi espagnole ; Les données de consentement aux communications marketing sont conservées jusqu'à ce que vous retiriez votre consentement ; Les données d'analyse web sont anonymisées après 26 mois ; La documentation juridique relative aux transactions immobilières est conservée pendant 6 ans conformément au Code de Commerce espagnol. Passés ces délais, nous supprimerons de manière sécurisée ou anonymiserons vos données personnelles, sauf si une conservation plus longue est requise par la loi ou des réclamations légales légitimes."
+    },
+    "dataSecurity": {
+      "heading": "Sécurité des Données",
+      "description": "Nous mettons en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos données personnelles contre tout traitement non autorisé ou illégal, perte accidentelle, destruction ou dommage. Ces mesures comprennent le chiffrement SSL pour la transmission des données, des serveurs sécurisés, des évaluations régulières de la sécurité, des contrôles d'accès limitant qui peut consulter vos données et une formation du personnel sur la protection des données. Bien que nous nous efforcions de protéger vos informations personnelles, aucune méthode de transmission sur Internet ou de stockage électronique n'est sûre à 100%. Nous ne pouvons garantir une sécurité absolue mais nous vous informerons ainsi que les autorités compétentes dans les 72 heures en cas de violation de données susceptible de présenter un risque pour vos droits et libertés, comme l'exige le RGPD."
+    },
+    "dataSharing": {
+      "heading": "Partage et Transferts de Données",
+      "description": "Nous ne vendons pas vos données personnelles à des tiers. Nous pouvons partager vos informations avec des prestataires de services de confiance qui nous aident à exploiter notre site web, à mener nos activités ou à vous servir (tels que l'hébergement web, les services de messagerie, les fournisseurs d'analyse), à condition qu'ils acceptent de garder ces informations confidentielles et de se conformer au RGPD. Nous pouvons également divulguer vos informations lorsque la loi l'exige ou pour protéger nos droits, notre propriété ou notre sécurité. Tout transfert international de données en dehors de l'UE/EEE est effectué conformément aux exigences du RGPD, y compris l'utilisation de Clauses Contractuelles Types ou d'autres garanties approuvées."
+    },
+    "yourChoices": {
+      "heading": "Vos Choix et Contrôle",
+      "description": "Vous pouvez vous désabonner des communications marketing à tout moment en cliquant sur le lien de désabonnement dans nos e-mails ou en nous contactant directement. Vous pouvez configurer votre navigateur pour refuser les cookies ou vous alerter lorsque des cookies sont envoyés. Vous pouvez demander à consulter, mettre à jour ou supprimer vos informations personnelles en nous contactant. Veuillez noter que si vous choisissez de ne pas fournir certaines informations ou de refuser certains traitements de données, nous pourrions ne pas être en mesure de vous fournir certains de nos services."
+    },
+    "changes": {
+      "heading": "Modifications de cette Politique",
+      "description": "Nous pouvons mettre à jour cette Politique de Confidentialité de temps à autre pour refléter les changements dans nos pratiques, la technologie, les exigences légales ou d'autres facteurs. Nous vous informerons de tout changement important en publiant la nouvelle Politique de Confidentialité sur cette page et en mettant à jour la date de 'Dernière mise à jour'. Nous vous encourageons à consulter périodiquement cette Politique de Confidentialité."
+    },
+    "supervisory": {
+      "heading": "Autorité de Contrôle",
+      "description": "Si vous estimez que nous n'avons pas traité vos données personnelles conformément à cette politique ou à la loi applicable, vous avez le droit de déposer une plainte auprès de l'Agence Espagnole de Protection des Données (Agencia Española de Protección de Datos - AEPD) sur www.aepd.es ou auprès de votre autorité locale de protection des données."
+    },
+    "contact": {
+      "heading": "Nous Contacter",
+      "description": "Si vous avez des questions sur cette Politique de Confidentialité, souhaitez exercer vos droits ou avez des préoccupations concernant la façon dont nous traitons vos données, veuillez nous contacter à :"
+    }
+  },
+  "CookiePolicy": {
+    "heading": "Politique en matière de Cookies",
+    "lastUpdated": "Dernière mise à jour : Janvier 2025",
+    "introduction": {
+      "heading": "Introduction",
+      "paragraph1": "Cette Politique en matière de Cookies explique comment Doran Homes utilise les cookies et technologies similaires sur notre site web pour améliorer votre expérience de navigation et vous fournir des informations pertinentes sur les propriétés de luxe à Ibiza.",
+      "paragraph2": "En utilisant notre site web, vous consentez à l'utilisation de cookies conformément à cette Politique en matière de Cookies."
+    },
+    "whatAreCookies": {
+      "heading": "Qu'est-ce que les Cookies?",
+      "description": "Les cookies sont de petits fichiers texte placés sur votre appareil lorsque vous visitez un site web. Ils sont largement utilisés pour faire fonctionner les sites web plus efficacement et fournir des informations aux propriétaires de sites web."
+    },
+    "cookiesWeUse": {
+      "heading": "Cookies que Nous Utilisons",
+      "essential": {
+        "heading": "Cookies Essentiels",
+        "description": "Ces cookies sont nécessaires au fonctionnement du site web et ne peuvent pas être désactivés.",
+        "purpose": "Finalité",
+        "purposeText": "Activer les fonctionnalités de base du site web, les préférences linguistiques et les fonctionnalités de sécurité",
+        "duration": "Durée",
+        "durationText": "Session ou jusqu'à 1 an"
+      },
+      "analytics": {
+        "heading": "Cookies Analytiques",
+        "description": "Ces cookies nous aident à comprendre comment les visiteurs interagissent avec notre site web en collectant des informations anonymes.",
+        "purpose": "Finalité",
+        "purposeText": "Analyser le trafic du site web, le comportement des utilisateurs et améliorer nos services",
+        "duration": "Durée",
+        "durationText": "Jusqu'à 2 ans"
+      },
+      "preference": {
+        "heading": "Cookies de Préférences",
+        "description": "Ces cookies mémorisent vos préférences et choix pour offrir une expérience plus personnalisée.",
+        "purpose": "Finalité",
+        "purposeText": "Mémoriser votre sélection de langue et autres préférences",
+        "duration": "Durée",
+        "durationText": "Jusqu'à 1 an"
+      }
+    },
+    "managingCookies": {
+      "heading": "Gestion des Cookies",
+      "paragraph1": "Vous pouvez contrôler et gérer les cookies via les paramètres de votre navigateur. La plupart des navigateurs vous permettent de refuser ou d'accepter les cookies, de supprimer les cookies existants ou d'être averti lorsque de nouveaux cookies sont définis.",
+      "paragraph2": "Veuillez noter que la désactivation de certains cookies peut affecter les fonctionnalités de notre site web et votre expérience utilisateur."
+    },
+    "thirdParty": {
+      "heading": "Cookies Tiers",
+      "description": "Nous pouvons utiliser des services tiers tels que des outils d'analyse qui peuvent définir leurs propres cookies. Ces tiers ont leurs propres politiques de confidentialité et de cookies, que nous vous encourageons à consulter."
+    },
+    "updates": {
+      "heading": "Mises à Jour de cette Politique",
+      "description": "Nous pouvons mettre à jour cette Politique en matière de Cookies de temps à autre pour refléter les changements technologiques ou les exigences légales. La date de 'Dernière mise à jour' en haut de cette page indique quand la politique a été révisée pour la dernière fois."
+    },
+    "contact": {
+      "heading": "Nous Contacter",
+      "description": "Si vous avez des questions sur notre utilisation des cookies, veuillez nous contacter à :"
+    }
+  },
+  "CookieConsent": {
+    "message": "Nous utilisons des cookies pour améliorer votre expérience de navigation et vous fournir des informations pertinentes sur les propriétés. En continuant à utiliser notre site web, vous consentez à notre utilisation des cookies.",
+    "accept": "Accepter",
+    "reject": "Refuser",
+    "privacyPolicy": "Politique de Confidentialité",
+    "cookiePolicy": "Politique en matière de Cookies",
+    "acceptAria": "Accepter les cookies",
+    "rejectAria": "Refuser les cookies"
   }
 }

@@ -211,6 +211,46 @@ export default async function PrivacyPolicyPage({ params }: Props) {
             </p>
           </section>
 
+          {/* Data Sharing */}
+          <section className="mb-12">
+            <h2 className="text-2xl font-light tracking-tight mb-4">
+              {t("dataSharing.heading")}
+            </h2>
+            <p className="text-gray-700 font-light leading-relaxed">
+              {t("dataSharing.description")}
+            </p>
+          </section>
+
+          {/* Your Choices */}
+          <section className="mb-12">
+            <h2 className="text-2xl font-light tracking-tight mb-4">
+              {t("yourChoices.heading")}
+            </h2>
+            <p className="text-gray-700 font-light leading-relaxed">
+              {t("yourChoices.description")}
+            </p>
+          </section>
+
+          {/* Changes to Policy */}
+          <section className="mb-12">
+            <h2 className="text-2xl font-light tracking-tight mb-4">
+              {t("changes.heading")}
+            </h2>
+            <p className="text-gray-700 font-light leading-relaxed">
+              {t("changes.description")}
+            </p>
+          </section>
+
+          {/* Supervisory Authority */}
+          <section className="mb-12">
+            <h2 className="text-2xl font-light tracking-tight mb-4">
+              {t("supervisory.heading")}
+            </h2>
+            <p className="text-gray-700 font-light leading-relaxed">
+              {t("supervisory.description")}
+            </p>
+          </section>
+
           {/* Contact */}
           <section className="mb-12">
             <h2 className="text-2xl font-light tracking-tight mb-4">
