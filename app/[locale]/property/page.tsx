@@ -39,9 +39,9 @@ export default function TheProperty() {
         </section>
 
         {/* Gallery Section - Masonry Grid */}
-        <section className="py-16 px-6">
+        <section className="py-32 md:py-40 px-6">
           <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-[280px]">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 auto-rows-[280px]">
               {galleryImages.map((image, index) => (
                 <div
                   key={index}
@@ -82,7 +82,7 @@ export default function TheProperty() {
             </div>
 
             {/* Amenities Grid */}
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-8 md:gap-12 mb-20">
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-12 mb-20">
               <div className="text-center group">
                 <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gray-900/5 flex items-center justify-center group-hover:bg-gray-900/10 transition-smooth">
                   <svg className="w-8 h-8 text-gray-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">

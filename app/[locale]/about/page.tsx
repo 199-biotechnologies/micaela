@@ -23,7 +23,7 @@ export default function About() {
                 <h1 className="text-5xl md:text-6xl font-extralight tracking-tight mb-6">{t("about.heading")}</h1>
                 <div className="w-16 h-px bg-gray-900 mb-10"></div>
 
-                <div className="space-y-6 text-gray-700 leading-relaxed font-light">
+                <div className="space-y-8 text-gray-700 leading-relaxed font-light">
                   <p>
                     {t("about.paragraph1")}
                   </p>

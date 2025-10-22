@@ -29,12 +29,12 @@ export default function Contact() {
         </section>
 
         {/* Contact Form Section */}
-        <section className="py-16 px-6">
+        <section className="py-32 md:py-40 px-6">
           <div className="max-w-2xl mx-auto">
-            <form className="space-y-8">
+            <form className="space-y-10">
               {/* Name */}
               <div className="group">
-                <label htmlFor="name" className="block text-sm font-light tracking-wide uppercase text-gray-500 mb-3">
+                <label htmlFor="name" className="block text-sm font-light tracking-wide uppercase text-gray-500 mb-4">
                   {t("form.name.label")}
                 </label>
                 <input
@@ -48,7 +48,7 @@ export default function Contact() {
 
               {/* Email */}
               <div className="group">
-                <label htmlFor="email" className="block text-sm font-light tracking-wide uppercase text-gray-500 mb-3">
+                <label htmlFor="email" className="block text-sm font-light tracking-wide uppercase text-gray-500 mb-4">
                   {t("form.email.label")}
                 </label>
                 <input
@@ -62,7 +62,7 @@ export default function Contact() {
 
               {/* Phone */}
               <div className="group">
-                <label htmlFor="phone" className="block text-sm font-light tracking-wide uppercase text-gray-500 mb-3">
+                <label htmlFor="phone" className="block text-sm font-light tracking-wide uppercase text-gray-500 mb-4">
                   {t("form.phone.label")} <span className="text-gray-400 normal-case">{t("form.phone.optional")}</span>
                 </label>
                 <input
@@ -76,7 +76,7 @@ export default function Contact() {
 
               {/* Message */}
               <div className="group">
-                <label htmlFor="message" className="block text-sm font-light tracking-wide uppercase text-gray-500 mb-3">
+                <label htmlFor="message" className="block text-sm font-light tracking-wide uppercase text-gray-500 mb-4">
                   {t("form.message.label")}
                 </label>
                 <textarea
@@ -117,7 +117,7 @@ export default function Contact() {
         </section>
 
         {/* Image Section */}
-        <section className="py-16 px-6">
+        <section className="py-32 md:py-40 px-6">
           <div className="max-w-6xl mx-auto">
             <div className="group relative h-[500px] overflow-hidden rounded-2xl">
               <Image

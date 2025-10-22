@@ -59,7 +59,7 @@ export default function Home() {
         <section className="py-32 md:py-40 px-6 bg-gray-50/50">
           <div className="max-w-7xl mx-auto">
             {/* Section title */}
-            <div className="text-center mb-24">
+            <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-extralight tracking-tight text-gray-900 mb-6">
                 {t("services.heading")}
               </h2>
@@ -67,7 +67,7 @@ export default function Home() {
             </div>
 
             {/* Service cards grid */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-12">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
               {/* Service 1 */}
               <div className="group cursor-default">
                 <div className="relative h-[480px] md:h-[560px] mb-8 overflow-hidden rounded-2xl bg-gray-100">
