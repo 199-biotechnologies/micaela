@@ -5,10 +5,10 @@ import { NextRequest, NextResponse } from 'next/server';
 const intlMiddleware = createMiddleware(routing);
 
 export default function middleware(request: NextRequest) {
-  const { pathname } = request.nextUrl;
+  const { pathname} = request.nextUrl;
 
   // Redirect /units to /property for all locales
-  if (pathname.match(/^\/(en|es|fr|de|it|zh|ru|ro)\/units$/)) {
+  if (pathname.match(/^\/(en|es|fr|de|it|nl|pt|zh|ru|ro|ar)\/units$/)) {
     const locale = pathname.split('/')[1];
     return NextResponse.redirect(new URL(`/${locale}/property`, request.url));
   }

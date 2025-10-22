@@ -98,9 +98,12 @@ export default function Header() {
     { code: "es", label: "ES", name: "Español" },
     { code: "fr", label: "FR", name: "Français" },
     { code: "it", label: "IT", name: "Italiano" },
+    { code: "nl", label: "NL", name: "Nederlands" },
+    { code: "pt", label: "PT", name: "Português" },
     { code: "ro", label: "RO", name: "Română" },
     { code: "ru", label: "RU", name: "Русский" },
     { code: "zh", label: "中文", name: "中文" },
+    { code: "ar", label: "AR", name: "العربية" },
   ];
 
   const currentLanguage = languages.find((lang) => lang.code === locale);

@@ -1,0 +1,371 @@
+{
+  "Header": {
+    "logoAlt": "Mihaela Doran",
+    "nav": {
+      "home": "Home",
+      "property": "العقار",
+      "about": "معلومات عنا",
+      "contact": "اتصل بنا"
+    }
+  },
+  "Footer": {
+    "brand": {
+      "name": "Mihaela Doran",
+      "tagline": "شريكك الموثوق للعقارات الفاخرة في إيبيزا منذ 2011."
+    },
+    "quickLinks": {
+      "heading": "روابط سريعة",
+      "home": "Home",
+      "theProperty": "العقار",
+      "about": "معلومات عنا",
+      "contact": "اتصل بنا"
+    },
+    "contact": {
+      "heading": "Contact",
+      "address": {
+        "line1": "3 Carrer d'Alhaueth",
+        "line2": "Ibiza, Spain 07800"
+      },
+      "ariaLabels": {
+        "instagram": "Instagram",
+        "facebook": "Facebook",
+        "whatsapp": "WhatsApp"
+      }
+    },
+    "bottom": {
+      "copyright": "© 2025 ميهايلا دوران. جميع الحقوق محفوظة.",
+      "privacyPolicy": "سياسة الخصوصية"
+    }
+  },
+  "WhatsAppButton": {
+    "text": "تواصل معنا"
+  },
+  "HomePage": {
+    "hero": {
+      "imageAlt": "منطقة طعام داخلية وخارجية تطل على المناظر الطبيعية",
+      "heading": {
+        "line1": "The White Angel",
+        "line2": "Talamanca"
+      },
+      "tagline": "الجنة في قلب تالامانكا"
+    },
+    "services": {
+      "heading": "خدماتنا",
+      "service1": {
+        "imageAlt": "Modern house with swimming pool",
+        "title": "شراء وبيع وتأجير المنازل",
+        "description": "نقدم مجموعة واسعة من المنازل والشقق للإيجار السياحي أو طويل الأجل أو للشراء."
+      },
+      "service2": {
+        "imageAlt": "Modern balcony overlooking cityscape",
+        "title": "الاستشارات القانونية والإنشائية",
+        "description": "تضم شبكتنا أفضل المتخصصين لتلبية أي احتياج يتعلق بشراء العقارات وتجديدها وبيعها."
+      },
+      "service3": {
+        "imageAlt": "Living room interior with modern design",
+        "title": "التجديد والتصميم الداخلي",
+        "description": "نحن شغوفون بالتصميم الداخلي ونقدم المشورة لعملائنا حول كيفية تحقيق أقصى استفادة من عقاراتهم."
+      }
+    },
+    "getInTouch": {
+      "heading": "تواصل معنا"
+    }
+  },
+  "AboutPage": {
+    "about": {
+      "heading": "Hi, I'm Mihaela",
+      "paragraph1": "Trained in interior design and licensed as a real-estate agent since 2011, I work where those two worlds meet—helping people in Ibiza choose well, design carefully, and settle in with confidence.",
+      "paragraph2": "I start with listening. We look at how you live—light, flow, storage, rhythm—and shape the search around that. With a small, trusted team, I keep relationships close and the process calm, so decisions feel clear and considered.",
+      "paragraph3": "We handle the details end to end: property search and negotiation, legal coordination and licensing, refurbishment and interior design advice. The aim is simple—fewer, better choices, and a home that feels like you.",
+      "imageAlt": "A woman with long, wavy hair sits at a dining table in a restaurant, adjusting her hair. The table has a white tablecloth, a glass of water, and a folded napkin. In the background, art and elegant curtains are visible."
+    },
+    "getInTouch": {
+      "heading": "Get In Touch"
+    }
+  },
+  "ContactPage": {
+    "hero": {
+      "heading": "Let's Connect",
+      "description": "Contact us today, and let us guide you in finding your perfect Ibiza home—whether it's a ground floor luxury apartment, or an exclusive penthouse retreat."
+    },
+    "form": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Your name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "your@email.com"
+      },
+      "phone": {
+        "label": "Phone",
+        "optional": "(Optional)",
+        "placeholder": "+34"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Tell us about your dream property in Ibiza..."
+      },
+      "submit": "Send Message",
+      "divider": "or",
+      "instantMessaging": "Prefer instant messaging?"
+    },
+    "imageAlt": "Aerial view of modern residential complex"
+  },
+  "PropertyPage": {
+    "hero": {
+      "heading": "Take A Look Inside",
+      "description": "Explore our meticulously designed spaces where modern luxury meets Mediterranean charm"
+    },
+    "gallery": {
+      "image1": "Rooftop",
+      "image2": "Penthouse Terrace",
+      "image3": "Terrace View",
+      "image4": "Rooftop Pool",
+      "image5": "Garden Pool",
+      "image6": "Balcony",
+      "image7": "Living Room"
+    },
+    "amenities": {
+      "heading": "Amenities",
+      "description": "All our apartments include 3-4 bedrooms, a private pool & garden, spa & fitting rooms, gym, indoor parking, and panoramic views of Dalt Villa and the Mediterranean Sea.",
+      "concierge": {
+        "title": "Concierge",
+        "description": "24/7 personalized service"
+      },
+      "spa": {
+        "title": "Spa & Fitness",
+        "description": "Wellness area & gym"
+      },
+      "indoorPool": {
+        "title": "Indoor Pool",
+        "description": "Heated year-round"
+      },
+      "outdoorPool": {
+        "title": "Outdoor Pool",
+        "description": "Three pools available"
+      },
+      "security": {
+        "title": "Security",
+        "description": "24/7 surveillance"
+      },
+      "closing": "Mihaela Doran is dedicated to the Ibiza lifestyle. With a wide range of properties and central apartments, we customize your stay for an exceptional experience. Offering turn-key projects, we handle licensing, legal, and interior design, so you can simply enjoy."
+    },
+    "location": {
+      "heading": "Prime Location",
+      "description": "Only three minutes walking from the wonderful Talamanca beach and the vibrant city of Ibiza. The White Angel is located in the heart of the city, with easy access to everything Ibiza has to offer.",
+      "imageAlt": "Rooftop pool overlooking Ibiza"
+    },
+    "floorPlans": {
+      "heading": "Unit Types",
+      "groundFloor": {
+        "heading": "GROUND FLOOR",
+        "details": "Private Pool • 4 Bedrooms • 185-320 sqm",
+        "imageAlt": "Architectural floor plan of a house showing various rooms, furniture, and outdoor areas."
+      },
+      "penthouse": {
+        "heading": "PENTHOUSE",
+        "details": "Private Pool • 3 Bedrooms • 197 sqm",
+        "imageAlt": "Architectural floor plan of a house showing rooms, furniture, kitchen, bedrooms, bathrooms, and outdoor patio with a swimming pool."
+      }
+    }
+  },
+  "UnitsPage": {
+    "hero": {
+      "heading": "Unit Types"
+    },
+    "groundFloor": {
+      "heading": "GROUND FLOOR",
+      "details": "Private Pool • 4 Bedrooms • 185-320 sqm",
+      "imageAlt": "Architectural floor plan of a house showing various rooms, furniture, and outdoor areas."
+    },
+    "penthouse": {
+      "heading": "PENTHOUSE",
+      "details": "Private Pool • 3 Bedrooms • 197 sqm",
+      "imageAlt": "Architectural floor plan of a house showing rooms, furniture, kitchen, bedrooms, bathrooms, and outdoor patio with a swimming pool."
+    },
+    "getInTouch": {
+      "heading": "Get In Touch"
+    }
+  },
+  "PrivacyPolicy": {
+    "heading": "Privacy Policy",
+    "lastUpdated": "Last updated: January 2025",
+    "introduction": {
+      "heading": "Introduction",
+      "paragraph1": "At Mihaela Doran, we are committed to protecting your privacy and personal data. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services, in full compliance with the EU General Data Protection Regulation (GDPR) and Spain's Organic Law on Data Protection and Guarantee of Digital Rights (LOPDGDD 3/2018).",
+      "paragraph2": "We respect your privacy and are committed to transparency in how we handle your personal information. We only collect data that is necessary to provide you with exceptional service regarding luxury real estate in Ibiza. By using our website or services, you consent to the data practices described in this policy."
+    },
+    "dataController": {
+      "heading": "Data Controller",
+      "name": "Company Name",
+      "address": "Address",
+      "contact": "Contact"
+    },
+    "dataCollection": {
+      "heading": "Data We Collect",
+      "intro": "We may collect and process the following categories of personal data:",
+      "personalData": {
+        "heading": "Personal Identification Data",
+        "description": "Name, surname, email address, phone number, postal address, and any other information you voluntarily provide when contacting us through our website, email, phone, or in person."
+      },
+      "technicalData": {
+        "heading": "Technical and Navigation Data",
+        "description": "IP address, browser type and version, device type, operating system, time zone setting, browser plug-in types and versions, location data, and other technology on the devices you use to access our website. We also collect information about your visit, including the full URL clickstream to, through and from our website (including date and time), pages you viewed, page response times, download errors, length of visits to certain pages, page interaction information (such as scrolling, clicks, and mouse-overs), and methods used to browse away from the page."
+      },
+      "communicationData": {
+        "heading": "Communication and Marketing Data",
+        "description": "Content of correspondence with us (email, phone, WhatsApp, or any other channel), records of property inquiries, preferences regarding receiving marketing from us, and your communication preferences."
+      }
+    },
+    "dataUse": {
+      "heading": "How We Use Your Data",
+      "purpose1": "To respond to and process your property inquiries and service requests",
+      "purpose2": "To provide you with information about properties that match your specified requirements and preferences",
+      "purpose3": "To communicate with you about properties, services, appointments, viewings, and transactions",
+      "purpose4": "To maintain, improve, and personalize our website and services based on your usage patterns",
+      "purpose5": "To comply with legal and regulatory obligations under Spanish and EU law",
+      "purpose6": "To send you relevant property updates, market insights, and promotional communications (only with your explicit consent)",
+      "purpose7": "To analyze website traffic and user behavior for service improvement and security purposes",
+      "purpose8": "To protect our legal rights and prevent fraud or misuse of our services"
+    },
+    "legalBasis": {
+      "heading": "Legal Basis for Processing",
+      "intro": "We process your personal data based on:",
+      "consent": {
+        "heading": "Your Consent",
+        "description": "When you provide information through contact forms or subscribe to communications"
+      },
+      "contract": {
+        "heading": "Contract Performance",
+        "description": "When processing is necessary to fulfill our services"
+      },
+      "legitimate": {
+        "heading": "Legitimate Interests",
+        "description": "To improve our services and provide you with relevant property information"
+      }
+    },
+    "yourRights": {
+      "heading": "Your Rights",
+      "intro": "Under GDPR, you have the following rights:",
+      "access": {
+        "heading": "Right of Access",
+        "description": "Request a copy of the personal data we hold about you"
+      },
+      "rectification": {
+        "heading": "Right to Rectification",
+        "description": "Request correction of inaccurate or incomplete data"
+      },
+      "erasure": {
+        "heading": "Right to Erasure",
+        "description": "Request deletion of your personal data ('right to be forgotten')"
+      },
+      "restriction": {
+        "heading": "Right to Restriction",
+        "description": "Request limitation of processing of your data"
+      },
+      "portability": {
+        "heading": "Right to Data Portability",
+        "description": "Receive your data in a structured, commonly used format"
+      },
+      "objection": {
+        "heading": "Right to Object",
+        "description": "Object to processing of your data for direct marketing or legitimate interests"
+      }
+    },
+    "dataRetention": {
+      "heading": "Data Retention",
+      "description": "We retain your personal data only for as long as necessary to fulfill the purposes outlined in this policy and to comply with legal requirements. Specific retention periods are: Contact form inquiries are retained for 2 years from last contact unless you request deletion; Active client data is retained for the duration of our business relationship plus 6 years for legal compliance under Spanish law; Marketing communications consent data is retained until you withdraw consent; Website analytics data is anonymized after 26 months; Legal documentation related to property transactions is retained for 6 years as required by Spanish Commercial Code. After these periods, we will securely delete or anonymize your personal data unless longer retention is required by law or legitimate legal claims."
+    },
+    "dataSecurity": {
+      "heading": "Data Security",
+      "description": "We implement appropriate technical and organizational security measures to protect your personal data against unauthorized or unlawful processing, accidental loss, destruction, or damage. These measures include SSL encryption for data transmission, secure servers, regular security assessments, access controls limiting who can view your data, and staff training on data protection. While we strive to protect your personal information, no method of transmission over the internet or electronic storage is 100% secure. We cannot guarantee absolute security but will notify you and relevant authorities within 72 hours if a data breach occurs that is likely to result in a risk to your rights and freedoms, as required by GDPR."
+    },
+    "dataSharing": {
+      "heading": "Data Sharing and Transfers",
+      "description": "We do not sell your personal data to third parties. We may share your information with trusted service providers who assist us in operating our website, conducting our business, or servicing you (such as website hosting, email services, analytics providers), provided they agree to keep this information confidential and comply with GDPR. We may also disclose your information when required by law or to protect our rights, property, or safety. Any international data transfers outside the EU/EEA are conducted in compliance with GDPR requirements, including use of Standard Contractual Clauses or other approved safeguards."
+    },
+    "yourChoices": {
+      "heading": "Your Choices and Control",
+      "description": "You can opt out of marketing communications at any time by clicking the unsubscribe link in our emails or contacting us directly. You can set your browser to refuse cookies or alert you when cookies are being sent. You may request to review, update, or delete your personal information by contacting us. Please note that if you choose not to provide certain information or opt out of certain data processing, we may not be able to provide you with some of our services."
+    },
+    "changes": {
+      "heading": "Changes to This Policy",
+      "description": "We may update this Privacy Policy from time to time to reflect changes in our practices, technology, legal requirements, or other factors. We will notify you of any material changes by posting the new Privacy Policy on this page and updating the 'Last Updated' date. We encourage you to review this Privacy Policy periodically."
+    },
+    "supervisory": {
+      "heading": "Supervisory Authority",
+      "description": "If you believe we have not handled your personal data in accordance with this policy or applicable law, you have the right to lodge a complaint with the Spanish Data Protection Authority (Agencia Española de Protección de Datos - AEPD) at www.aepd.es or with your local data protection authority."
+    },
+    "contact": {
+      "heading": "Contact Us",
+      "description": "If you have questions about this Privacy Policy, wish to exercise your rights, or have concerns about how we handle your data, please contact us at:"
+    }
+  },
+  "CookiePolicy": {
+    "heading": "Cookie Policy",
+    "lastUpdated": "Last updated: January 2025",
+    "introduction": {
+      "heading": "Introduction",
+      "paragraph1": "This Cookie Policy explains how Mihaela Doran uses cookies and similar technologies on our website to enhance your browsing experience and provide you with relevant information about luxury properties in Ibiza.",
+      "paragraph2": "By using our website, you consent to the use of cookies in accordance with this Cookie Policy."
+    },
+    "whatAreCookies": {
+      "heading": "What Are Cookies?",
+      "description": "Cookies are small text files that are placed on your device when you visit a website. They are widely used to make websites work more efficiently and provide information to website owners."
+    },
+    "cookiesWeUse": {
+      "heading": "Cookies We Use",
+      "essential": {
+        "heading": "Essential Cookies",
+        "description": "These cookies are necessary for the website to function properly and cannot be disabled.",
+        "purpose": "Purpose",
+        "purposeText": "Enable core website functionality, language preferences, and security features",
+        "duration": "Duration",
+        "durationText": "Session or up to 1 year"
+      },
+      "analytics": {
+        "heading": "Analytics Cookies",
+        "description": "These cookies help us understand how visitors interact with our website by collecting anonymous information.",
+        "purpose": "Purpose",
+        "purposeText": "Analyze website traffic, user behavior, and improve our services",
+        "duration": "Duration",
+        "durationText": "Up to 2 years"
+      },
+      "preference": {
+        "heading": "Preference Cookies",
+        "description": "These cookies remember your preferences and choices to provide a more personalized experience.",
+        "purpose": "Purpose",
+        "purposeText": "Remember your language selection and other preferences",
+        "duration": "Duration",
+        "durationText": "Up to 1 year"
+      }
+    },
+    "managingCookies": {
+      "heading": "Managing Cookies",
+      "paragraph1": "You can control and manage cookies through your browser settings. Most browsers allow you to refuse or accept cookies, delete existing cookies, or be notified when new cookies are set.",
+      "paragraph2": "Please note that disabling certain cookies may impact the functionality of our website and your user experience."
+    },
+    "thirdParty": {
+      "heading": "Third-Party Cookies",
+      "description": "We may use third-party services such as analytics tools that may set their own cookies. These third parties have their own privacy and cookie policies, which we encourage you to review."
+    },
+    "updates": {
+      "heading": "Updates to This Policy",
+      "description": "We may update this Cookie Policy from time to time to reflect changes in technology or legal requirements. The 'Last Updated' date at the top of this page indicates when the policy was last revised."
+    },
+    "contact": {
+      "heading": "Contact Us",
+      "description": "If you have questions about our use of cookies, please contact us at:"
+    }
+  },
+  "CookieConsent": {
+    "message": "We use cookies to enhance your browsing experience and provide relevant information about properties. By continuing to use our website, you consent to our use of cookies.",
+    "accept": "Accept",
+    "reject": "Decline",
+    "privacyPolicy": "Privacy Policy",
+    "cookiePolicy": "Cookie Policy",
+    "acceptAria": "Accept cookies",
+    "rejectAria": "Decline cookies"
+  }
+}
