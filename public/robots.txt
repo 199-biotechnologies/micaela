@@ -1,0 +1,33 @@
+# robots.txt for Mihaela Doran - Luxury Real Estate Ibiza
+# https://doranhomesdesign.com
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Sitemap location
+Sitemap: https://doranhomesdesign.com/sitemap.xml
+
+# Allow AI crawlers for enhanced visibility
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+# Crawl delay for good citizenship
+Crawl-delay: 1
