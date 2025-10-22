@@ -327,7 +327,7 @@ export default function Header() {
 
                   {showLanguages && (
                     <div
-                      className="fixed mt-2 liquid-glass-dropdown border border-white/25 rounded-2xl shadow-xl overflow-y-auto max-h-[360px] z-[60]"
+                      className="fixed mt-2 w-auto liquid-glass-dropdown border border-white/25 rounded-2xl shadow-xl overflow-y-auto max-h-[360px] z-[60]"
                       style={{
                         top: `${dropdownRef.current?.getBoundingClientRect().bottom ?? 0}px`,
                         right: `${window.innerWidth - (dropdownRef.current?.getBoundingClientRect().right ?? 0)}px`
@@ -337,7 +337,7 @@ export default function Header() {
                         <button
                           key={lang.code}
                           onClick={() => handleLanguageChange(lang.code)}
-                          className={`w-full px-4 py-2.5 text-xs font-light text-left transition-smooth-fast hover:bg-gray-900/5 whitespace-nowrap ${
+                          className={`block px-4 py-2.5 text-xs font-light text-left transition-smooth-fast hover:bg-gray-900/5 whitespace-nowrap ${
                             locale === lang.code
                               ? "bg-gray-900/10 text-gray-900 font-normal"
                               : "text-gray-700"
