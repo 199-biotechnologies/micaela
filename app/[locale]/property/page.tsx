@@ -1,14 +1,18 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import BottomNav from "../../components/BottomNav";
 import WhatsAppButton from "../../components/WhatsAppButton";
+import GalleryModal from "../../components/GalleryModal";
 
 export default function TheProperty() {
   const t = useTranslations("PropertyPage");
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
 
   const galleryImages = [
     { src: "/images/gallery-1.jpg", titleKey: "gallery.image1", span: "col-span-2 row-span-2" },
@@ -20,9 +24,23 @@ export default function TheProperty() {
     { src: "/images/service3.jpg", titleKey: "gallery.image7", span: "col-span-1 row-span-1" },
   ];
 
+  const openModal = (index: number) => {
+    setSelectedImageIndex(index);
+    setModalOpen(true);
+  };
+
   return (
     <div className="min-h-screen bg-white">
       <Header />
+
+      {/* Gallery Modal */}
+      <GalleryModal
+        images={galleryImages}
+        initialIndex={selectedImageIndex}
+        isOpen={modalOpen}
+        onClose={() => setModalOpen(false)}
+        getTitle={(titleKey) => t(titleKey)}
+      />
 
       <main className="pt-20">
         {/* Hero Section */}
@@ -43,9 +61,10 @@ export default function TheProperty() {
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6 auto-rows-[280px]">
               {galleryImages.map((image, index) => (
-                <div
+                <button
                   key={index}
-                  className={`group relative overflow-hidden rounded-2xl bg-gray-100 ${image.span}`}
+                  onClick={() => openModal(index)}
+                  className={`group relative overflow-hidden rounded-2xl bg-gray-100 ${image.span} cursor-pointer`}
                 >
                   <Image
                     src={image.src}
@@ -54,15 +73,33 @@ export default function TheProperty() {
                     className="object-cover transition-smooth group-hover:scale-110"
                     quality={90}
                   />
-                  {/* Overlay with title */}
+                  {/* Overlay with title and expand hint */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0 opacity-0 group-hover:opacity-100 transition-smooth">
                     <div className="absolute bottom-6 left-6">
                       <p className="text-white font-light tracking-wide text-sm">
                         {t(image.titleKey)}
                       </p>
                     </div>
+                    {/* Expand icon */}
+                    <div className="absolute top-6 right-6">
+                      <div className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/20">
+                        <svg
+                          className="w-5 h-5 text-white"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={1.5}
+                            d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"
+                          />
+                        </svg>
+                      </div>
+                    </div>
                   </div>
-                </div>
+                </button>
               ))}
             </div>
           </div>
