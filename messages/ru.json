@@ -4,7 +4,6 @@
     "nav": {
       "home": "Главная",
       "property": "Недвижимость",
-      "layout": "Планировки",
       "about": "О нас",
       "contact": "Контакты"
     }
@@ -18,7 +17,6 @@
       "heading": "Быстрые ссылки",
       "home": "Главная",
       "theProperty": "Объект",
-      "layout": "Планировки",
       "about": "О нас",
       "contact": "Контакты"
     },
@@ -48,7 +46,8 @@
       "heading": {
         "line1": "Белый Ангел",
         "line2": "Таламанка"
-      }
+      },
+      "tagline": "Heaven in the Heart of Talamanca"
     },
     "services": {
       "heading": "Наша Экспертиза",

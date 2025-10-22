@@ -34,13 +34,18 @@ export default function Home() {
 
           {/* Hero Content - Centered with refined spacing */}
           <div className="relative h-full flex flex-col items-center justify-center text-white text-center px-6">
-            <div className="max-w-6xl animate-fade-in">
-              {/* Main headline - ALL CAPS, SAME SIZE */}
-              <h1 className="text-6xl md:text-8xl lg:text-9xl font-extralight tracking-[-0.04em] leading-[0.95] uppercase">
+            <div className="max-w-5xl animate-fade-in">
+              {/* Main headline - Smaller, refined */}
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-extralight tracking-[-0.02em] leading-[1.1] uppercase mb-6">
                 {t("hero.heading.line1")}
                 <br />
                 {t("hero.heading.line2")}
               </h1>
+
+              {/* Tagline - Smaller, elegant */}
+              <p className="text-lg md:text-xl lg:text-2xl font-light tracking-[0.15em] uppercase opacity-90">
+                {t("hero.tagline")}
+              </p>
 
               {/* CTA with premium animation */}
               <div className="mt-16">

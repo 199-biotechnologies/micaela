@@ -4,7 +4,6 @@
     "nav": {
       "home": "首页",
       "property": "房产",
-      "layout": "户型",
       "about": "关于我们",
       "contact": "联系方式"
     }
@@ -18,7 +17,6 @@
       "heading": "快速导航",
       "home": "首页",
       "theProperty": "房产详情",
-      "layout": "户型图",
       "about": "关于我们",
       "contact": "联系方式"
     },
@@ -48,7 +46,8 @@
       "heading": {
         "line1": "白天使",
         "line2": "塔拉曼卡"
-      }
+      },
+      "tagline": "Heaven in the Heart of Talamanca"
     },
     "services": {
       "heading": "我们的专业服务",

@@ -45,12 +45,6 @@ export default function Footer() {
                 className="text-xs text-gray-700 hover:text-gray-900 font-light tracking-[0.1em] uppercase transition-smooth-fast relative group w-fit"
               >
                 {t("quickLinks.theProperty")}
-              </Link>
-              <Link
-                href="/units"
-                className="text-xs text-gray-700 hover:text-gray-900 font-light tracking-[0.1em] uppercase transition-smooth-fast relative group w-fit"
-              >
-                {t("quickLinks.layout")}
                 <span className="absolute -bottom-1 left-0 w-0 h-px bg-gray-900 transition-all group-hover:w-full" />
               </Link>
               <Link

@@ -4,7 +4,6 @@
     "nav": {
       "home": "Acasă",
       "property": "Proprietatea",
-      "layout": "Planuri",
       "about": "Despre Noi",
       "contact": "Contact"
     }
@@ -18,7 +17,6 @@
       "heading": "Acces Rapid",
       "home": "Acasă",
       "theProperty": "Proprietatea",
-      "layout": "Planuri",
       "about": "Despre Noi",
       "contact": "Contact"
     },
@@ -48,7 +46,8 @@
       "heading": {
         "line1": "The White Angel",
         "line2": "Talamanca"
-      }
+      },
+      "tagline": "Heaven in the Heart of Talamanca"
     },
     "services": {
       "heading": "Expertiza Noastră",

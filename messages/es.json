@@ -4,7 +4,6 @@
     "nav": {
       "home": "Inicio",
       "property": "La Residencia",
-      "layout": "Tipologías",
       "about": "Nosotros",
       "contact": "Contacto"
     }
@@ -18,7 +17,6 @@
       "heading": "Acceso Rápido",
       "home": "Inicio",
       "theProperty": "La Residencia",
-      "layout": "Tipologías",
       "about": "Nosotros",
       "contact": "Contacto"
     },
@@ -48,7 +46,8 @@
       "heading": {
         "line1": "The White Angel",
         "line2": "Talamanca"
-      }
+      },
+      "tagline": "Heaven in the Heart of Talamanca"
     },
     "services": {
       "heading": "Nuestra Expertise",

@@ -4,7 +4,6 @@
     "nav": {
       "home": "Home",
       "property": "La Proprietà",
-      "layout": "Planimetria",
       "about": "Chi Siamo",
       "contact": "Contatti"
     }
@@ -18,7 +17,6 @@
       "heading": "Link Rapidi",
       "home": "Home",
       "theProperty": "La Proprietà",
-      "layout": "Planimetria",
       "about": "Chi Siamo",
       "contact": "Contatti"
     },
@@ -48,7 +46,8 @@
       "heading": {
         "line1": "The White Angel",
         "line2": "Talamanca"
-      }
+      },
+      "tagline": "Heaven in the Heart of Talamanca"
     },
     "services": {
       "heading": "La Nostra Expertise",

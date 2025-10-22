@@ -4,7 +4,6 @@
     "nav": {
       "home": "Home",
       "property": "Property",
-      "layout": "Layout",
       "about": "About",
       "contact": "Contact"
     }
@@ -18,7 +17,6 @@
       "heading": "Quick Links",
       "home": "Home",
       "theProperty": "The Property",
-      "layout": "Layout",
       "about": "About",
       "contact": "Contact"
     },
@@ -48,7 +46,8 @@
       "heading": {
         "line1": "The White Angel",
         "line2": "Talamanca"
-      }
+      },
+      "tagline": "Heaven in the Heart of Talamanca"
     },
     "services": {
       "heading": "Our Services",

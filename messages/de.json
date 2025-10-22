@@ -4,7 +4,6 @@
     "nav": {
       "home": "Startseite",
       "property": "Immobilie",
-      "layout": "Grundrisse",
       "about": "Über uns",
       "contact": "Kontakt"
     }
@@ -18,7 +17,6 @@
       "heading": "Schnellzugriff",
       "home": "Startseite",
       "theProperty": "Die Immobilie",
-      "layout": "Grundrisse",
       "about": "Über uns",
       "contact": "Kontakt"
     },
@@ -48,7 +46,8 @@
       "heading": {
         "line1": "The White Angel",
         "line2": "Talamanca"
-      }
+      },
+      "tagline": "Heaven in the Heart of Talamanca"
     },
     "services": {
       "heading": "Unsere Expertise",
