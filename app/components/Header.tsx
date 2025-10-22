@@ -200,72 +200,72 @@ export default function Header() {
       </header>
 
       {/* ========== DESKTOP HEADER (FLOATING CAPSULE) ========== */}
-      <div className="hidden md:block fixed top-6 left-0 right-0 z-50">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 flex justify-center">
-          {/* Capsule Container */}
-          <div className="relative">
-            {/* Liquid Glass Background */}
-            <div className="absolute inset-0 liquid-glass-header rounded-full shadow-2xl shadow-gray-900/10" />
-            {/* Gradient overlay for enhanced frosted look */}
-            <div className="absolute inset-0 bg-gradient-to-b from-white/30 via-white/10 to-transparent rounded-full pointer-events-none" />
-            {/* Top highlight shimmer */}
-            <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/60 to-transparent rounded-full pointer-events-none" />
+      <div className="hidden md:flex fixed top-6 left-0 right-0 z-50 justify-center px-6 lg:px-8">
+        {/* Capsule Container */}
+        <div className="relative">
+          {/* Liquid Glass Background */}
+          <div className="absolute inset-0 liquid-glass-header rounded-full shadow-2xl shadow-gray-900/10" />
+          {/* Gradient overlay for enhanced frosted look */}
+          <div className="absolute inset-0 bg-gradient-to-b from-white/30 via-white/10 to-transparent rounded-full pointer-events-none" />
+          {/* Top highlight shimmer */}
+          <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/60 to-transparent rounded-full pointer-events-none" />
 
-            {/* Content */}
-            <div className="relative flex items-center justify-between px-8 py-4 gap-12">
-              {/* Logo */}
-              <Link href="/" className="flex-shrink-0 transition-smooth-fast hover:opacity-70">
-                <Image
-                  src="/images/mihaela-logo.svg"
-                  alt={t("logoAlt")}
-                  width={180}
-                  height={54}
-                  priority
-                />
-              </Link>
+          {/* Content */}
+          <div className="relative flex items-center justify-between px-6 lg:px-8 py-3 lg:py-4 gap-8 lg:gap-12">
+            {/* Logo */}
+            <Link href="/" className="flex-shrink-0 transition-smooth-fast hover:opacity-70">
+              <Image
+                src="/images/mihaela-logo.svg"
+                alt={t("logoAlt")}
+                width={160}
+                height={48}
+                priority
+                className="lg:w-[180px] lg:h-[54px]"
+              />
+            </Link>
 
-              {/* Desktop Navigation */}
-              <nav className="flex items-center space-x-12">
+            {/* Desktop Navigation */}
+            <nav className="flex items-center space-x-4 lg:space-x-12">
                 <Link
                   href="/"
-                  className="text-xs text-gray-700 hover:text-gray-900 font-light tracking-[0.1em] uppercase transition-smooth-fast relative group"
+                  className="hidden lg:block text-xs text-gray-700 hover:text-gray-900 font-light tracking-[0.1em] uppercase transition-smooth-fast relative group"
                 >
                   {t("nav.home")}
                   <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-gray-900 opacity-0 transition-smooth group-hover:opacity-100" />
                 </Link>
                 <Link
                   href="/property"
-                  className="text-xs text-gray-700 hover:text-gray-900 font-light tracking-[0.1em] uppercase transition-smooth-fast relative group"
+                  className="text-xs text-gray-700 hover:text-gray-900 font-light tracking-[0.1em] uppercase transition-smooth-fast relative group whitespace-nowrap"
                 >
                   {t("nav.property")}
                   <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-gray-900 opacity-0 transition-smooth group-hover:opacity-100" />
                 </Link>
                 <Link
                   href="/units"
-                  className="text-xs text-gray-700 hover:text-gray-900 font-light tracking-[0.1em] uppercase transition-smooth-fast relative group"
+                  className="text-xs text-gray-700 hover:text-gray-900 font-light tracking-[0.1em] uppercase transition-smooth-fast relative group whitespace-nowrap"
                 >
                   {t("nav.layout")}
                   <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-gray-900 opacity-0 transition-smooth group-hover:opacity-100" />
                 </Link>
                 <Link
                   href="/about"
-                  className="text-xs text-gray-700 hover:text-gray-900 font-light tracking-[0.1em] uppercase transition-smooth-fast relative group"
+                  className="text-xs text-gray-700 hover:text-gray-900 font-light tracking-[0.1em] uppercase transition-smooth-fast relative group whitespace-nowrap"
                 >
                   {t("nav.about")}
                   <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-gray-900 opacity-0 transition-smooth group-hover:opacity-100" />
                 </Link>
                 <Link
                   href="/contact"
-                  className="px-6 py-2.5 text-xs font-light tracking-[0.1em] uppercase bg-gray-900 text-white rounded-full transition-smooth-fast hover:bg-gray-800 hover:shadow-lg hover:shadow-gray-900/25"
+                  className="px-4 lg:px-6 py-2 lg:py-2.5 text-xs font-light tracking-[0.1em] uppercase bg-gray-900 text-white rounded-full transition-smooth-fast hover:bg-gray-800 hover:shadow-lg hover:shadow-gray-900/25 whitespace-nowrap"
                 >
                   {t("nav.contact")}
                 </Link>
 
                 {/* Language Switcher */}
-                <div className="relative ml-4" ref={dropdownRef}>
+                <div className="relative" ref={dropdownRef}>
                   <button
                     onClick={() => setShowLanguages(!showLanguages)}
-                    className="px-4 py-2.5 text-xs font-light tracking-[0.1em] uppercase border border-gray-900/20 text-gray-900 rounded-full transition-smooth-fast hover:bg-gray-900/5 hover:border-gray-900 min-h-[44px]"
+                    className="px-3 lg:px-4 py-2 lg:py-2.5 text-xs font-light tracking-[0.1em] uppercase border border-gray-900/20 text-gray-900 rounded-full transition-smooth-fast hover:bg-gray-900/5 hover:border-gray-900 min-h-[40px] lg:min-h-[44px] whitespace-nowrap"
                     aria-label="Select language"
                     aria-expanded={showLanguages}
                     aria-haspopup="true"
@@ -295,7 +295,6 @@ export default function Header() {
               </nav>
             </div>
           </div>
-        </div>
       </div>
     </>
   );

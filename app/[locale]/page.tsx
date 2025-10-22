@@ -15,7 +15,7 @@ export default function Home() {
       <Header />
 
       {/* Main Content */}
-      <main className="pt-20">
+      <main>
         {/* Hero Section - Refined with subtle gradient overlay */}
         <section className="relative h-screen overflow-hidden">
           {/* Image with subtle zoom on load */}
