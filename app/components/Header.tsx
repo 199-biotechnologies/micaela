@@ -317,12 +317,19 @@ export default function Header() {
                     aria-label="Select language"
                     aria-expanded={showLanguages}
                     aria-haspopup="true"
+                    id="language-button-desktop"
                   >
                     {currentLanguage?.label}
                   </button>
 
                   {showLanguages && (
-                    <div className="absolute top-full right-0 mt-2 liquid-glass-dropdown border border-white/25 rounded-2xl shadow-xl overflow-hidden min-w-[100px] z-[60]">
+                    <div
+                      className="fixed mt-2 liquid-glass-dropdown border border-white/25 rounded-2xl shadow-xl overflow-hidden min-w-[100px] z-[60]"
+                      style={{
+                        top: `${dropdownRef.current?.getBoundingClientRect().bottom ?? 0}px`,
+                        right: `${window.innerWidth - (dropdownRef.current?.getBoundingClientRect().right ?? 0)}px`
+                      }}
+                    >
                       {languages.map((lang) => (
                         <button
                           key={lang.code}
