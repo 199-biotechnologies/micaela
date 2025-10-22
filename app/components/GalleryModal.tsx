@@ -56,16 +56,20 @@ export default function GalleryModal({
     // Set up next image layer
     setNextIndex(newIndex);
 
-    // Wait one frame for DOM to render, then trigger fade
-    animationFrameRef.current = requestAnimationFrame(() => {
-      setShowNext(true);
+    // Double RAF pattern for reliable CSS transitions (Vue.js pattern)
+    // First RAF: Browser registers DOM change
+    // Second RAF: Browser applies transition
+    requestAnimationFrame(() => {
+      animationFrameRef.current = requestAnimationFrame(() => {
+        setShowNext(true);
 
-      // Wait for crossfade to complete
-      transitionTimeoutRef.current = setTimeout(() => {
-        setDisplayIndex(newIndex);
-        setNextIndex(null);
-        setShowNext(false);
-      }, 450);
+        // Wait for crossfade to complete
+        transitionTimeoutRef.current = setTimeout(() => {
+          setDisplayIndex(newIndex);
+          setNextIndex(null);
+          setShowNext(false);
+        }, 450);
+      });
     });
   }, [nextIndex]);
 
