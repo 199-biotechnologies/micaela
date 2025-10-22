@@ -18,69 +18,56 @@ export default function GalleryModal({
   onClose,
   getTitle,
 }: GalleryModalProps) {
-  // displayIndex: What's currently visible (stable)
-  // targetIndex: What we're transitioning to (only during transition)
   const [displayIndex, setDisplayIndex] = useState(initialIndex);
-  const [targetIndex, setTargetIndex] = useState<number | null>(null);
+  const [nextIndex, setNextIndex] = useState<number | null>(null);
+  const [showNext, setShowNext] = useState(false);
   const [imagesLoaded, setImagesLoaded] = useState<Set<number>>(new Set([initialIndex]));
 
   const transitionTimeoutRef = useRef<NodeJS.Timeout | null>(null);
-  const loadCheckTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const animationFrameRef = useRef<number | null>(null);
 
-  // Update display index when initialIndex changes
+  // Reset on modal open
   useEffect(() => {
-    setDisplayIndex(initialIndex);
-    setTargetIndex(null);
-    setImagesLoaded(new Set([initialIndex]));
-  }, [initialIndex]);
+    if (isOpen) {
+      setDisplayIndex(initialIndex);
+      setNextIndex(null);
+      setShowNext(false);
+      setImagesLoaded(new Set([initialIndex]));
+    }
+  }, [isOpen, initialIndex]);
 
   // Mark image as loaded
   const handleImageLoad = useCallback((index: number) => {
     setImagesLoaded((prev) => new Set([...prev, index]));
   }, []);
 
-  // Clean up timeouts
+  // Clean up on unmount
   useEffect(() => {
     return () => {
       if (transitionTimeoutRef.current) clearTimeout(transitionTimeoutRef.current);
-      if (loadCheckTimeoutRef.current) clearTimeout(loadCheckTimeoutRef.current);
+      if (animationFrameRef.current) cancelAnimationFrame(animationFrameRef.current);
     };
   }, []);
 
-  // Navigate to specific index
+  // Navigate to new index
   const navigateToIndex = useCallback((newIndex: number) => {
-    if (targetIndex !== null) return; // Already transitioning
+    if (nextIndex !== null) return; // Already transitioning
 
-    // Start transition immediately
-    setTargetIndex(newIndex);
+    // Set up next image layer
+    setNextIndex(newIndex);
 
-    // Function to complete the transition
-    const completeTransition = () => {
-      // Wait for CSS crossfade to complete (400ms)
+    // Wait one frame for DOM to render, then trigger fade
+    animationFrameRef.current = requestAnimationFrame(() => {
+      setShowNext(true);
+
+      // Wait for crossfade to complete
       transitionTimeoutRef.current = setTimeout(() => {
         setDisplayIndex(newIndex);
-        // Keep target layer for one more frame to ensure smooth handoff
-        setTimeout(() => setTargetIndex(null), 50);
-      }, 400);
-    };
-
-    // If image is already loaded, start transition immediately
-    if (imagesLoaded.has(newIndex)) {
-      completeTransition();
-    } else {
-      // Wait for image to load (max 3 seconds)
-      const startTime = Date.now();
-      const checkInterval = setInterval(() => {
-        if (imagesLoaded.has(newIndex) || Date.now() - startTime > 3000) {
-          clearInterval(checkInterval);
-          completeTransition();
-        }
-      }, 50);
-
-      // Store reference for cleanup
-      loadCheckTimeoutRef.current = checkInterval as unknown as NodeJS.Timeout;
-    }
-  }, [targetIndex, imagesLoaded]);
+        setNextIndex(null);
+        setShowNext(false);
+      }, 450);
+    });
+  }, [nextIndex]);
 
   const goToNext = useCallback(() => {
     const newIndex = (displayIndex + 1) % images.length;
@@ -106,7 +93,7 @@ export default function GalleryModal({
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [isOpen, onClose, goToNext, goToPrevious]);
 
-  // Touch handling for swipe gestures
+  // Touch handling
   const [touchStart, setTouchStart] = useState(0);
   const [touchEnd, setTouchEnd] = useState(0);
 
@@ -123,14 +110,13 @@ export default function GalleryModal({
     if (touchStart - touchEnd < -75) goToPrevious();
   };
 
-  // Prevent body scroll when modal is open
+  // Prevent body scroll
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "";
     }
-
     return () => {
       document.body.style.overflow = "";
     };
@@ -138,14 +124,14 @@ export default function GalleryModal({
 
   if (!isOpen) return null;
 
-  const isTransitioning = targetIndex !== null;
+  const isTransitioning = nextIndex !== null;
 
   return (
     <div
       className="fixed inset-0 z-[100] flex items-center justify-center"
       onClick={onClose}
     >
-      {/* Backdrop with blur */}
+      {/* Backdrop */}
       <div className="absolute inset-0 bg-black/90 backdrop-blur-xl animate-fade-in" />
 
       {/* Close Button */}
@@ -154,27 +140,17 @@ export default function GalleryModal({
         className="absolute top-6 right-6 z-[102] w-12 h-12 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white/20 hover:scale-110 transition-smooth-fast"
         aria-label="Close gallery"
       >
-        <svg
-          className="w-6 h-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={1.5}
-            d="M6 18L18 6M6 6l12 12"
-          />
+        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M6 18L18 6M6 6l12 12" />
         </svg>
       </button>
 
-      {/* Image Counter */}
+      {/* Counter */}
       <div className="absolute bottom-6 left-6 z-[102] text-white/80 text-xs font-light tracking-[0.2em] uppercase">
         {displayIndex + 1} / {images.length}
       </div>
 
-      {/* Main Image Container */}
+      {/* Image Container */}
       <div
         className="relative z-[101] w-full h-full flex items-center justify-center px-20"
         onClick={(e) => e.stopPropagation()}
@@ -182,12 +158,11 @@ export default function GalleryModal({
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
       >
-        {/* Dual-layer crossfade system */}
         <div className="relative max-w-[90vw] max-h-[90vh] w-full h-full">
-          {/* Display layer - currently visible image (fades out when transitioning) */}
+          {/* Current display layer */}
           <div
             className={`absolute inset-0 transition-opacity duration-400 ease-out ${
-              isTransitioning ? "opacity-0" : "opacity-100"
+              showNext ? "opacity-0" : "opacity-100"
             }`}
           >
             <Image
@@ -201,28 +176,32 @@ export default function GalleryModal({
             />
           </div>
 
-          {/* Target layer - next image (fades in when transitioning) */}
-          {isTransitioning && targetIndex !== null && (
-            <div className="absolute inset-0 transition-opacity duration-400 ease-out opacity-100">
+          {/* Next layer (crossfades in) */}
+          {nextIndex !== null && (
+            <div
+              className={`absolute inset-0 transition-opacity duration-400 ease-out ${
+                showNext ? "opacity-100" : "opacity-0"
+              }`}
+            >
               <Image
-                src={images[targetIndex].src}
-                alt={getTitle(images[targetIndex].titleKey)}
+                src={images[nextIndex].src}
+                alt={getTitle(images[nextIndex].titleKey)}
                 fill
                 className="object-contain"
                 quality={100}
                 priority
-                onLoad={() => handleImageLoad(targetIndex)}
+                onLoad={() => handleImageLoad(nextIndex)}
               />
             </div>
           )}
 
-          {/* Preload adjacent images (hidden) */}
+          {/* Preload adjacent */}
           {!isTransitioning && (
             <>
               <div className="hidden">
                 <Image
                   src={images[(displayIndex + 1) % images.length].src}
-                  alt="Preload next"
+                  alt="Preload"
                   width={1920}
                   height={1080}
                   quality={100}
@@ -232,7 +211,7 @@ export default function GalleryModal({
               <div className="hidden">
                 <Image
                   src={images[(displayIndex - 1 + images.length) % images.length].src}
-                  alt="Preload previous"
+                  alt="Preload"
                   width={1920}
                   height={1080}
                   quality={100}
@@ -243,55 +222,33 @@ export default function GalleryModal({
           )}
         </div>
 
-        {/* Navigation Arrows - Desktop Only */}
+        {/* Navigation - Desktop */}
         <div className="hidden md:block">
-          {/* Previous Arrow */}
           <button
             onClick={(e) => {
               e.stopPropagation();
               goToPrevious();
             }}
             disabled={isTransitioning}
-            className="absolute left-6 top-1/2 -translate-y-1/2 w-14 h-14 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white/20 hover:scale-110 transition-smooth-fast disabled:opacity-50 disabled:cursor-not-allowed"
-            aria-label="Previous image"
+            className="absolute left-6 top-1/2 -translate-y-1/2 w-14 h-14 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white/20 hover:scale-110 transition-smooth-fast disabled:opacity-30 disabled:cursor-wait"
+            aria-label="Previous"
           >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={1.5}
-                d="M15 19l-7-7 7-7"
-              />
+            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 19l-7-7 7-7" />
             </svg>
           </button>
 
-          {/* Next Arrow */}
           <button
             onClick={(e) => {
               e.stopPropagation();
               goToNext();
             }}
             disabled={isTransitioning}
-            className="absolute right-6 top-1/2 -translate-y-1/2 w-14 h-14 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white/20 hover:scale-110 transition-smooth-fast disabled:opacity-50 disabled:cursor-not-allowed"
-            aria-label="Next image"
+            className="absolute right-6 top-1/2 -translate-y-1/2 w-14 h-14 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white/20 hover:scale-110 transition-smooth-fast disabled:opacity-30 disabled:cursor-wait"
+            aria-label="Next"
           >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={1.5}
-                d="M9 5l7 7-7 7"
-              />
+            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
             </svg>
           </button>
         </div>
