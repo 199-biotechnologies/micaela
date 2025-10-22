@@ -165,9 +165,11 @@ export default function GalleryModal({
         <div className="relative max-w-[90vw] max-h-[90vh] w-full h-full">
           {/* Current display layer */}
           <div
-            className={`absolute inset-0 transition-opacity duration-400 ease-out ${
-              showNext ? "opacity-0" : "opacity-100"
-            }`}
+            className="absolute inset-0"
+            style={{
+              transition: 'opacity 400ms ease-out',
+              opacity: showNext ? 0 : 1,
+            }}
           >
             <Image
               src={images[displayIndex].src}
@@ -183,9 +185,11 @@ export default function GalleryModal({
           {/* Next layer (crossfades in) */}
           {nextIndex !== null && (
             <div
-              className={`absolute inset-0 transition-opacity duration-400 ease-out ${
-                showNext ? "opacity-100" : "opacity-0"
-              }`}
+              className="absolute inset-0"
+              style={{
+                transition: 'opacity 400ms ease-out',
+                opacity: showNext ? 1 : 0,
+              }}
             >
               <Image
                 src={images[nextIndex].src}
