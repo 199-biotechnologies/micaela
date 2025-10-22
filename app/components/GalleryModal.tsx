@@ -63,12 +63,18 @@ export default function GalleryModal({
       animationFrameRef.current = requestAnimationFrame(() => {
         setShowNext(true);
 
-        // Wait for crossfade to complete
+        // Wait for crossfade to complete (400ms)
         transitionTimeoutRef.current = setTimeout(() => {
+          // First: Update display index (display layer now shows new image)
           setDisplayIndex(newIndex);
-          setNextIndex(null);
-          setShowNext(false);
-        }, 450);
+
+          // Then: Wait for display layer to fade back to opacity 1
+          // before removing target layer (prevent flash)
+          setTimeout(() => {
+            setNextIndex(null);
+            setShowNext(false);
+          }, 50);
+        }, 400);
       });
     });
   }, [nextIndex]);
