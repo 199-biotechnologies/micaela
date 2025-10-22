@@ -156,6 +156,19 @@
       "heading": "Emplazamiento de Excepción",
       "description": "A tan solo tres minutos a pie de la renombrada playa de Talamanca y del cosmopolita centro de Ibiza. The White Angel se sitúa en el epicentro de la isla, con acceso privilegiado a lo más selecto que Ibiza ofrece.",
       "imageAlt": "Piscina en azotea con vista a Ibiza"
+    },
+    "floorPlans": {
+      "heading": "Tipologías de Residencias",
+      "groundFloor": {
+        "heading": "PLANTA BAJA",
+        "details": "Piscina Privada • 4 Dormitorios • 185-320 m²",
+        "imageAlt": "Plano arquitectónico de una casa mostrando varias habitaciones, muebles y áreas exteriores."
+      },
+      "penthouse": {
+        "heading": "ÁTICO",
+        "details": "Piscina Privada • 3 Dormitorios • 197 m²",
+        "imageAlt": "Plano arquitectónico de una casa mostrando habitaciones, muebles, cocina, dormitorios, baños y patio exterior con piscina."
+      }
     }
   },
   "UnitsPage": {

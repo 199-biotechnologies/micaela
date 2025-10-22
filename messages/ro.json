@@ -156,6 +156,19 @@
       "heading": "Amplasament de Excepție",
       "description": "La numai trei minute de mers pe jos de renumita plajă Talamanca și de cosmopolitul oraș Ibiza. The White Angel se află în epicentrul insulei, cu acces privilegiat la tot ceea ce Ibiza oferă mai prestigios.",
       "imageAlt": "Piscină pe acoperiș cu priveliște către Ibiza"
+    },
+    "floorPlans": {
+      "heading": "Tipologii de Reședințe",
+      "groundFloor": {
+        "heading": "PARTER",
+        "details": "Piscină Privată • 4 Dormitoare • 185-320 m²",
+        "imageAlt": "Plan arhitectural al unei case care arată diverse camere, mobilier și zone exterioare."
+      },
+      "penthouse": {
+        "heading": "PENTHOUSE",
+        "details": "Piscină Privată • 3 Dormitoare • 197 m²",
+        "imageAlt": "Plan arhitectural al unei case care arată camere, mobilier, bucătărie, dormitoare, băi și patio exterior cu piscină."
+      }
     }
   },
   "UnitsPage": {

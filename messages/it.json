@@ -156,6 +156,19 @@
       "heading": "Posizione Privilegiata",
       "description": "A soli tre minuti a piedi dalla meravigliosa spiaggia di Talamanca e dalla vibrante città di Ibiza. The White Angel è situato nel cuore della città, con facile accesso a tutto ciò che Ibiza ha da offrire.",
       "imageAlt": "Piscina panoramica con vista su Ibiza"
+    },
+    "floorPlans": {
+      "heading": "Tipologie di Unità",
+      "groundFloor": {
+        "heading": "PIANO TERRA",
+        "details": "Piscina Privata • 4 Camere da Letto • 185-320 mq",
+        "imageAlt": "Planimetria architettonica di una casa che mostra varie stanze, arredi e aree esterne."
+      },
+      "penthouse": {
+        "heading": "ATTICO",
+        "details": "Piscina Privata • 3 Camere da Letto • 197 mq",
+        "imageAlt": "Planimetria architettonica di una casa che mostra stanze, arredi, cucina, camere da letto, bagni e patio esterno con piscina."
+      }
     }
   },
   "UnitsPage": {

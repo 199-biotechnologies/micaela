@@ -156,6 +156,19 @@
       "heading": "Prime Location",
       "description": "Only three minutes walking from the wonderful Talamanca beach and the vibrant city of Ibiza. The White Angel is located in the heart of the city, with easy access to everything Ibiza has to offer.",
       "imageAlt": "Rooftop pool overlooking Ibiza"
+    },
+    "floorPlans": {
+      "heading": "Unit Types",
+      "groundFloor": {
+        "heading": "GROUND FLOOR",
+        "details": "Private Pool • 4 Bedrooms • 185-320 sqm",
+        "imageAlt": "Architectural floor plan of a house showing various rooms, furniture, and outdoor areas."
+      },
+      "penthouse": {
+        "heading": "PENTHOUSE",
+        "details": "Private Pool • 3 Bedrooms • 197 sqm",
+        "imageAlt": "Architectural floor plan of a house showing rooms, furniture, kitchen, bedrooms, bathrooms, and outdoor patio with a swimming pool."
+      }
     }
   },
   "UnitsPage": {

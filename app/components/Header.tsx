@@ -228,13 +228,6 @@ export default function Header() {
                   {t("nav.property")}
                 </Link>
                 <Link
-                  href="/units"
-                  onClick={() => setShowMobileMenu(false)}
-                  className="block py-4 text-lg font-light tracking-[0.1em] uppercase text-gray-700 hover:text-gray-900 transition-smooth-fast border-b border-gray-200/50"
-                >
-                  {t("nav.layout")}
-                </Link>
-                <Link
                   href="/about"
                   onClick={() => setShowMobileMenu(false)}
                   className="block py-4 text-lg font-light tracking-[0.1em] uppercase text-gray-700 hover:text-gray-900 transition-smooth-fast border-b border-gray-200/50"
@@ -290,15 +283,6 @@ export default function Header() {
                   }`}
                 >
                   {t("nav.property")}
-                  <span className={`absolute -bottom-2 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full opacity-0 transition-smooth group-hover:opacity-100 ${isDarkBackground ? 'bg-white' : 'bg-gray-900'}`} />
-                </Link>
-                <Link
-                  href="/units"
-                  className={`text-xs font-light tracking-[0.1em] uppercase transition-all duration-300 relative group whitespace-nowrap ${
-                    isDarkBackground ? 'text-white hover:text-gray-200' : 'text-gray-700 hover:text-gray-900'
-                  }`}
-                >
-                  {t("nav.layout")}
                   <span className={`absolute -bottom-2 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full opacity-0 transition-smooth group-hover:opacity-100 ${isDarkBackground ? 'bg-white' : 'bg-gray-900'}`} />
                 </Link>
                 <Link
