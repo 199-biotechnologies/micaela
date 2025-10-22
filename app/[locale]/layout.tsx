@@ -15,23 +15,23 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Mihaela Doran",
+  title: "Mihaela Doran | Private Estates • Ibiza",
   description: "The White Angel Talamanca - Exclusive luxury real estate in Ibiza. Expert interior design and bespoke property development by Mihaela Doran.",
-  keywords: ["Mihaela Doran", "Ibiza luxury real estate", "White Angel Talamanca", "interior design Ibiza", "luxury property Ibiza"],
+  keywords: ["Mihaela Doran", "Ibiza luxury real estate", "White Angel Talamanca", "interior design Ibiza", "luxury property Ibiza", "private estates Ibiza"],
   authors: [{ name: "Mihaela Doran" }],
   creator: "Mihaela Doran",
   publisher: "Mihaela Doran",
   openGraph: {
-    title: "Mihaela Doran",
+    title: "Mihaela Doran | Private Estates • Ibiza",
     description: "The White Angel Talamanca - Exclusive luxury real estate in Ibiza",
     url: "https://doranhomesdesign.com",
-    siteName: "Mihaela Doran",
+    siteName: "Mihaela Doran | Private Estates • Ibiza",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mihaela Doran",
+    title: "Mihaela Doran | Private Estates • Ibiza",
     description: "The White Angel Talamanca - Exclusive luxury real estate in Ibiza",
     creator: "@doranhomesdesign",
   },
