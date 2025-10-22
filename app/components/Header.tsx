@@ -93,16 +93,33 @@ export default function Header() {
         </defs>
       </svg>
 
-      <header className="fixed top-0 left-0 right-0 z-50">
-        {/* Liquid Glass Frosted Effect */}
-        <div className="absolute inset-0 liquid-glass-header border-b border-white/25 shadow-lg shadow-gray-900/5" />
-        {/* Gradient overlay for enhanced frosted look */}
-        <div className="absolute inset-0 bg-gradient-to-b from-white/30 via-white/10 to-transparent pointer-events-none" />
-        {/* Top highlight shimmer */}
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/60 to-transparent pointer-events-none" />
+      <header className="fixed top-0 left-0 right-0 z-50 md:top-6 md:left-0 md:right-0">
+        {/* Mobile: Full-width bar */}
+        <div className="md:hidden">
+          {/* Liquid Glass Frosted Effect */}
+          <div className="absolute inset-0 liquid-glass-header border-b border-white/25 shadow-lg shadow-gray-900/5" />
+          {/* Gradient overlay for enhanced frosted look */}
+          <div className="absolute inset-0 bg-gradient-to-b from-white/30 via-white/10 to-transparent pointer-events-none" />
+          {/* Top highlight shimmer */}
+          <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/60 to-transparent pointer-events-none" />
+        </div>
+
+        {/* Desktop: Floating oval */}
+        <div className="hidden md:block absolute inset-0">
+          <div className="max-w-7xl mx-auto px-6 lg:px-8 h-full flex items-center justify-center">
+            <div className="relative w-full">
+              {/* Oval background with liquid glass */}
+              <div className="absolute inset-0 liquid-glass-header rounded-full shadow-2xl shadow-gray-900/10" />
+              {/* Gradient overlay for enhanced frosted look */}
+              <div className="absolute inset-0 bg-gradient-to-b from-white/30 via-white/10 to-transparent rounded-full pointer-events-none" />
+              {/* Top highlight shimmer */}
+              <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/60 to-transparent rounded-full pointer-events-none" />
+            </div>
+          </div>
+        </div>
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="flex justify-between items-center py-6">
+        <div className="flex justify-between items-center py-6 md:py-4">
           <div className="flex-shrink-0">
             <Link href="/" className="transition-smooth-fast hover:opacity-70">
               <Image
