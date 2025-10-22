@@ -12,7 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: 'cookie-policy', priority: 0.5, changeFrequency: 'yearly' as const },
   ];
 
-  const baseUrl = 'https://doranhomesdesign.com';
+  const baseUrl = 'https://mihaeladoran.com';
   const currentDate = new Date();
 
   return locales.flatMap(locale =>
