@@ -63,9 +63,43 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50">
-      {/* Glassmorphism effect */}
-      <div className="absolute inset-0 bg-white/70 backdrop-blur-xl border-b border-white/20 shadow-sm shadow-gray-900/5" />
+    <>
+      {/* SVG Filter Definition for Liquid Glass Effect */}
+      <svg className="absolute w-0 h-0" aria-hidden="true">
+        <defs>
+          <filter id="liquid-glass-filter" colorInterpolationFilters="sRGB">
+            {/* Subtle turbulence for organic distortion */}
+            <feTurbulence type="fractalNoise" baseFrequency="0.008 0.012" numOctaves="3" seed="2" result="noise"/>
+            {/* Light displacement for glass refraction */}
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="4" xChannelSelector="R" yChannelSelector="G" result="displace"/>
+            {/* Gaussian blur for frosted effect */}
+            <feGaussianBlur in="displace" stdDeviation="0.5" result="blur"/>
+            {/* Enhanced color saturation */}
+            <feColorMatrix in="blur" type="saturate" values="1.4" result="saturate"/>
+            {/* Subtle chromatic aberration */}
+            <feComponentTransfer in="saturate" result="chromatic">
+              <feFuncR type="linear" slope="1.02" intercept="0.01"/>
+              <feFuncG type="linear" slope="0.98" intercept="0"/>
+              <feFuncB type="linear" slope="1.01" intercept="0.01"/>
+            </feComponentTransfer>
+            {/* Specular lighting for glass highlights */}
+            <feSpecularLighting in="chromatic" surfaceScale="3" specularConstant="0.5" specularExponent="15" lightingColor="#ffffff" result="specular">
+              <fePointLight x="-5000" y="-8000" z="15000"/>
+            </feSpecularLighting>
+            {/* Blend specular with source */}
+            <feComposite in="chromatic" in2="specular" operator="arithmetic" k1="0" k2="1" k3="0.15" k4="0" result="composite"/>
+            <feBlend in="composite" in2="SourceGraphic" mode="normal"/>
+          </filter>
+        </defs>
+      </svg>
+
+      <header className="fixed top-0 left-0 right-0 z-50">
+        {/* Liquid Glass Frosted Effect */}
+        <div className="absolute inset-0 liquid-glass-header border-b border-white/25 shadow-lg shadow-gray-900/5" />
+        {/* Gradient overlay for enhanced frosted look */}
+        <div className="absolute inset-0 bg-gradient-to-b from-white/30 via-white/10 to-transparent pointer-events-none" />
+        {/* Top highlight shimmer */}
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/60 to-transparent pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex justify-between items-center py-6">
@@ -143,7 +177,7 @@ export default function Header() {
               </button>
 
               {showLanguages && (
-                <div className="absolute top-full right-0 mt-2 bg-white/90 backdrop-blur-xl border border-gray-900/20 rounded-2xl shadow-lg overflow-hidden min-w-[100px] z-[60]">
+                <div className="absolute top-full right-0 mt-2 liquid-glass-dropdown border border-white/25 rounded-2xl shadow-xl overflow-hidden min-w-[100px] z-[60]">
                   {languages.map((lang) => (
                     <button
                       key={lang.code}
@@ -233,5 +267,6 @@ export default function Header() {
         </div>
       )}
     </header>
+    </>
   );
 }
