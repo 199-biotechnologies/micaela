@@ -327,7 +327,7 @@ export default function Header() {
 
                   {showLanguages && (
                     <div
-                      className="fixed mt-2 w-auto liquid-glass-dropdown border border-white/25 rounded-2xl shadow-xl overflow-y-auto max-h-[360px] z-[60]"
+                      className="fixed mt-2 w-auto liquid-glass-dropdown border border-white/25 rounded-2xl shadow-xl z-[60]"
                       style={{
                         top: `${dropdownRef.current?.getBoundingClientRect().bottom ?? 0}px`,
                         right: `${window.innerWidth - (dropdownRef.current?.getBoundingClientRect().right ?? 0)}px`
@@ -337,14 +337,24 @@ export default function Header() {
                         <button
                           key={lang.code}
                           onClick={() => handleLanguageChange(lang.code)}
-                          className={`block px-4 py-2.5 text-xs font-light text-left transition-smooth-fast hover:bg-gray-900/5 whitespace-nowrap ${
+                          className={`flex items-center justify-between gap-8 px-4 py-2.5 text-xs font-light transition-smooth-fast hover:bg-gray-900/5 w-full min-w-[180px] ${
                             locale === lang.code
-                              ? "bg-gray-900/10 text-gray-900 font-normal"
+                              ? "text-gray-900 font-normal"
                               : "text-gray-700"
                           }`}
                           aria-current={locale === lang.code ? "true" : undefined}
                         >
-                          {lang.name}
+                          <span className="flex items-center gap-3">
+                            {locale === lang.code ? (
+                              <svg className="w-3 h-3 text-gray-900" fill="currentColor" viewBox="0 0 20 20">
+                                <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                              </svg>
+                            ) : (
+                              <span className="w-3" />
+                            )}
+                            <span className="text-gray-900 font-normal">{lang.label}</span>
+                          </span>
+                          <span className="text-gray-700">{lang.name}</span>
                         </button>
                       ))}
                     </div>
