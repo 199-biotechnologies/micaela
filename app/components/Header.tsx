@@ -242,14 +242,14 @@ export default function Header() {
 
       {/* ========== DESKTOP HEADER (FLOATING CAPSULE) ========== */}
       <div ref={headerRef} className="hidden md:inline-flex fixed top-6 left-0 right-0 z-50 justify-center px-6 lg:px-8">
-        {/* Capsule Container */}
-        <div className="relative transition-all duration-300">
+        {/* Capsule Container - overflow-hidden clips all internal effects to rounded boundary */}
+        <div className="relative transition-all duration-300 overflow-hidden rounded-full shadow-2xl shadow-gray-900/10">
           {/* Liquid Glass Background */}
-          <div className="absolute inset-0 liquid-glass-header rounded-full shadow-2xl shadow-gray-900/10" />
+          <div className="absolute inset-0 liquid-glass-header" />
           {/* Gradient overlay for enhanced frosted look */}
-          <div className="absolute inset-0 bg-gradient-to-b from-white/30 via-white/10 to-transparent rounded-full pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-b from-white/30 via-white/10 to-transparent pointer-events-none" />
           {/* Top highlight shimmer */}
-          <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/60 to-transparent rounded-full pointer-events-none" />
+          <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/60 to-transparent pointer-events-none" />
 
           {/* Content */}
           <div className="relative flex items-center justify-between px-6 lg:px-8 py-3 lg:py-4 gap-8 lg:gap-12">
