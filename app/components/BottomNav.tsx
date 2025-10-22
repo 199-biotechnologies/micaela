@@ -82,23 +82,21 @@ export default function BottomNav() {
 
           {/* Language Dropdown - Opens Upward */}
           {showLanguages && (
-            <div className="absolute bottom-full right-0 mb-2 bg-white/95 backdrop-blur-xl border border-gray-900/20 rounded-2xl shadow-xl overflow-hidden min-w-[120px] animate-slideUp">
-              <div className="max-h-[280px] overflow-y-auto">
-                {languages.map((lang) => (
-                  <button
-                    key={lang.code}
-                    onClick={() => handleLanguageChange(lang.code)}
-                    className={`w-full px-4 py-3 text-xs font-light tracking-[0.1em] uppercase text-left transition-smooth-fast hover:bg-gray-900/5 min-h-[48px] flex items-center ${
-                      locale === lang.code
-                        ? "bg-gray-900/10 text-gray-900"
-                        : "text-gray-700"
-                    }`}
-                    aria-current={locale === lang.code ? "true" : undefined}
-                  >
-                    {lang.label}
-                  </button>
-                ))}
-              </div>
+            <div className="absolute bottom-full right-0 mb-2 bg-white/95 backdrop-blur-xl border border-gray-900/20 rounded-2xl shadow-xl overflow-y-auto max-h-[320px] animate-slideUp">
+              {languages.map((lang) => (
+                <button
+                  key={lang.code}
+                  onClick={() => handleLanguageChange(lang.code)}
+                  className={`w-full px-4 py-3 text-xs font-light text-left transition-smooth-fast hover:bg-gray-900/5 min-h-[48px] flex items-center whitespace-nowrap ${
+                    locale === lang.code
+                      ? "bg-gray-900/10 text-gray-900 font-normal"
+                      : "text-gray-700"
+                  }`}
+                  aria-current={locale === lang.code ? "true" : undefined}
+                >
+                  {lang.name}
+                </button>
+              ))}
             </div>
           )}
         </div>
