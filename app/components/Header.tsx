@@ -273,7 +273,7 @@ export default function Header() {
                 <Link
                   href="/"
                   className={`hidden lg:block text-xs font-light tracking-[0.1em] uppercase transition-all duration-300 relative group ${
-                    isDarkBackground ? 'text-white hover:text-gray-200' : 'text-gray-700 hover:text-gray-900'
+                    isDarkBackground ? 'text-white hover:text-gray-200' : 'text-gray-900 hover:text-gray-700'
                   }`}
                 >
                   {t("nav.home")}
@@ -282,7 +282,7 @@ export default function Header() {
                 <Link
                   href="/property"
                   className={`text-xs font-light tracking-[0.1em] uppercase transition-all duration-300 relative group whitespace-nowrap ${
-                    isDarkBackground ? 'text-white hover:text-gray-200' : 'text-gray-700 hover:text-gray-900'
+                    isDarkBackground ? 'text-white hover:text-gray-200' : 'text-gray-900 hover:text-gray-700'
                   }`}
                 >
                   {t("nav.property")}
@@ -291,7 +291,7 @@ export default function Header() {
                 <Link
                   href="/about"
                   className={`text-xs font-light tracking-[0.1em] uppercase transition-all duration-300 relative group whitespace-nowrap ${
-                    isDarkBackground ? 'text-white hover:text-gray-200' : 'text-gray-700 hover:text-gray-900'
+                    isDarkBackground ? 'text-white hover:text-gray-200' : 'text-gray-900 hover:text-gray-700'
                   }`}
                 >
                   {t("nav.about")}
@@ -327,7 +327,7 @@ export default function Header() {
 
                   {showLanguages && (
                     <div
-                      className="fixed mt-2 w-auto liquid-glass-dropdown border border-white/25 rounded-2xl shadow-xl z-[60]"
+                      className="fixed mt-2 w-auto bg-white/95 backdrop-blur-xl border border-gray-200/50 rounded-2xl shadow-lg z-[60]"
                       style={{
                         top: `${dropdownRef.current?.getBoundingClientRect().bottom ?? 0}px`,
                         right: `${window.innerWidth - (dropdownRef.current?.getBoundingClientRect().right ?? 0)}px`
