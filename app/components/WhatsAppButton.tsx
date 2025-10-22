@@ -7,9 +7,13 @@ export default function WhatsAppButton() {
   const [isHovered, setIsHovered] = useState(false);
   const t = useTranslations("WhatsAppButton");
 
+  // Pre-filled message for better desktop experience
+  const message = encodeURIComponent("Hello, I'm interested in The White Angel Talamanca luxury property.");
+  const whatsappUrl = `https://wa.me/34671478820?text=${message}`;
+
   return (
     <a
-      href="https://wa.me/34671478820"
+      href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
       className="inline-flex items-center justify-center group"
