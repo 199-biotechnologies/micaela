@@ -241,7 +241,7 @@ export default function Header() {
       </header>
 
       {/* ========== DESKTOP HEADER (FLOATING CAPSULE) ========== */}
-      <div ref={headerRef} className="hidden md:flex fixed top-6 left-0 right-0 z-50 justify-center px-6 lg:px-8">
+      <div ref={headerRef} className="hidden md:inline-flex fixed top-6 left-0 right-0 z-50 justify-center px-6 lg:px-8">
         {/* Capsule Container */}
         <div className="relative transition-all duration-300">
           {/* Liquid Glass Background */}
