@@ -19,27 +19,95 @@ export default function GalleryModal({
   getTitle,
 }: GalleryModalProps) {
   const [currentIndex, setCurrentIndex] = useState(initialIndex);
-  const [isAnimating, setIsAnimating] = useState(false);
+  const [nextIndex, setNextIndex] = useState(initialIndex);
+  const [isTransitioning, setIsTransitioning] = useState(false);
+  const [imagesLoaded, setImagesLoaded] = useState<Set<number>>(new Set([initialIndex]));
+  const [isLoading, setIsLoading] = useState(false);
 
-  // Update current index when initialIndex changes
+  // Update indices when initialIndex changes
   useEffect(() => {
     setCurrentIndex(initialIndex);
+    setNextIndex(initialIndex);
+    setImagesLoaded(new Set([initialIndex]));
   }, [initialIndex]);
 
-  // Navigation functions
+  // Mark image as loaded
+  const handleImageLoad = useCallback((index: number) => {
+    setImagesLoaded((prev) => new Set([...prev, index]));
+  }, []);
+
+  // Navigation functions with proper loading
   const goToNext = useCallback(() => {
-    if (isAnimating) return;
-    setIsAnimating(true);
-    setCurrentIndex((prev) => (prev + 1) % images.length);
-    setTimeout(() => setIsAnimating(false), 300);
-  }, [images.length, isAnimating]);
+    if (isTransitioning || isLoading) return;
+
+    const targetIndex = (currentIndex + 1) % images.length;
+
+    // If image isn't loaded yet, show loading state
+    if (!imagesLoaded.has(targetIndex)) {
+      setIsLoading(true);
+    }
+
+    setNextIndex(targetIndex);
+    setIsTransitioning(true);
+
+    // Wait for image to load, then transition
+    const checkLoaded = setInterval(() => {
+      if (imagesLoaded.has(targetIndex)) {
+        clearInterval(checkLoaded);
+        setIsLoading(false);
+
+        // Crossfade duration
+        setTimeout(() => {
+          setCurrentIndex(targetIndex);
+          setIsTransitioning(false);
+        }, 400);
+      }
+    }, 50);
+
+    // Timeout fallback
+    setTimeout(() => {
+      clearInterval(checkLoaded);
+      setIsLoading(false);
+      setCurrentIndex(targetIndex);
+      setIsTransitioning(false);
+    }, 2000);
+  }, [images.length, currentIndex, isTransitioning, isLoading, imagesLoaded]);
 
   const goToPrevious = useCallback(() => {
-    if (isAnimating) return;
-    setIsAnimating(true);
-    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
-    setTimeout(() => setIsAnimating(false), 300);
-  }, [images.length, isAnimating]);
+    if (isTransitioning || isLoading) return;
+
+    const targetIndex = (currentIndex - 1 + images.length) % images.length;
+
+    // If image isn't loaded yet, show loading state
+    if (!imagesLoaded.has(targetIndex)) {
+      setIsLoading(true);
+    }
+
+    setNextIndex(targetIndex);
+    setIsTransitioning(true);
+
+    // Wait for image to load, then transition
+    const checkLoaded = setInterval(() => {
+      if (imagesLoaded.has(targetIndex)) {
+        clearInterval(checkLoaded);
+        setIsLoading(false);
+
+        // Crossfade duration
+        setTimeout(() => {
+          setCurrentIndex(targetIndex);
+          setIsTransitioning(false);
+        }, 400);
+      }
+    }, 50);
+
+    // Timeout fallback
+    setTimeout(() => {
+      clearInterval(checkLoaded);
+      setIsLoading(false);
+      setCurrentIndex(targetIndex);
+      setIsTransitioning(false);
+    }, 2000);
+  }, [images.length, currentIndex, isTransitioning, isLoading, imagesLoaded]);
 
   // Keyboard navigation
   useEffect(() => {
@@ -136,20 +204,71 @@ export default function GalleryModal({
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
       >
-        {/* Image */}
-        <div
-          className={`relative max-w-[90vw] max-h-[90vh] w-full h-full transition-all duration-300 ${
-            isAnimating ? "opacity-0 scale-95" : "opacity-100 scale-100"
-          }`}
-        >
-          <Image
-            src={images[currentIndex].src}
-            alt={getTitle(images[currentIndex].titleKey)}
-            fill
-            className="object-contain"
-            quality={100}
-            priority
-          />
+        {/* Dual-layer crossfade system */}
+        <div className="relative max-w-[90vw] max-h-[90vh] w-full h-full">
+          {/* Current image (stays visible during transition) */}
+          <div
+            className={`absolute inset-0 transition-opacity duration-400 ease-out ${
+              isTransitioning ? "opacity-0" : "opacity-100"
+            }`}
+          >
+            <Image
+              src={images[currentIndex].src}
+              alt={getTitle(images[currentIndex].titleKey)}
+              fill
+              className="object-contain"
+              quality={100}
+              priority
+              onLoad={() => handleImageLoad(currentIndex)}
+            />
+          </div>
+
+          {/* Next image (fades in when transitioning) */}
+          {isTransitioning && (
+            <div
+              className={`absolute inset-0 transition-opacity duration-400 ease-out ${
+                isTransitioning ? "opacity-100" : "opacity-0"
+              }`}
+            >
+              <Image
+                src={images[nextIndex].src}
+                alt={getTitle(images[nextIndex].titleKey)}
+                fill
+                className="object-contain"
+                quality={100}
+                priority
+                onLoad={() => handleImageLoad(nextIndex)}
+              />
+            </div>
+          )}
+
+          {/* Preload adjacent images */}
+          {!isTransitioning && (
+            <>
+              {/* Preload next */}
+              <div className="hidden">
+                <Image
+                  src={images[(currentIndex + 1) % images.length].src}
+                  alt="Preload next"
+                  width={1920}
+                  height={1080}
+                  quality={100}
+                  onLoad={() => handleImageLoad((currentIndex + 1) % images.length)}
+                />
+              </div>
+              {/* Preload previous */}
+              <div className="hidden">
+                <Image
+                  src={images[(currentIndex - 1 + images.length) % images.length].src}
+                  alt="Preload previous"
+                  width={1920}
+                  height={1080}
+                  quality={100}
+                  onLoad={() => handleImageLoad((currentIndex - 1 + images.length) % images.length)}
+                />
+              </div>
+            </>
+          )}
         </div>
 
         {/* Navigation Arrows - Desktop Only */}
@@ -160,23 +279,45 @@ export default function GalleryModal({
               e.stopPropagation();
               goToPrevious();
             }}
-            disabled={isAnimating}
+            disabled={isTransitioning || isLoading}
             className="absolute left-6 top-1/2 -translate-y-1/2 w-14 h-14 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white/20 hover:scale-110 transition-smooth-fast disabled:opacity-50 disabled:cursor-not-allowed"
             aria-label="Previous image"
           >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={1.5}
-                d="M15 19l-7-7 7-7"
-              />
-            </svg>
+            {isLoading && nextIndex === (currentIndex - 1 + images.length) % images.length ? (
+              <svg
+                className="w-5 h-5 animate-spin"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <circle
+                  className="opacity-25"
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  strokeWidth="3"
+                />
+                <path
+                  className="opacity-75"
+                  fill="currentColor"
+                  d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                />
+              </svg>
+            ) : (
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={1.5}
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+            )}
           </button>
 
           {/* Next Arrow */}
@@ -185,23 +326,45 @@ export default function GalleryModal({
               e.stopPropagation();
               goToNext();
             }}
-            disabled={isAnimating}
+            disabled={isTransitioning || isLoading}
             className="absolute right-6 top-1/2 -translate-y-1/2 w-14 h-14 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white/20 hover:scale-110 transition-smooth-fast disabled:opacity-50 disabled:cursor-not-allowed"
             aria-label="Next image"
           >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={1.5}
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
+            {isLoading && nextIndex === (currentIndex + 1) % images.length ? (
+              <svg
+                className="w-5 h-5 animate-spin"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <circle
+                  className="opacity-25"
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  strokeWidth="3"
+                />
+                <path
+                  className="opacity-75"
+                  fill="currentColor"
+                  d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                />
+              </svg>
+            ) : (
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={1.5}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            )}
           </button>
         </div>
       </div>
