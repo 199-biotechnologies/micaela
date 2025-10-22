@@ -13,7 +13,9 @@ export default function Header() {
   const router = useRouter();
   const [showLanguages, setShowLanguages] = useState(false);
   const [showMobileMenu, setShowMobileMenu] = useState(false);
+  const [isDarkBackground, setIsDarkBackground] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const headerRef = useRef<HTMLDivElement>(null);
 
   // Close dropdown when clicking outside
   useEffect(() => {
@@ -43,6 +45,52 @@ export default function Header() {
       document.body.style.overflow = 'unset';
     };
   }, [showMobileMenu]);
+
+  // Detect dark backgrounds and switch text/logo color
+  useEffect(() => {
+    if (typeof window === 'undefined' || !headerRef.current) return;
+
+    const checkBackgroundBrightness = () => {
+      if (!headerRef.current) return;
+
+      const headerRect = headerRef.current.getBoundingClientRect();
+      const centerX = headerRect.left + headerRect.width / 2;
+      const centerY = headerRect.top + headerRect.height / 2;
+
+      // Get element behind header center
+      const elements = document.elementsFromPoint(centerX, centerY);
+      // Skip header itself and find first content element
+      const contentElement = elements.find(el => !el.closest('header') && !el.closest('nav'));
+
+      if (contentElement) {
+        const style = window.getComputedStyle(contentElement);
+        const bgColor = style.backgroundColor;
+        const bgImage = style.backgroundImage;
+
+        // Check if there's a dark background color or image
+        if (bgImage && bgImage !== 'none') {
+          // If there's a background image, assume it might be dark
+          setIsDarkBackground(true);
+        } else if (bgColor && bgColor !== 'rgba(0, 0, 0, 0)' && bgColor !== 'transparent') {
+          // Calculate brightness from RGB
+          const rgb = bgColor.match(/\d+/g);
+          if (rgb) {
+            const brightness = (parseInt(rgb[0]) * 299 + parseInt(rgb[1]) * 587 + parseInt(rgb[2]) * 114) / 1000;
+            setIsDarkBackground(brightness < 128);
+          }
+        }
+      }
+    };
+
+    checkBackgroundBrightness();
+    window.addEventListener('scroll', checkBackgroundBrightness);
+    window.addEventListener('resize', checkBackgroundBrightness);
+
+    return () => {
+      window.removeEventListener('scroll', checkBackgroundBrightness);
+      window.removeEventListener('resize', checkBackgroundBrightness);
+    };
+  }, []);
 
   const languages = [
     { code: "en", label: "EN", name: "English" },
@@ -200,9 +248,9 @@ export default function Header() {
       </header>
 
       {/* ========== DESKTOP HEADER (FLOATING CAPSULE) ========== */}
-      <div className="hidden md:flex fixed top-6 left-0 right-0 z-50 justify-center px-6 lg:px-8">
+      <div ref={headerRef} className="hidden md:flex fixed top-6 left-0 right-0 z-50 justify-center px-6 lg:px-8">
         {/* Capsule Container */}
-        <div className="relative">
+        <div className="relative transition-all duration-300">
           {/* Liquid Glass Background */}
           <div className="absolute inset-0 liquid-glass-header rounded-full shadow-2xl shadow-gray-900/10" />
           {/* Gradient overlay for enhanced frosted look */}
@@ -220,7 +268,7 @@ export default function Header() {
                 width={160}
                 height={48}
                 priority
-                className="lg:w-[180px] lg:h-[54px]"
+                className={`lg:w-[180px] lg:h-[54px] transition-all duration-300 ${isDarkBackground ? 'brightness-0 invert' : ''}`}
               />
             </Link>
 
@@ -228,35 +276,47 @@ export default function Header() {
             <nav className="flex items-center space-x-4 lg:space-x-12">
                 <Link
                   href="/"
-                  className="hidden lg:block text-xs text-gray-700 hover:text-gray-900 font-light tracking-[0.1em] uppercase transition-smooth-fast relative group"
+                  className={`hidden lg:block text-xs font-light tracking-[0.1em] uppercase transition-all duration-300 relative group ${
+                    isDarkBackground ? 'text-white hover:text-gray-200' : 'text-gray-700 hover:text-gray-900'
+                  }`}
                 >
                   {t("nav.home")}
-                  <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-gray-900 opacity-0 transition-smooth group-hover:opacity-100" />
+                  <span className={`absolute -bottom-2 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full opacity-0 transition-smooth group-hover:opacity-100 ${isDarkBackground ? 'bg-white' : 'bg-gray-900'}`} />
                 </Link>
                 <Link
                   href="/property"
-                  className="text-xs text-gray-700 hover:text-gray-900 font-light tracking-[0.1em] uppercase transition-smooth-fast relative group whitespace-nowrap"
+                  className={`text-xs font-light tracking-[0.1em] uppercase transition-all duration-300 relative group whitespace-nowrap ${
+                    isDarkBackground ? 'text-white hover:text-gray-200' : 'text-gray-700 hover:text-gray-900'
+                  }`}
                 >
                   {t("nav.property")}
-                  <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-gray-900 opacity-0 transition-smooth group-hover:opacity-100" />
+                  <span className={`absolute -bottom-2 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full opacity-0 transition-smooth group-hover:opacity-100 ${isDarkBackground ? 'bg-white' : 'bg-gray-900'}`} />
                 </Link>
                 <Link
                   href="/units"
-                  className="text-xs text-gray-700 hover:text-gray-900 font-light tracking-[0.1em] uppercase transition-smooth-fast relative group whitespace-nowrap"
+                  className={`text-xs font-light tracking-[0.1em] uppercase transition-all duration-300 relative group whitespace-nowrap ${
+                    isDarkBackground ? 'text-white hover:text-gray-200' : 'text-gray-700 hover:text-gray-900'
+                  }`}
                 >
                   {t("nav.layout")}
-                  <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-gray-900 opacity-0 transition-smooth group-hover:opacity-100" />
+                  <span className={`absolute -bottom-2 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full opacity-0 transition-smooth group-hover:opacity-100 ${isDarkBackground ? 'bg-white' : 'bg-gray-900'}`} />
                 </Link>
                 <Link
                   href="/about"
-                  className="text-xs text-gray-700 hover:text-gray-900 font-light tracking-[0.1em] uppercase transition-smooth-fast relative group whitespace-nowrap"
+                  className={`text-xs font-light tracking-[0.1em] uppercase transition-all duration-300 relative group whitespace-nowrap ${
+                    isDarkBackground ? 'text-white hover:text-gray-200' : 'text-gray-700 hover:text-gray-900'
+                  }`}
                 >
                   {t("nav.about")}
-                  <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-gray-900 opacity-0 transition-smooth group-hover:opacity-100" />
+                  <span className={`absolute -bottom-2 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full opacity-0 transition-smooth group-hover:opacity-100 ${isDarkBackground ? 'bg-white' : 'bg-gray-900'}`} />
                 </Link>
                 <Link
                   href="/contact"
-                  className="px-4 lg:px-6 py-2 lg:py-2.5 text-xs font-light tracking-[0.1em] uppercase bg-gray-900 text-white rounded-full transition-smooth-fast hover:bg-gray-800 hover:shadow-lg hover:shadow-gray-900/25 whitespace-nowrap"
+                  className={`px-4 lg:px-6 py-2 lg:py-2.5 text-xs font-light tracking-[0.1em] uppercase rounded-full transition-all duration-300 whitespace-nowrap ${
+                    isDarkBackground
+                      ? 'bg-white text-gray-900 hover:bg-gray-100 hover:shadow-lg hover:shadow-white/25'
+                      : 'bg-gray-900 text-white hover:bg-gray-800 hover:shadow-lg hover:shadow-gray-900/25'
+                  }`}
                 >
                   {t("nav.contact")}
                 </Link>
@@ -265,7 +325,11 @@ export default function Header() {
                 <div className="relative" ref={dropdownRef}>
                   <button
                     onClick={() => setShowLanguages(!showLanguages)}
-                    className="px-3 lg:px-4 py-2 lg:py-2.5 text-xs font-light tracking-[0.1em] uppercase border border-gray-900/20 text-gray-900 rounded-full transition-smooth-fast hover:bg-gray-900/5 hover:border-gray-900 min-h-[40px] lg:min-h-[44px] whitespace-nowrap"
+                    className={`px-3 lg:px-4 py-2 lg:py-2.5 text-xs font-light tracking-[0.1em] uppercase border rounded-full transition-all duration-300 min-h-[40px] lg:min-h-[44px] whitespace-nowrap ${
+                      isDarkBackground
+                        ? 'border-white/30 text-white hover:bg-white/10 hover:border-white'
+                        : 'border-gray-900/20 text-gray-900 hover:bg-gray-900/5 hover:border-gray-900'
+                    }`}
                     aria-label="Select language"
                     aria-expanded={showLanguages}
                     aria-haspopup="true"
